@@ -15,7 +15,9 @@
 * **AES**   (**A**dvenced **E**ncryption **S**tandart)
 * **REST**  (**Re**presentive **S**tate **T**ransfer)
 * **API**   (**A**plication **P**rograming **I**nterface)
-* **SSH**   (**S**ecure **Sh**ell )
+
+* **SSH**   (**S**ecure **Sh**ell)
+* **SaaS**  (**S**oftware **a**s **a** **S**ervice) -  allows users to connect to and use cloud-based apps over the Internet. 
 
 ## TCP vs UDP
 
