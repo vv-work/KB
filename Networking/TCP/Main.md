@@ -1,4 +1,4 @@
-## Syntaxis 
+k## Syntaxis 
 
 ##### Header
 * **IP**    (**I**nternet **P**rotocol)
@@ -16,8 +16,15 @@
 * **REST**  (**Re**presentive **S**tate **T**ransfer)
 * **API**   (**A**plication **P**rograming **I**nterface)
 
+**NET**
+* **ASP**   (**A**ctive **S**erver **P**age)
+* **IIS**   (**I**nternet **I**nvormation **S**ervice)
+* **SOAP**  (**S**imple **O**bject **A**ccess **P**rotocol)
+
 * **SSH**   (**S**ecure **Sh**ell)
 * **SaaS**  (**S**oftware **a**s **a** **S**ervice) -  allows users to connect to and use cloud-based apps over the Internet. 
+* **RPC**   (**R**emote **P**rodurall **C**all)
+
 
 ## TCP vs UDP
 

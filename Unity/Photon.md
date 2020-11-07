@@ -1,4 +1,4 @@
-## Photon
+## Photo
 
 ## Outline
 
