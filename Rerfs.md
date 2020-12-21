@@ -17,3 +17,7 @@ https://ai.googleblog.com/2019/03/real-time-ar-self-expression-with.html
 [FaceAPI-JS](https://github.com/justadudewhohacks/face-api.js/)
 [MyFavorite](https://storage.googleapis.com/tfjs-models/demos/facemesh/index.html)
 [TutorForFaceMesh])(https://www.npmjs.com/package/@tensorflow-models/facemesh) 
+
+
+## Unity WEB Face tracking
+https://www.banuba.com/blog/unity-ar-foundation-face-tracking-and-banuba-face-ar-compared

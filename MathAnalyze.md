@@ -1,18 +1,3 @@
-Green Panda account
-
-Viktor@greenpandagames.com
-pass: Vv5345575
-
-
-Mindfull#$
-
-1995
-
-19951304
-
-1111
-
-11110000
 
 
 -----BEGIN RSA PRIVATE KEY-----
@@ -67,3 +52,23 @@ URqdpV6W1Bx4nRHiglYV5JrojnTROFEMt6xq6F9+7d98ccP9L6zesU+m4SH7x133
 oOfgO726JcVZAqhMGjs5JDoHWmpx9RaVMct+IQ1HAFgTD3NoTwSXzRKq2lE=
 -----END RSA PRIVATE KEY-----
 
+
+Green Panda account
+
+Viktor@greenpandagames.com
+pass: Vv5345575
+
+
+Mindfull#$
+
+1995
+
+19951304
+
+1111
+
+11110000
+
+Nova Poshta API key
+
+f09362fdaeb676da2331b18b17d37c5f

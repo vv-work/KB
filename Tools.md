@@ -1,3 +1,11 @@
+# IIS
+
+## Run from comand line
+```powershell
+.\inetmgr
+```
+ 
+
 # PowrShell
 
 
@@ -23,11 +31,10 @@ cat ~/.ssh/id_rsa.pub #see your pubic key
 ```
 ## Add tool
 ```powershell
-[System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH+';c:\program files\7-zip')
-#for that seession
-
-[System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH+';B:\Programs\Microsoft VS Code\',[System.EnvironmentVariableTarget]::Machine)
-#save to the machine
+# To create new path
+[System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH+';c:\program files\7-zip\')
+# Tpon constantly save it
+[System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH,[System.EnvironmentVariableTarget]::Machine)
 ```
 ## WebRequests
 
@@ -50,7 +57,7 @@ choco install nano -y
 
 
 ## Archives
-~~Expend~~-7Zip
+Expend~~-7Zip
 Compress-7Zip
 
 ## Shortcuts
@@ -82,4 +89,17 @@ C:\Program Files (x86)\Microsoft Visual Studio\Shared
 ```powershell
 $vmData = az vm show --name BuildStation --resource-group BuildStation_group | ConvertFrom-Json 
 $ip.virtualMachine.network.publicIpAddresses.ipAddress
+```
+
+# Open properties
+```powershell
+$o = new-object -com Shell.Application
+$folder = $o.NameSpace("C:\path\to\file")
+$file = $folder.ParseName("filename.txt")
+
+# Folder:
+$folder.Self.InvokeVerb("Properties")
+
+# File:
+$file.InvokeVerb("Properties")
 ```
