@@ -1,5 +1,19 @@
 # IIS
 
+# Unity
+```powershell
+#Open Project in Unity
+Unity -projectPath B:\Git\FaceRemote\FaceTrackingOld\
+Unity -createProject B:\Git\TestProject
+#Execute Commamd
+Unity -projectPath . -executeMethod CLI.SayHello
+```
+
+## Get and kill task
+```powershell
+tasklist
+Taskkill /IM UnityPackageManager.exe /F
+```
 ## Run from comand line
 ```powershell
 .\inetmgr
@@ -32,7 +46,7 @@ cat ~/.ssh/id_rsa.pub #see your pubic key
 ## Add tool
 ```powershell
 # To create new path
-[System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH+';c:\program files\7-zip\')
+[System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH+';'+$Path)
 # Tpon constantly save it
 [System.Environment]::SetEnvironmentVariable('PATH',$Env:PATH,[System.EnvironmentVariableTarget]::Machine)
 ```
