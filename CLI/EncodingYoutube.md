@@ -23,9 +23,11 @@ ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output
 
 ## Download best audios of best playlist
 ```powershell
-youtube-dl -o '%(playlist_index)s - %(title)s.m4a'--playlist-start 26 -f 'bestaudio'  https://www.youtube.com/playlist?list=PLX2vGYjWbI0QvLHla7C_Z_s3q1Oi461o4
+$link = '%Video Link'
 
-youtube-dl -o '%(playlist_index)s - %(title)s.webm'--playlist-start 26 -f 'webm'  https://www.youtube.com/playlist?list=PLX2vGYjWbI0QvLHla7C_Z_s3q1Oi461o4
+youtube-dl -o '%(playlist_index)s - %(title)s.webm' -f 'webm' $link
+youtube-dl -o '%(playlist_index)s - %(title)s.m4a'-f 'bestaudio' $link
+
 ```
 
 
