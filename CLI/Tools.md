@@ -9,6 +9,10 @@ Unity -createProject B:\Git\TestProject
 Unity -projectPath . -executeMethod CLI.SayHello
 ```
 
+ 
+
+# PowrShell
+
 ## Get and kill task
 ```powershell
 tasklist
@@ -18,16 +22,12 @@ Taskkill /IM UnityPackageManager.exe /F
 ```powershell
 .\inetmgr
 ```
- 
-
-# PowrShell
-
 
 ## Basics
 Creating arrays
 
 
-## SSH
+## SSjjjH
 [Tutorial that worked](https://www.tutorialdocs.com/article/windows-openssh-tutorial.html)
 
 ## Make powershlel default
@@ -71,7 +71,7 @@ choco install nano -y
 
 
 ## Archives
-Expend~~-7Zip
+Expand-7Zip filename.zip .\folder\
 Compress-7Zip
 
 ## Shortcuts
