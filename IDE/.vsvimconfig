@@ -1,0 +1,15 @@
+map <Space>f :vsc ReSharper.ReSharper_GotoFileMember<CR>
+
+map <Space>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<CR>
+map <Space>v :vsc ReSharper.Resharper_IntroVariable<CR>
+map <Space>m :vsc ReSharper.ReSharper_ExtractMethod<CR>
+
+
+# custom
+map <Space>m :vsc ReSharper.ReSharper_ExtractMethod<CR>
+map <Space>m :vsc ReSharper.ReSharper_ExtractMethod<CR>
+
+map gi :vsc ReSharper.ReSharper_Generate<CR>
+map gI :vsc ReSharper.ReSharper_GenerateFileBesides<CR>
+map gd :vsc ReSharper.ReSharper_DuplicateText<CR>
+map zo :vsc File.CloseAllButThis<CR>

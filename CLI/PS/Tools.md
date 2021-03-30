@@ -27,7 +27,7 @@ Taskkill /IM UnityPackageManager.exe /F
 Creating arrays
 
 
-## SSjjjH
+## SSH
 [Tutorial that worked](https://www.tutorialdocs.com/article/windows-openssh-tutorial.html)
 
 ## Make powershlel default
