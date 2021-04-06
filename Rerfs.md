@@ -1,6 +1,12 @@
-# Artilces 
+# References
+![board](~/res/../../res/TrelloBoard.png)
 
-## IMportant
+## Education
+
+[Trello board with everything](https://trello.com/b/Z6cDRyis/good-coding-practices-in-unity-unofficial)
+
+
+## Important
 Coolest  [UnityMeshGneration](https://github.com/mattatz/unity-teddy) I ever saw in my life
 Open WebGL examples [ling](https://enoxsoftware.github.io/OpenCVForUnity/webgl_example/index.html)
 
