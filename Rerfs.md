@@ -1,5 +1,5 @@
 # References
-![board](~/res/../../res/TrelloBoard.png)
+![board](/res/TrelloBoard.png)
 
 ## Education
 
