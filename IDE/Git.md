@@ -22,3 +22,18 @@ git branch -d <branch name>
 ```
 # Remove file from history
 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch Assets\External\1PumpkinExport\CorryMarryXmas.anim' --prune-empty --tag-name-filter cat -- --all
+
+
+## SSH
+
+```powershell
+ls -al ~/.ssh
+# Check is there any files already
+```
+### Generate
+
+```powershell
+ls -al ~/.ssh
+$ ssh-keygen -t ed25519 -C "yuriy.paramonov@outlook.com"
+# Check is there any files already
+```
