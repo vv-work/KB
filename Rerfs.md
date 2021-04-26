@@ -1,6 +1,10 @@
 # References
 ![board](/res/TrelloBoard.png)
 
+## Science
+
+[Physical property based materials][https://google.github.io/filament/Filament.md.html]
+
 ## Education
 
 [Trello board with everything](https://trello.com/b/Z6cDRyis/good-coding-practices-in-unity-unofficial)
@@ -39,7 +43,14 @@ Open WebGL examples [ling](https://enoxsoftware.github.io/OpenCVForUnity/webgl_e
 ## Sales
 Web AR Ads boost  sales - [link](https://arinsider.co/2020/09/09/how-can-brands-jumpstart-sales-with-ar-part-ii/)
 
-# Face Tracking 
+#  OpenCV
+
+[Good OpenCV Watch](https://medium.com/@ravitejajnv/install-opencv-4-0-1-from-source-on-macos-for-conda-virtual-environments-to-use-sift-and-surf-5c62bb21daab)
+[Getting the watch](https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/)
+[KarasNeroNetwork HandTracking](https://github.com/jrobchin/Computer-Vision-Basics-with-Python-Keras-and-OpenCV)
+[OpenCV circle detection](https://docs.opencv.org/3.4/d4/d70/tutorial_hough_circle.html)
+[OpenCV Python GoodStart](https://pythonprogramming.net/loading-images-python-opencv-tutorial/)
+
 ## Google 
 ![](/Res/InstantMotionTracking.gif)
 TenserFlow Face and Hand Tracking - [link](https://blog.tensorflow.org/2020/03/face-and-hand-tracking-in-browser-with-mediapipe-and-tensorflowjs.html)
