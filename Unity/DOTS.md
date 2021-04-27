@@ -8,10 +8,15 @@
 2. [ECS](#ecs)
 
 ## Links Questions
-
-[Unity Academy](http://aras-p.info/texts/files/2018Academy%20-%20ECS-DoD.pdf)
-[Intro ECS](D:\Lib\Videos\Unity)
+[NonUnityDOTS](/res/2018UnityAcademyECS.pdf)
 [Intel Dots Tutorial](https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html)
+[Tanks DOTS TDS](https://www.raywenderlich.com/7630142-entity-component-system-for-unity-getting-started)
+[Third person Zombie Demo](https://blogs.unity3d.com/2019/11/27/creating-a-third-person-zombie-shooter-with-dots/)
+[Getting Started with Dots](https://reeseschultz.com/getting-started-with-unity-dots/)
+
+![ECS Tansk](/res/ECSTank.gif)
+
+### 
 
 ### WebGL
 
