@@ -1,22 +1,36 @@
-# DOTS
+# ECS
+
+## Tasks
+
+0. Aracus lecutres UnityAcademe in [Links](#Links)
+1. Add Enteties package
+2. Create Dots pack
+3. Review Unity samples
+4. Benefits.
+
+## Questions
+
+1. ECS vs Dots ?
+2. ECS without Unity?
+3. Job System is needed or not  .
+4. Async Await
+
+## Links
+
+[Unity Academy](http://aras-p.info/texts/files/2018Academy%20-%20ECS-DoD.pdf)
+[Intro ECS](D:\Lib\Videos\Unity)
+[Intel Dots Tutorial](https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html)
+[Cool fishes](https://www.raywenderlich.com/7880445-unity-job-system-and-burst-compiler-getting-started)
+
+**ECS**(**E**ntitiy,**C**omponents,**S**ystems):
+
+- Entity - Data
+- Components - nothing
+- System - is where is logic.
 
 **DOTS**(**D**ata,**O**riented,**T**echonology,**S*tack)
 
-## Outline
-
-1. [Links](#links-questions)
-2. [ECS](#ecs)
-
-## Links Questions
-[NonUnityDOTS](/res/2018UnityAcademyECS.pdf)
-[Intel Dots Tutorial](https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html)
-[Tanks DOTS TDS](https://www.raywenderlich.com/7630142-entity-component-system-for-unity-getting-started)
-[Third person Zombie Demo](https://blogs.unity3d.com/2019/11/27/creating-a-third-person-zombie-shooter-with-dots/)
-[Getting Started with Dots](https://reeseschultz.com/getting-started-with-unity-dots/)
-
-![ECS Tansk](/res/ECSTank.gif)
-
-### 
+## Impoartnat
 
 ### WebGL
 
@@ -36,56 +50,6 @@ class EnableThreads
 }
 
 ```
-
-### Questions
-
-1. Async Await in DOTS
-
-### Unity2020.1.6
-
-- [Entities 0.16](https://docs.unity3d.com/Packages/com.unity.entities@0.16/manual/index.html)
-- [Hybrid Renderer 0.10](https://docs.unity3d.com/Packages/com.unity.rendering.hybrid@0.10/manual/index.html)
-- [Unity Physics 0.5.1](https://docs.unity3d.com/Packages/com.unity.physics@0.5/manual/index.html)
-- [Hovak Physics 0.4.1](https://docs.unity3d.com/Packages/com.havok.physics@0.4/manual/index.html)
-
-- [Jobs 0.17](https://docs.unity3d.com/Packages/com.unity.jobs@0.7/manual/index.html)
-- [Burst 1.6](https://docs.unity3d.com/Packages/com.unity.burst@1.6/manual/docs/QuickStart.html)
-
-### manifest.json
-```json
-{
-    "com.havok.physics": "0.4.1-preview.2",
-    "com.unity.animation": "0.8.0-preview.4",
-    "com.unity.burst": "1.6.0-pre.2",
-    "com.unity.entities": "0.16.0-preview.21",
-    "com.unity.jobs": "0.7.0-preview.17",
-    "com.unity.render-pipelines.universal": "8.2.0",
-    "com.unity.rendering.hybrid": "0.10.0-preview.21",
-    "com.unity.scriptablebuildpipeline": "1.17.0",
-    "com.unity.test-framework": "1.1.24"
-  },
-  "enableLockFile": true,
-  "testables": [
-    "com.unity.collections",
-    "com.unity.animation",
-    "com.unity.entities",
-    "com.unity.jobs",
-    "com.unity.rendering.hybrid"
-  ]
-}
-```
-
-
-## ECS
-
-**ECS**(**E**ntitiy,**C**omponents,**S**ystems):
-
-![ECSIntro](res/ECSMemoryLayout1.jpeg)
-![ECSIntro](res/ECSMemoryLayout2.jpeg)
-
-- Entity - Data
-- Components - nothing
-- System - is where is logic.
 
 
 ## Job System
@@ -279,3 +243,24 @@ class ApplyVelocityParallelForSample : MonoBehaviour
     }
 }
 ```
+
+### ITransformParallel
+
+### ECS has ScheduleBatchedJobs implemented
+
+### Tips and Tricks
+
+0. Don't be stupid
+1. Do not access static data from job (don't be stupid)
+2. Flush scheduled batches (don't be stupid)
+3. Don't try to update data from NativeContainer
+``` c# 
+ nativeArray[0]++; 
+ //The same as
+var temp = nativeArray[0]; temp++; 
+```
+4. Call JobHandle.Complete to regain ownership.
+5. Don't call Complete right after Schaduale(don't be stupid)
+6. Use [ReadOnly] (don't be stupid)
+7. Do not allocate managed memory in jobs (don't be stupid)
+
