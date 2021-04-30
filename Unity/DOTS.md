@@ -39,6 +39,22 @@ When **dynamic** changed entity archetype it will be move to new chunk.
 
 ![chunk](res/ArchetypeChunkDiagram.png)
 
+### Entity Queries
+
+`EntityQuery` - Archetype request for search by components can be:
+
+- All -     `==` match **all** components
+- Any -     `||`at least **one** component
+- None -    `!=`  **none** of componts shold match
+
+### Jobs
+
+`Entities.ForEach`
+`IJObEntityBatch`
+`Schedule()`
+
+
+
 ## Impoartnat
 
 ### WebGL
@@ -254,6 +270,8 @@ class ApplyVelocityParallelForSample : MonoBehaviour
 
 ### ITransformParallel
 
+``
+
 ### ECS has ScheduleBatchedJobs implemented
 
 ### Tips and Tricks
@@ -277,3 +295,58 @@ var temp = nativeArray[0]; temp++;
 ## Algos
 
 ![](res/simd.jpeg)
+
+## Packages
+
+### List
+
+This list is particullary for my `Unity 2020.1.6f`
+
+- [ECS](https://docs.unity3d.com/Packages/com.unity.entities@0.16/manual/index.html)
+- [DOTS Editor](https://docs.unity3d.com/Packages/com.unity.dots.editor@0.11/manual/index.html)
+- [Hybrid Renderer](https://docs.unity3d.com/Packages/com.unity.rendering.hybrid@0.10/manual/index.html)
+- [Burst tutorial](https://docs.unity3d.com/Packages/com.unity.burst@1.3/manual/index.html)
+- [Serialization](https://docs.unity3d.com/Packages/com.unity.serialization@1.7/manual/index.html)
+
+### manifest.json 
+
+```json
+{
+    "com.havok.physics": "0.4.1-preview.2",
+    "com.unity.animation": "0.8.0-preview.4",
+    "com.unity.burst": "1.6.0-pre.2",
+    "com.unity.entities": "0.16.0-preview.21",
+    "com.unity.jobs": "0.7.0-preview.17",
+    "com.unity.serialization": "1.7.0-preview.1",
+
+    "com.unity.render-pipelines.universal": "8.2.0",
+    "com.unity.rendering.hybrid": "0.10.0-preview.21",
+    "com.unity.scriptablebuildpipeline": "1.17.0",
+    "com.unity.test-framework": "1.1.24",
+
+
+    "com.unity.platforms.windows" : "0.10.0-preview.10",
+    "com.unity.platforms.android" : "0.10.0-preview.10",
+    "com.unity.platforms.web" : "0.10.0-preview.10"
+  },
+  "enableLockFile": true,
+  "testables": [
+    "com.unity.collections",
+    "com.unity.animation",
+    "com.unity.entities",
+    "com.unity.jobs",
+
+    "com.unity.rendering.hybrid",
+    "com.unity.dots.editor",
+
+
+    "com.unity.platforms.windows",
+    "com.unity.platforms.android",
+    "com.unity.platforms.web"
+
+
+  ]
+}
+```
+
+
