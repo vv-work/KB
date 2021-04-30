@@ -6,29 +6,21 @@
 function subtract ($from, $count) { $from - $count } #function
 ```
 
-## Execution policy
+## Environment 
 
 ```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-Get-ExecutionPolicy -List
+
+#Best Way
+$env:Path +=";B:\MyPrograms\Git"
+
+#More complex
+$Value= $env:Path
+[System.Environment]::SetEnvironmentVariable('Path',$Value,[System.EnvironmentVariableTarget]::Process);
+
+[System.Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::Process);
+[System.Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::Machine);
+[System.Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::User);
 ```
-
-## Making shortcut
-
-### IIS manager location 
->%windir%\system32\inetsrv\InetMgr.exe
-
-### Winodws Terminal Location
->C:\Users\admin\AppData\Local\Microsoft\WindowsApps\Microsoft.WindowsTerminal_8wekyb3d8bbwe
-
-### Powershell Shortcut Location
->C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
-```powershell
-C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -noexit (. B:\Lib\Proj\PS\Default.ps1)
-```
->Path = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
-
-
 ## Install My script
 
 ```powershell
@@ -53,3 +45,26 @@ Start-Job { param([string[]]$path)code $path } -ArgumentList (Get-Location)
 
  foreach($r in $repos){ if($r.Contains("github.com")){git clone $r}}
 Cloning into 'Rider-Replica'...
+ 
+
+## Execution policy
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+Get-ExecutionPolicy -List
+```
+
+## Making shortcut
+
+### IIS manager location 
+>%windir%\system32\inetsrv\InetMgr.exe
+
+### Winodws Terminal Location
+>C:\Users\admin\AppData\Local\Microsoft\WindowsApps\Microsoft.WindowsTerminal_8wekyb3d8bbwe
+
+### Powershell Shortcut Location
+>C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
+```powershell
+C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -noexit (. B:\Lib\Proj\PS\Default.ps1)
+```
+>Path = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell

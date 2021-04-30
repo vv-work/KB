@@ -1,19 +1,10 @@
-# ECS
-
-## Tasks
-
-0. Aracus lecutres UnityAcademe in [Links](#Links)
-1. Add Enteties package
-2. Create Dots pack
-3. Review Unity samples
-4. Benefits.
+# DOTS
 
 ## Questions
 
-1. ECS vs Dots ?
-2. ECS without Unity?
-3. Job System is needed or not  .
-4. Async Await
+0. Some
+1. ECS without Unity?
+2. Async Await
 
 ## Links
 
@@ -76,7 +67,6 @@ Sort of shared memory to be able to accress location not a copy
 - DifferentType
 - ReadOnly                   - to avoid DisposalSentinel
 - Container Allocator   - for best performance
-
 #### Types:
 ```c#
 //In Job System
