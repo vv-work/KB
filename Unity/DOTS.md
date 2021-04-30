@@ -1,25 +1,43 @@
 # DOTS
 
+**DOTS**(**D**ata,**O**riented,**T**echonology,**S**tack)
+
 ## Questions
 
-0. Some
-1. ECS without Unity?
-2. Async Await
+0. SIMD Vecotrization ?
+1. ECS without Unity in VisualStudio?
+2. Async Await with ECS?
+
 
 ## Links
 
-[Unity Academy](http://aras-p.info/texts/files/2018Academy%20-%20ECS-DoD.pdf)
-[Intro ECS](D:\Lib\Videos\Unity)
-[Intel Dots Tutorial](https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html)
-[Cool fishes](https://www.raywenderlich.com/7880445-unity-job-system-and-burst-compiler-getting-started)
+- [Intel Dots Tutorial](https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html)
+
+- [DOTS water Brust](https://www.raywenderlich.com/7880445-unity-job-system-and-burst-compiler-getting-started)
+
+- [ECS non Unity](http://aras-p.info/texts/files/2018Academy%20-%20ECS-DoD.pdf)
+
+## ECS
 
 **ECS**(**E**ntitiy,**C**omponents,**S**ystems):
 
-- Entity - Data
-- Components - nothing
-- System - is where is logic.
+- Entity - Identity 
+- Components - Data
+- System - Behaviour is where is logic.
 
-**DOTS**(**D**ata,**O**riented,**T**echonology,**S*tack)
+### Archetypes
+
+`EntityArchetype`  - is combination of entities if we remove `Renderer`.
+Then archetype will be **dynamically** changed.
+
+![archetypes](res/ArchetypeDiagram.png)
+
+### Memory Chunks
+
+`ArchetypeChunk` - allocated memory by chunk.
+When **dynamic** changed entity archetype it will be move to new chunk.
+
+![chunk](res/ArchetypeChunkDiagram.png)
 
 ## Impoartnat
 
@@ -254,3 +272,8 @@ var temp = nativeArray[0]; temp++;
 6. Use [ReadOnly] (don't be stupid)
 7. Do not allocate managed memory in jobs (don't be stupid)
 
+
+
+## Algos
+
+![](res/simd.jpeg)
