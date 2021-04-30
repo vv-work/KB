@@ -8,7 +8,6 @@
 1. ECS without Unity in VisualStudio?
 2. Async Await with ECS?
 
-
 ## Links
 
 - [Intel Dots Tutorial](https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html)
@@ -69,13 +68,13 @@ By default ads to **Simulation** group.
 
 #### Types
 
-- `SystemBase` - base
+- `SystemBase` - is `MonoBehaviour` from ECS
+
 - `EntityCommandBufferSystem` - buffer for other systems.
 - `ComponentSystemGroup` - nested and other organization.
 - `GameObjectConversationSystem` - run in Editor.
 
-
-`SystemBase` - is `MonoBehaviour` from ECS
+#### Example
 
 ```c#
 public struct Position : IComponentData
@@ -162,8 +161,6 @@ When **dynamic** changed entity archetype it will be move to new chunk.
 `Entities.ForEach`
 `IJObEntityBatch`
 `Schedule()`
-
-
 
 ## Job System
 
@@ -377,25 +374,58 @@ var temp = nativeArray[0]; temp++;
 6. Use [ReadOnly] (don't be stupid)
 7. Do not allocate managed memory in jobs (don't be stupid)
 
+## Burst
 
+Should be magical just add:
+`[BurstCompile]` to the Job struct and magic.
+![Megic](res/Magic.gif)
+
+### Burst Menu
+
+![Burst Menu](res/burst-menu.png)
+
+### Burst Inspector
+
+![BurstInspector](res/burst-inspector.png)
+
+### Not done research on Burst
+
+>Not over yet...
 
 ## Algos
 
 ![](res/simd.jpeg)
 
+
+## CookBook
+
+### WebGL
+
+```c#
+using UnityEditor;
+using UnityEngine;
+
+[InitializeOnLoad]
+class EnableThreads
+{
+    static EnableThreads()
+    {
+        PlayerSettings.WebGL.linkerTarget = WebGLLinkerTarget.Wasm;
+        PlayerSettings.WebGL.threadsSupport = true;
+        PlayerSettings.WebGL.memorySize = 512;
+    }
+}
+
+```
+
+### !Important
+
+`ComponentSystem` and `JobComponentSystem` - old.
+`SystemBase` and `Entities.ForEach` - new   .
+
 ## Packages
 
-### List
-
-This list is particullary for my `Unity 2020.1.6f`
-
-- [ECS](https://docs.unity3d.com/Packages/com.unity.entities@0.16/manual/index.html)
-- [DOTS Editor](https://docs.unity3d.com/Packages/com.unity.dots.editor@0.11/manual/index.html)
-- [Hybrid Renderer](https://docs.unity3d.com/Packages/com.unity.rendering.hybrid@0.10/manual/index.html)
-- [Burst tutorial](https://docs.unity3d.com/Packages/com.unity.burst@1.3/manual/index.html)
-- [Serialization](https://docs.unity3d.com/Packages/com.unity.serialization@1.7/manual/index.html)
-
-### manifest.json 
+### manifest.json
 
 ```json
 {
@@ -436,29 +466,12 @@ This list is particullary for my `Unity 2020.1.6f`
 }
 ```
 
+### List
 
-## CookBook
+This list is specifically for my `Unity 2020.1.6f`
 
-### WebGL
-
-```c#
-using UnityEditor;
-using UnityEngine;
-
-[InitializeOnLoad]
-class EnableThreads
-{
-    static EnableThreads()
-    {
-        PlayerSettings.WebGL.linkerTarget = WebGLLinkerTarget.Wasm;
-        PlayerSettings.WebGL.threadsSupport = true;
-        PlayerSettings.WebGL.memorySize = 512;
-    }
-}
-
-```
-
-### !Important
-
-`ComponentSystem` and `JobComponentSystem` - old.
-`SystemBase` and `Entities.ForEach` - new .
+- [ECS](https://docs.unity3d.com/Packages/com.unity.entities@0.16/manual/index.html)
+- [DOTS Editor](https://docs.unity3d.com/Packages/com.unity.dots.editor@0.11/manual/index.html)
+- [Hybrid Renderer](https://docs.unity3d.com/Packages/com.unity.rendering.hybrid@0.10/manual/index.html)
+- [Burst tutorial](https://docs.unity3d.com/Packages/com.unity.burst@1.3/manual/index.html)
+- [Serialization](https://docs.unity3d.com/Packages/com.unity.serialization@1.7/manual/index.html)
