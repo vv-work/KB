@@ -21,9 +21,119 @@
 
 **ECS**(**E**ntitiy,**C**omponents,**S**ystems):
 
-- Entity - Identity 
-- Components - Data
-- System - Behaviour is where is logic.
+- [Entity](#entities) - Identity
+- [Component](#component) - Data
+- [System](#system) - Behaviour
+
+### Entities
+
+Entities - is like lightweight `GameObject`.
+
+`EntityManger` - is one **ring** to control them all.
+`EntityArchetype` - it does not have a name only type.
+
+#### Create
+
+You can convert prefabs into entities or made your own spawner.
+
+`EntityManager.CreateEntity` - the way evil is born by giving:
+
+- `ComponentType[]` - array of components
+- `EntityArchetype` - Instruction.
+- `Instantiate` - Clone of existing.
+- Create empty and then add components.
+**Multiple by**
+Fill ``NativeArray`` by ``CreateEntity`` or ``Instantiate`` - cloning.
+
+### Components
+
+Our data and it comes in many forms:
+
+- `IComponentData` - general.
+- `IBufferElementData` - buffer
+- `ISharedComponentData` - shared.
+- `ISystemStateComponentData` - state (created or destroyed)
+- `ISharedSystemStateComponentData` - System sate
+- `Blob assets` - non component just for storing data has reference.
+ Data will be  available to `Jobs`.
+
+
+### System
+
+![ECS System](res/BasicSystem.png)
+
+#### Instantiating
+
+ECS automatically does that.
+By default ads to **Simulation** group.
+
+#### Types
+
+- `SystemBase` - base
+- `EntityCommandBufferSystem` - buffer for other systems.
+- `ComponentSystemGroup` - nested and other organization.
+- `GameObjectConversationSystem` - run in Editor.
+
+
+`SystemBase` - is `MonoBehaviour` from ECS
+
+```c#
+public struct Position : IComponentData
+{
+   public float3 Value;
+}
+
+public struct Velocity : IComponentData
+{
+   public float3 Value;
+}
+
+public class ECSSystem : SystemBase
+{
+   protected override void OnUpdate()
+   {
+       // Local variable captured in ForEach
+       float dT = Time.DeltaTime;
+
+       Entities
+           .WithName("Update_Displacement")
+           .ForEach(
+               (ref Position position, in Velocity velocity) =>
+               {
+                   position = new Position()
+                   {
+                       Value = position.Value + velocity.Value * dT
+                   };
+               }
+           )
+           .ScheduleParallel();
+   }
+}
+
+```
+
+### System lifecycle Callbacks
+
+> Exaclty like in `MonoBehaviour` but in `SystemBase`
+
+- `OnCreate()` - first.
+- `OnStartRunning()` - before first `OnUpdate()` when is **resumed**
+- `OnUpdate()` - each frame when there is work and isEnable
+- `OnStopRunning()` -  no entities matching also before on Destroy .
+- `OnDestroy()`  - last.
+
+### SystemUpdateOrder
+
+Is determent by by `ComponentSystemGroup` attributes:
+
+-`UpdateInGroupAttribute`
+-`UpdateBeforeAttribute`
+-`UpdateAfterAttribute`
+
+If group not specified it will go to the World default group.
+
+
+### ECS Concepts
 
 ### Archetypes
 
@@ -55,28 +165,6 @@ When **dynamic** changed entity archetype it will be move to new chunk.
 
 
 
-## Impoartnat
-
-### WebGL
-
-```c#
-using UnityEditor;
-using UnityEngine;
-
-[InitializeOnLoad]
-class EnableThreads
-{
-    static EnableThreads()
-    {
-        PlayerSettings.WebGL.linkerTarget = WebGLLinkerTarget.Wasm;
-        PlayerSettings.WebGL.threadsSupport = true;
-        PlayerSettings.WebGL.memorySize = 512;
-    }
-}
-
-```
-
-
 ## Job System
 
 Not ECS can be use **separetely**.
@@ -84,7 +172,6 @@ Not ECS can be use **separetely**.
 ### Safety System
 
 **Race Condition** - When one part of code depends on another.
-
 
 **Safety System** - Prevent that by sanding data to potential race conditions only **blittable data types**
 
@@ -350,3 +437,28 @@ This list is particullary for my `Unity 2020.1.6f`
 ```
 
 
+## CookBook
+
+### WebGL
+
+```c#
+using UnityEditor;
+using UnityEngine;
+
+[InitializeOnLoad]
+class EnableThreads
+{
+    static EnableThreads()
+    {
+        PlayerSettings.WebGL.linkerTarget = WebGLLinkerTarget.Wasm;
+        PlayerSettings.WebGL.threadsSupport = true;
+        PlayerSettings.WebGL.memorySize = 512;
+    }
+}
+
+```
+
+### !Important
+
+`ComponentSystem` and `JobComponentSystem` - old.
+`SystemBase` and `Entities.ForEach` - new .
