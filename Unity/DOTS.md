@@ -380,7 +380,7 @@ Should be magical just add:
 `[BurstCompile]` to the Job struct and magic.
 ![Megic](res/Magic.gif)
 
-### Burst Menu
+k### Burst Menu
 
 ![Burst Menu](res/burst-menu.png)
 
