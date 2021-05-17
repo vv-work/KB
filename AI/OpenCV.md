@@ -5,19 +5,29 @@
 
 ### Books
 
-- 9/10 OpenCVCookbook Python by Examples
-- 8.5/10 OpenCVCookbook Python BluePrints
-- 8.25/10 OpenCV by Examples
+- 9.5/10 OpenCV Learning Path Theory+Examples
 - 8/10 TenserFlow 2.0
-- 7.5 openCv Cookbook++
-- 7.5 OpenCV ProProcessing 
+
+- 7.5 openCv Cookbook
+  - C++ based.
+
+- 7.5 OpenCV ProProcessing
+  - Java based.
+
 - 7/10 Hands-on ML Kera ch14 CNN CV.
 - 7/10 Rabbit algos AI
 
-- LearningOpenCV 3 Big and detailed
+- Learning OpenCV 3 Big and detailed
+  - C+++ 
+  - More like ditailed catalog.
+
+- Numerical for  CV to deep into math
+  - Really ditailed on the Math behind.
+
+- CV Algos and Applience Szelinsky to deep into math
+
 - Ml for OpenCV a bit dig down
-- Szhielzki R OpenCV to deep into math
-- Numeraical for  CV to deep into math
+ - Just Theory No practice:
 
 ### Libs
 
@@ -89,7 +99,7 @@ cv2.imshow('soboly',sobely)
 cv2.imshow('edges',edges)
 ```
 ### Shzelinski Model
-()['\AI\Res\Szhelinski.png']
+[](/AI/Res/Szhelinski.png       )
 
 ### Todo
 
