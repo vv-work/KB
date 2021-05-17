@@ -21,7 +21,7 @@ git branch -u origin <branch name>
 git branch -d <branch name>
 ```
 # Remove file from history
-git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch Assets\External\1PumpkinExport\CorryMarryXmas.anim' --prune-empty --tag-name-filter cat -- --all
+    git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch Assets\External\1PumpkinExport\CorryMarryXmas.anim' --prune-empty --tag-name-filter cat -- --all
 
 
 ## SSH

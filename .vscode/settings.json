@@ -4,5 +4,7 @@
         "presistent",
         "struct",
         "unmanaged"
-    ]
+    ],
+    "python.pythonPath": "B:\\MyPrograms\\Python37\\python.exe",
+    "jupyter.jupyterServerType": "local"
 }
