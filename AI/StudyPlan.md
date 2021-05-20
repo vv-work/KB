@@ -28,18 +28,15 @@ And we probably start with First one.
 ### Questions
 
 0. How the hell computer vision Works?
-
-2. ML.Net what it is and how to eat it.
-
-1. I need briew terminology CNN CV e.t.c?
-
-3. TenserFlow what it is? Is it better then ML.NET
+1. ML.Net what it is and how to eat it.
+   1. I need briew terminology CNN CV e.t.c?
+2. TenserFlow what it is? Is it better then ML.NET
     - TenserFlow-Sharp?
-4. OpenCV terminology just basic one.
+3. OpenCV terminology just basic one.
     - And what parts of it will I need?
     - What is good and what is bad in Unity OpenCV.
 
-1. How to find the f*cking watch.
+4. How to find the f*cking watch.
     - Combine CV and ML
 
 ## Tasks

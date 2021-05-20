@@ -1,5 +1,12 @@
 # Machine Learning
 
+## Resoursces
+
+# Microsoft 
+
+- [Reinforcement Learning Designer-centered](https://www.microsoft.com/en-us/research/blog/designer-centered-reinforcement-learning/?OCID=msr_blog_DesignerRL_highlights1)
+- [RL Reserach Colleciton](https://www.microsoft.com/en-us/research/blog/research-collection-reinforcement-learning-at-microsoft/)
+
 ## Basics
 
 ### Supervised Machine Learning
@@ -14,14 +21,10 @@ When we look for hidden **structure** in data.
 
 Feature engineering process of creation feature do analyze the data.
 
-
 ### RMSE
 
 `RMSE` - **R**oot of **M**ean **S**quared **E**rror
 Evaluation technique by squaring root error.
-
-## Traine
-Here are Basic Concept for the machine Learning
 
 ### Binary classification
 

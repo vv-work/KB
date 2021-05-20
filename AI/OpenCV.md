@@ -27,7 +27,7 @@
 - CV Algos and Applience Szelinsky to deep into math
 
 - Ml for OpenCV a bit dig down
- - Just Theory No practice:
+ - Just Theory No practice
 
 ### Libs
 
@@ -36,8 +36,16 @@
 - OpenCV Library for Python
 
 ### course
+
 - 7.5/10 ML TenserFlow Keras
-- 7.5/10 ML TenserFlow Keras
+- OpenCV in .NET
+
+### Questions
+
+- What is YOLO?
+- What is DarkNet?
+- What is SSD? 
+- How does they work what the diffrence?
 
 
 ### Code examples
@@ -45,19 +53,8 @@
 - OpenCV for Unity
 - Books by examples
 - Github Repos
-- ML.NET full of great things
 
-### Ml.NET
-
--[Taco vs Burito](https://github.com/sethjuarez/TacosML)
-
-- [Object Detection ONNX Article](https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/object-detection-onnx)
-- [Object Detection](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx)
-- [Image classifification Model API](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_Training)
-- [Image classifing scoring ](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_TensorFlow)
-- [ Image classification training](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_TensorFlowEstimator)
-
-
+    
 ## Basics
 
 Basic import
