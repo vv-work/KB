@@ -40,6 +40,14 @@
 - 7.5/10 ML TenserFlow Keras
 - OpenCV in .NET
 
+## Links
+
+- [Yolov3 on OpenCV](https://itnext.io/implementing-yolo-v3-in-tensorflow-tf-slim-c3c55ff59dbe)
+- [ Open CV wiki DeepLearing](https://github.com/opencv/opencv/wiki/Deep-Learning-in-OpenCV)
+- GraphAPI
+- TF ObjectDetectionAPI
+- TF text Graph
+
 ### Questions
 
 - What is YOLO?
@@ -47,14 +55,12 @@
 - What is SSD? 
 - How does they work what the diffrence?
 
-
 ### Code examples
 
 - OpenCV for Unity
 - Books by examples
 - Github Repos
 
-    
 ## Basics
 
 Basic import
@@ -66,6 +72,7 @@ import matplotlib.pyplot as plt
 ```
 
 ### Channels
+
 ```python
 img=cv2.imread('image.jpg',1)
 
@@ -75,6 +82,7 @@ rbr_img = cv2.merge((r,b,r))
 ```
 
 ### Scaling
+
 ```python
 scale = 0.25
 img_scaled = cv2.resize(img,None,fx=scale, fy=slale, interpolation = cv2.INTER_LINEAR)
@@ -95,7 +103,9 @@ cv2.imshow('soblx', sobelx)
 cv2.imshow('soboly',sobely)
 cv2.imshow('edges',edges)
 ```
+
 ### Shzelinski Model
+
 [](/AI/Res/Szhelinski.png       )
 
 ### Todo
