@@ -5,6 +5,9 @@
         "struct",
         "unmanaged"
     ],
-    "python.pythonPath": "B:\\MyPrograms\\Python37\\python.exe",
-    "jupyter.jupyterServerType": "local"
+    "python.pythonPath": "B:\\MyPrograms\\Python39\\python.exe",
+    "jupyter.jupyterServerType": "local",
+    "python.autoComplete.extraPaths": [
+    
+    ]
 }
