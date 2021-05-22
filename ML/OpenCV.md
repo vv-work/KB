@@ -1,7 +1,81 @@
 # OpenCV
 
 
+## Links
+
+- [ Open CV wiki DeepLearing](https://github.com/opencv/opencv/wiki/Deep-Learning-in-OpenCV)
+  -[Important](https://docs.opencv.org/master/d1/dee/tutorial_introduction_to_pca.html)
+
+### Questions
+
+ML
+- What is YOLO?
+- What is DarkNet?
+- What is SSD? 
+- How does they work what the diffrence?
+
+- GraphAPI
+- TF ObjectDetectionAPI
+- TF text Graph
+
+- [ ] GrapCut Segmentation castle.
+- [ ] BackProjecting Historgram.
+- [ ] mean shift to find Object.
+- [ ] Histogram comparison
+- [ ] Segmentation using watersheds.
+- [ ] Extracting distinctive regions using MSER.
+- [ ] Line Detection with Hough transform.
+- [ ] Hough Circle Detection.
+- [ ] Shape description.
+
+- [ ] Detecting Interest Points
+  - [ ] FAST
+  - [ ] SURF
+  - [ ] Point Matching
+  - [ ] Template Matching
+  - [ ] Local Intensity Pattern (SURF,SIFT)
+  - [ ] FREAK
+  - [ ] Matching with Random Simple cosinus
+
+- [ ] homography between two images
+- [ ] Detect Plane in image
+- [ ] Haar cascade
+- [ ] Detecting objects with Support Vector Machines and histogram of oriented gradients.
+- [ ] Convalutional Nero Networks
+
+- [ ] Erosion And dilation
+- [ ] Equlizing Historgram
+- [ ] Seam carving
+- [ ] Remove region
+- [ ] Detecting Shapes
+- [ ] Segmented Image
+- [ ] Watershed Algorithm (direction)
+- [ ] AR tracking
+- [ ] ANN-MLP classifier
+
+- [ ] Custom Cascade Creation
+- [ ] Object Recognition
+
+## ML side of things
+
+- [ ] DeepLearning
+- [ ] Feature Enginiring
+- [ ] Deep Learning for CV
+- [ ] Dogs vs Cats
+- [ ] ML.Net image classification.
+
+## Plan
+- [ ] ML.Net quick start 
+- [ ] ML.Net stop sign detection
+- [ ] ML.Net classification Binary
+- [ ] ML.Net classification Scoring
+- [ ] ML.Net classification Training
+- [ ] ML.Net classification PreferedAPI (Transfered Learning)
+- [ ] ML.Net Deep Learning
+
+
 ## Materials
+
 
 ### Books
 
@@ -40,20 +114,6 @@
 - 7.5/10 ML TenserFlow Keras
 - OpenCV in .NET
 
-## Links
-
-- [Yolov3 on OpenCV](https://itnext.io/implementing-yolo-v3-in-tensorflow-tf-slim-c3c55ff59dbe)
-- [ Open CV wiki DeepLearing](https://github.com/opencv/opencv/wiki/Deep-Learning-in-OpenCV)
-- GraphAPI
-- TF ObjectDetectionAPI
-- TF text Graph
-
-### Questions
-
-- What is YOLO?
-- What is DarkNet?
-- What is SSD? 
-- How does they work what the diffrence?
 
 ### Code examples
 
