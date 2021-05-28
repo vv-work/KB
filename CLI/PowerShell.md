@@ -8,7 +8,10 @@ function subtract ($from, $count) { $from - $count } #function
 
 ## Environment 
 
-```powershell
+## Moduels
+
+`D:\Users\admin\Documents\WindowsPowerShell\Modules` - old loction
+`B:\myprograms\powershell\7\Modules\` - current location
 
 #Best Way
 $env:Path +=";B:\MyPrograms\Git"
@@ -65,6 +68,13 @@ Get-ExecutionPolicy -List
 ### Powershell Shortcut Location
 >C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
 ```powershell
+B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -noexit
 C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -noexit (. B:\Lib\Proj\PS\Default.ps1)
 ```
 >Path = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
+
+### For terminal
+```powershell 
+B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -noexit
+
+```
