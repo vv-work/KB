@@ -2,12 +2,53 @@
 
 ## Resoursces
 
-# Microsoft 
-
-- [Reinforcement Learning Designer-centered](https://www.microsoft.com/en-us/research/blog/designer-centered-reinforcement-learning/?OCID=msr_blog_DesignerRL_highlights1)
-- [RL Reserach Colleciton](https://www.microsoft.com/en-us/research/blog/research-collection-reinforcement-learning-at-microsoft/)
-
 ## Basics
+
+### MNIST
+
+### Hidden Layer
+
+Some computer part that we now nothihng             `               
+
+!["Image"](Res/ML/Img1.png)
+
+### Weights & Bios
+
+The influnce of the activation layer
+
+!["Image"](Res/ML/Img2.png)
+
+**Bios**
+
+!["Image"](Res/ML/Img7.png)
+
+
+### Sigmoid Function
+
+The funciton that is goes close to -1 or 1 
+the bigger the number is 
+
+!["Image"](Res/ML/Img4.png)
+
+This **math** way  to deteming the weight
+
+!["Image"](Res/ML/Img3.png)
+
+Actually Deep network dosen's use **Sigmoid** They use the ReLU
+
+!["Image"](Res/ML/Img6.png)
+
+## Math 
+
+We can thinc about the neuro netowrk as simplie like about math
+
+!["Image"](Res/ML/Img5.png)
+
+
+#### Cost Fucntion
+
+Cost fucntion is way to mesure what changes are postive and wha tare negative
+!["Image"](Res/ML/Img8.png)
 
 ### Supervised Machine Learning
 
@@ -38,23 +79,6 @@ Is **supervised machine learning** task. To understand binary nature of the task
 ### Multiclass classification
 
 A supervised machine learning task is used to predict class category.
-
-#### Trainers
-
-- LightGbmMulticlassTrainer
-- SdcaMaximumEntropyMulticlassTrainer
-- SdcaNonCalibratedMulticlassTrainer
-- LbfgsMaximumEntropyMulticlassTrainer
-- NaiveBayesMulticlassTrainer
-- OneVersusAllTrainer
-- PairwiseCouplingTrainer
-
-- ImageClassificationTrainer
-
-#### Input/Output
-
-`Score` - Single
- `PredictionLabel` - Key
 
 ### Regression
 

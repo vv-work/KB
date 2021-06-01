@@ -63,7 +63,7 @@ Get-ExecutionPolicy -List
 >%windir%\system32\inetsrv\InetMgr.exe
 
 ### Winodws Terminal Location
->C:\Users\admin\AppData\Local\Microsoft\WindowsApps\Microsoft.WindowsTerminal_8wekyb3d8bbwe
+>D:\Users\admin\AppData\Local\Microsoft\WindowsApps\Microsoft.WindowsTerminal_8wekyb3d8bbwe
 
 ### Powershell Shortcut Location
 >C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
