@@ -2,6 +2,10 @@
 
 ## Resoursces
 
+## Difrent Networks
+
+!["difrent nets"](Res/Comparison_image_neural_networks.svg.png)
+
 ## Basics
 
 ### MNIST
