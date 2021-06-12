@@ -1,6 +1,4 @@
-###### 
-
-
+## TF CheatSheet
 
 `References` from Tensorflow docs and bunch of places on the internet!
 
