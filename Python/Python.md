@@ -1,4 +1,66 @@
 # Python
 
-- [Cheat Sheet](CheetSheet/index.md)
-    
+[images](CheatSheet/index.md)
+
+### User Input
+
+```python
+name = input("what's your name? ")
+print(name)
+```
+
+
+#### List comperhansions
+```python
+squars= [x**2 for x in range(1,11)]
+print(squars)
+```
+>ouput: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#### Slicing a list 
+```python 
+fishers = ['sam','bob','ada','bea']
+first_two=fishers[:2]
+print(first_two)
+```
+>output: [sam,bob]
+
+#### Copy array
+
+```python
+copy_of_bike = bikes[:] # making list
+```
+```python
+'trey' in bikes # Array contains
+'some' not in bikes # Array not contins
+
+logic = True
+
+if logic:
+    print("some logic")
+elif age>=18 :
+    print("You have 18")
+else:
+    print("Nothing")
+```
+
+#### Dictionary
+
+```python
+alien = {'color':'green', 'points':5}   #create dictionary
+alien['x_position'] = 0                 #new value
+print(f'alian color is{alien['color']}')
+
+ far_numbers = {'eric' :17, 'ever' :4}
+ for name,number in far_numbers.items():
+     print(name + ' loves ' + str(number))
+ for name in far_numbers.keys():
+     print(name))
+```
+>output : green
+>eric loves 17
+>ever loves 4
+>eric
+>ever
+
+
+
