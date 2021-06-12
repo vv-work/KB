@@ -1,7 +1,4 @@
 # CheetSheets 
- <style>	 img\{max-width: 100%\}
-	 body\{max-width: 100%\}
-</style>
 
 ## Sections
 
