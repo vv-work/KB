@@ -1,4 +1,4 @@
 # Python
 
-- [Cheat Sheet](CheetSheet\index.md)
+- [Cheat Sheet](CheetSheet/index.md)
     
