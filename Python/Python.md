@@ -2,6 +2,7 @@
 
 [images](CheatSheet/index.md)
 
+
 ### User Input
 
 ```python
