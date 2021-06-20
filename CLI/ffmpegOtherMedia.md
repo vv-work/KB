@@ -20,6 +20,7 @@ ffmpeg -i .\ADHD-Relief.mp3 -f segment -segment_time 3000 -c copy ADHDRelief%03d
 
 ### Main
 
+
 `-i StickAround.mp4`
 Input file is StickAround.mp4
 
@@ -43,3 +44,7 @@ ffmpeg -ss 61.0 -t 2.5 -i StickAround.mp4 -f gif StickAround.gif
 
 ### Crop the video
 `ffmpeg -i ForEugene.mp4 -filter:v 'crop=iw-840' 'EugeneCrop.mp4'`
+
+#### Resize
+
+`ffmpeg -i some.mkv -s 1280x720 output.mp4`
