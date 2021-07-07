@@ -21,5 +21,11 @@ It's biological plastic made of organic
 1. Calibration Cube
 2. Banch from PLA
 
+## PLA 
+
+![PLA temp tower](Res/pla-printing-temperature-tower.jpg)
 
 
+Tempratures:
+    - Nozzle: 205(180-225)
+    - Bad: 60(50-70)

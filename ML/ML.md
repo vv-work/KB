@@ -1,18 +1,19 @@
 # Machine Learning
 
 ## Resoursces
-
-## Difrent Networks
-
-!["difrent nets"](Res/Comparison_image_neural_networks.svg.png)
+- [Macinea Learning Manga](http://localhost/Books/ML/A0PythonManga.pdf)
 
 ## Basics
 
 ### MNIST
 
+### Difrent Networks
+
+!["difrent nets"](Res/Comparison_image_neural_networks.svg.png)
+
 ### Hidden Layer
 
-Some computer part that we now nothihng             `               
+Some computer part that we now nothihng             
 
 !["Image"](Res/ML/Img1.png)
 
