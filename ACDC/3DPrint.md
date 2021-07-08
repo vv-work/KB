@@ -27,5 +27,5 @@ It's biological plastic made of organic
 
 
 Tempratures:
-    - Nozzle: 205(180-225)
+    - Nozzle: **195**(180-225)
     - Bad: 60(50-70)

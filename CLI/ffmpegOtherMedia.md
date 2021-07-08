@@ -18,8 +18,20 @@ Split audio into the equal 30 min parts
 ffmpeg -i .\ADHD-Relief.mp3 -f segment -segment_time 3000 -c copy ADHDRelief%03d.mp3
 ```
 
-### Main
+### Cut part of video 
 
+```powershell
+ffmpeg --s 00:05:00 -i '.\input.mkv' -s 1280x720 -t 300 'out.mp4'
+```
+### Speed up 
+
+20x times `0.05=1/20`
+
+```powershell
+ffmpeg -i 'input.mkv' -filter:v "setpts=0.05*PTS" SpeedUp.mp4
+```
+
+### Main
 
 `-i StickAround.mp4`
 Input file is StickAround.mp4

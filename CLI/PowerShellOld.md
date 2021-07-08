@@ -181,13 +181,10 @@ Compress-7Zip
 ## Removign large file from history
 >git filter-branch --force --index-filter  'git rm --cached --ignore-unmatch path/to/ceo.jpg'  --prune-empty --tag-name-filter cat -- --all
 
-## Visual Studio
-(IHA)Intel Hardware Accelaration  for Android emulator
 
 
 ## Shared tools location
 C:\Program Files (x86)\Microsoft Visual Studio\Shared
-
 
 
 # Azure
