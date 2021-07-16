@@ -8,6 +8,21 @@
 - satisfection
 - fulfillment
 
+## Resources
+ -[Forbes article](https://www.forbes.com/sites/andyswan/2016/10/05/7-work-ethic-commandments-for-an-entrepreneur/?sh=59e60614ce6a)
+
+## Quesions
+- Nevy seal (army) work ethhic
+-  Book Nine things success people do diffrently?
+-  More ditails on Workoholics culture?
+-  How Protistanism work ethic sounds?
+-  Work ethic philosphy?
+> Maurice Blanchot 
+-  Work Ethic in difrent countries:
+  - U.S.S.R
+  - U.S.A
+  - Japen
+  - Scandinavia
 
 ## Factors
 
@@ -29,4 +44,9 @@
 - Positive problem-solving help overcome future difficulties
 - Hardships always come and go.
 - Lack of *time* and *resources* is constant. You will always lack something.
-
+- **Contrafreeloading** - make it is to get food
+- Dont be `busy`
+- **One.More.Rep**
+- Create winning routine
+- **GOOD** priciple 
+“GOOD. (action) (problem).”
