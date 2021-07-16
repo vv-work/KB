@@ -2,7 +2,16 @@
 
 ## Links
 
-[7 Tips](https://www.freecodecamp.org/news/7-vim-tips-that-changed-my-life/)
+- [7 Tips](https://www.freecodecamp.org/news/7-vim-tips-that-changed-my-life/)
+- [Python](https://www.vimfromscratch.com/articles/vim-for-python/)
+
+## Plugins
+
+
+### vim-plug
+
+`~\.vimrc` - file to edit
+
 
 ## Extensions
 
@@ -18,4 +27,7 @@ I have couple of blind spots with vim. But the general concpt of working full in
 
 ## Copy pase MS Widnows buffer
 
-``
+<kbd>"</kbd>+<kbd>\*</kbd>+<kbd>y</kbd> - copy
+
+<kbd>"</kbd>+<kbd>\*</kbd>+<kbd>p</kbd> - paste 
+

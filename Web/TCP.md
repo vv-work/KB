@@ -1,4 +1,4 @@
-k## Syntaxis 
+# TCP Syntaxis 
 
 ##### Header
 * **IP**    (**I**nternet **P**rotocol)
@@ -17,7 +17,7 @@ k## Syntaxis
 * **API**   (**A**plication **P**rograming **I**nterface)
 
 **NET**
-* **ASP**   (**A**ctive **S**erver **P**age)
+***ASP**   (**A**ctive **S**erver **P**age)
 * **IIS**   (**I**nternet **I**nvormation **S**ervice)
 * **SOAP**  (**S**imple **O**bject **A**ccess **P**rotocol)
 
@@ -35,4 +35,3 @@ k## Syntaxis
 >20 bits
 
 ![TCP Packet](/res/packet.jpg)
-
