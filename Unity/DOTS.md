@@ -75,8 +75,10 @@ By default ads to **Simulation** group.
 - `GameObjectConversationSystem` - run in Editor.
 
 #### Example
+ 
+Just <kbd>Ctrl</kbd>+ <kbd>X</kbd>
 
-```c#
+```CSharp
 public struct Position : IComponentData
 {
    public float3 Value;
