@@ -9,7 +9,7 @@
 ## Python Console
 
 [Python Net](https://pythonnet.github.io/)
-[Package Link](https://docs.unity3d.com/Packages/com.unity.scripting.python@4.0/manual/PythonScriptEditor.html)
+[Package Link](https://docs.uklnity3d.com/Packages/com.unity.scripting.python@4.0/manual/PythonScriptEditor.html)
 
 ## Manifest 
 
