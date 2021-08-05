@@ -1,6 +1,5 @@
 # TCP Syntaxis 
 
-![](res/TCP-IP.jpg)
 
 ##### Header
 * **IP**    (**I**nternet **P**rotocol)
@@ -36,4 +35,6 @@
 **TCP** - UDP + Controls Pockets delivery.
 >20 bits
 
+
+![UDP](res/TCP-IP.jpg)
 ![TCP Packet](res/packet.jpg)
