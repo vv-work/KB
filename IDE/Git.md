@@ -2,22 +2,59 @@
 
 ## Questions
 
--  What is diff?
--  Have to compare file from history?
 
+-  Git stash
+-  Git switch
+-  Other services except github.
+-  Just storage of file archiving?
+-  Git LFS ?
+
+## Git gc and archive
+Remove unecessary files
+
+`git gc`
+`git archive -o latest.zip HEAD`
+
+## Cherry-pck
+ 
+Apply changes introduces by other commit.
+
+## HEAD 
+
+- `HEAD` - Last commit
+- `HEAD^^` - two commits ago
+- `main~2` - on branch main 2 commit ago
+
+## Restore 
+`git restore Readme.md`
+`git restore ONe.md --source  d798773f78cf0f3a5430348ae5077723b474e8ec`
+`git restore --source main~2 Readme.md`
+
+Restores file from current index or from specific commit
+Or Roll back it's content to the state needed
+
+## Stash
+It sort of like reset but changes **stashed**
+Files basically saying unding changes that was git add
+
+ 
 ## Diff 
 
 ```PowerShell
-git diff 
+git diff HEAD^
+git diff HEAD^^ HEAD^
+git diff HEAD COMMIT_ADDRESS
 ```
 
+## Submodule
+The power to add submodule so it will pop up in project
+But will be tracked separetly
 
-## Typical git upload code
+## Git log
 
-git branch -M main
-git remote add origin git@github.com:ComanGames/GeeneeMasks.git
-git push -u origin main
-
+```powershell
+git log --follow Readme.md
+```
 
 ## Add to GIT LFS
 
