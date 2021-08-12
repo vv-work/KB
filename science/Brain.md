@@ -30,10 +30,12 @@
 
 ## Ways to change Network
 
+0. A Unit test to pass.
 1. A Detailed strategical planning
 2. A Short exercise session(10 push up).
 
-1. B Solving puzzles on HuckerRank 
+
+3. B Solving puzzles on HuckerRank 
 3. B 10 minutes of making memes.
 4. B Making lecture for someone.
 5. C Avoiding Dophomine Addictive things.
