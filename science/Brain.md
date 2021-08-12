@@ -1,6 +1,6 @@
-# About brain
 
-## Anexiety
+
+### About brain tion.jpgAnexiety
 
 ![](Res/ThoughtsMap.jpg)
 
@@ -10,7 +10,7 @@
 
 ## Ego Deplation 
 
-![](Res\EgoDeplation.jpg)
+![](Res/EgoDeplation.jpg)
 
 ## Prefrontal cortex functions
 
