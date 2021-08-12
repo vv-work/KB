@@ -1,12 +1,26 @@
+# Brain
 
+## Qustions?
 
-### About brain tion.jpgAnexiety
+- Box breathing.
+- Quck ways to activate Mindfull network.
+
+## Goals
+
+- Nero networks for productivy work.
+- Nero envirmoent to get to work.
+
+### About brain 
 
 ![](Res/ThoughtsMap.jpg)
 
 ## Depression
 
 ![](Res/DepressionBrainScan.jpg)
+
+## Anexiety 
+
+![](Res/Parasympthematic.png)
 
 ## Ego Deplation 
 
