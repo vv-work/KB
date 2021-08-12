@@ -31,13 +31,16 @@ ffmpeg --s 00:05:00 -i '.\input.mkv' -s 1280x720 -t 300 'out.mp4'
 ffmpeg -i 'input.mkv' -filter:v "setpts=0.05*PTS" SpeedUp.mp4
 ```
 
+### Gif
+`-f gif` 
+Format we wan't output into
+
+`ffmpeg -i animated.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4
+`
 ### Main
 
 `-i StickAround.mp4`
 Input file is StickAround.mp4
-
-`-f gif` 
-Format we wan't output into
 
 
 `-ss 61.0` 
