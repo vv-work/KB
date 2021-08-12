@@ -5,7 +5,12 @@
 ![](Res/ThoughtsMap.jpg)
 
 ## Depression
+
 ![](Res/DepressionBrainScan.jpg)
+
+## Ego Deplation 
+
+![](Res\EgoDeplation.jpg)
 
 ## Prefrontal cortex functions
 
