@@ -14,16 +14,16 @@
 
 ## Command line syntaxis
 
-`:!` - execute in command line
-`%` - current file name
+ - `:!` - execute in command line
+ - `%` - current file name
 
 ## Search
 
-`/`  search for something
-`//` previous search
-`?`  backward search
-`:set hlsearch` - turn on highlight on search
-`:noh` - turn off highlight on search
+ - `/`  search for something
+ - `//` previous search
+ - `?`  backward search
+ - `:set hlsearch` - turn on highlight on search
+ - `:noh` - turn off highlight on search
 
 ### Vimgrep
 
@@ -31,12 +31,10 @@ Super awesome vim search in multiple files
 
 ## Substitue
 
-`:s/pattern/replace/g` - find and replace in current line
-`:%s///replace/g` - replace last search in entire file
-`%` - serch in entire file
-
-
-`:help :substitute`
+ - `:s/pattern/replace/g` - find and replace in current line
+ - `:%s///replace/g` - replace last search in entire file
+ - `%` - serch in entire file
+ - `:help :substitute`
 
 ## Concept 
 
