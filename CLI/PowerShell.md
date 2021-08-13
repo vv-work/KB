@@ -1,7 +1,7 @@
 # PowerShell
 
 ## Emoji 
-🔥🤔💖
+🔥🤔💖t
 
 ## Basics
 
