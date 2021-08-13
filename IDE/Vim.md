@@ -5,20 +5,38 @@
 - [7 Tips](https://www.freecodecamp.org/news/7-vim-tips-that-changed-my-life/)
 - [Python](https://www.vimfromscratch.com/articles/vim-for-python/)
 
-## Plugins
+## Questions
+
+- Official documentation use
+- Information source
+- Exercises
 
 
-### vim-plug
+## Command line syntaxis
 
-`~\.vimrc` - file to edit
+`:!` - execute in command line
+`%` - current file name
+
+## Search
+
+`/`  search for something
+`//` previous search
+`?`  backward search
+`:set hlsearch` - turn on highlight on search
+`:noh` - turn off highlight on search
+
+### Vimgrep
+
+Super awesome vim search in multiple files
+
+## Substitue
+
+`:s/pattern/replace/g` - find and replace in current line
+`:%s///replace/g` - replace last search in entire file
+`%` - serch in entire file
 
 
-## Extensions
-
-- See the file hirarchy
-- Intellisens
-- Documentation
-- Vim MarkDown syntaxis formated
+`:help :substitute`
 
 ## Concept 
 
@@ -31,3 +49,20 @@ I have couple of blind spots with vim. But the general concpt of working full in
 
 <kbd>"</kbd>+<kbd>\*</kbd>+<kbd>p</kbd> - paste 
 
+
+## Plugins
+
+
+### vim-plug
+
+`~\.vimrc` - file to edit
+
+### Vim Tree-View
+
+
+## Extensions
+
+- See the file hirarchy
+- Intellisens
+- Documentation
+- Vim MarkDown syntaxis formated
