@@ -1,5 +1,8 @@
 # PowerShell
 
+## Emoji 
+🔥🤔💖
+
 ## Basics
 
 ```powershell
