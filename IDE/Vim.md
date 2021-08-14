@@ -90,3 +90,15 @@ Super awesome vim search in multiple files
 ## Vimtutor
 
 vim C:\tools\vim\vim82\tutor\tutor
+
+## Scrolling
+
+<kbd>Ctrl</kbd>+<kbd>U</kbd> - Scroll up 
+<kbd>Ctrl</kbd>+<kbd>D</kbd> - Scroll Down
+<kbd>Ctrl</kbd>+<kbd>Y</kbd> - Scroll One Line up 
+<kbd>Ctrl</kbd>+<kbd>E</kbd> - Scroll One Line Down
+
+`zz` - Scroll to the screen center
+`zt` - Scroll to the Top
+`zb` - Scroll to the Bottom
+
