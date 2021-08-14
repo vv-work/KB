@@ -70,12 +70,27 @@ Super awesome vim search in multiple files
 <kbd>Ctrl</kbd>+<kbd>O</kbd> - Get to begining
 <kbd>Ctrl</kbd>+<kbd>T</kbd> - Get to previous location
 
+## Scrolling
+
+<kbd>Ctrl</kbd>+<kbd>U</kbd> - Scroll up 
+<kbd>Ctrl</kbd>+<kbd>D</kbd> - Scroll Down
+<kbd>Ctrl</kbd>+<kbd>Y</kbd> - Scroll One Line up 
+<kbd>Ctrl</kbd>+<kbd>E</kbd> - Scroll One Line Down
+
+`zz` - Scroll to the screen center
+`zt` - Scroll to the Top
+`zb` - Scroll to the Bottom
+
 ## Plugins
 
 
 ### vim-plug
 
 `~\.vimrc` - file to edit
+`:source ~/.vimrc` - To reload source
+`:PlugInstall` - to Install new plugins
+`:PlugUpdate` - in case of update
+
 
 ### Vim Tree-View
 
@@ -91,14 +106,4 @@ Super awesome vim search in multiple files
 
 vim C:\tools\vim\vim82\tutor\tutor
 
-## Scrolling
-
-<kbd>Ctrl</kbd>+<kbd>U</kbd> - Scroll up 
-<kbd>Ctrl</kbd>+<kbd>D</kbd> - Scroll Down
-<kbd>Ctrl</kbd>+<kbd>Y</kbd> - Scroll One Line up 
-<kbd>Ctrl</kbd>+<kbd>E</kbd> - Scroll One Line Down
-
-`zz` - Scroll to the screen center
-`zt` - Scroll to the Top
-`zb` - Scroll to the Bottom
 
