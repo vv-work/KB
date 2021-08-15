@@ -1,0 +1,157 @@
+► Title - 
+	Removing event handlers
+▬ Message - 
+	Ссылка на объект не указывает на экземпляр объекта.
+○ Type - 
+	System.NullReferenceException
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:39:40
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void RemoveRoutedEventHandlers(System.Windows.UIElement, System.Windows.RoutedEvent)
+♠ StackTrace - 
+   в ScreenToGif.Util.Other.RemoveRoutedEventHandlers(UIElement element, RoutedEvent routedEvent)
+
+----------------------------------
+
+► Title - 
+	Removing event handlers
+▬ Message - 
+	Ссылка на объект не указывает на экземпляр объекта.
+○ Type - 
+	System.NullReferenceException
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:39:47
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void RemoveRoutedEventHandlers(System.Windows.UIElement, System.Windows.RoutedEvent)
+♠ StackTrace - 
+   в ScreenToGif.Util.Other.RemoveRoutedEventHandlers(UIElement element, RoutedEvent routedEvent)
+
+----------------------------------
+
+► Title - 
+	Removing event handlers
+▬ Message - 
+	Ссылка на объект не указывает на экземпляр объекта.
+○ Type - 
+	System.NullReferenceException
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:41:04
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void RemoveRoutedEventHandlers(System.Windows.UIElement, System.Windows.RoutedEvent)
+♠ StackTrace - 
+   в ScreenToGif.Util.Other.RemoveRoutedEventHandlers(UIElement element, RoutedEvent routedEvent)
+
+----------------------------------
+
+► Title - 
+	Removing event handlers
+▬ Message - 
+	Ссылка на объект не указывает на экземпляр объекта.
+○ Type - 
+	System.NullReferenceException
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:42:41
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void RemoveRoutedEventHandlers(System.Windows.UIElement, System.Windows.RoutedEvent)
+♠ StackTrace - 
+   в ScreenToGif.Util.Other.RemoveRoutedEventHandlers(UIElement element, RoutedEvent routedEvent)
+
+----------------------------------
+
+► Title - 
+	Removing event handlers
+▬ Message - 
+	Ссылка на объект не указывает на экземпляр объекта.
+○ Type - 
+	System.NullReferenceException
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:45:11
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void RemoveRoutedEventHandlers(System.Windows.UIElement, System.Windows.RoutedEvent)
+♠ StackTrace - 
+   в ScreenToGif.Util.Other.RemoveRoutedEventHandlers(UIElement element, RoutedEvent routedEvent)
+
+----------------------------------
+
+► Title - 
+	Encode
+▬ Message - 
+	Error while encoding the Gif with FFmpeg.
+○ Type - 
+	System.Exception
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:53:46
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void EncodeWithFfmpeg(ScreenToGif.Model.ExportPresets.ExportPreset, System.Collections.Generic.List`1[ScreenToGif.Model.FrameInfo], Int32, System.Threading.CancellationTokenSource, System.String)
+◘ Other - 
+	Command:
+-vsync auto -safe 0 -f concat -i "file:D:\Users\admin\AppData\Local\Temp\ScreenToGif\Recording\2021-08-15 06-34-18\Encode 2021-08-15 06-53-45-90\concat.txt" -loop 0 -lavfi palettegen=stats_mode=diff[pal],[0:v][pal]paletteuse=new=1:dither=sierra2_4a:diff_mode=rectangle -f gif -y "B:\Temp\ScreenToGifTestFFMPEGOAuto.gif"
+
+Result:
+
+ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Expected number for vsync but found: auto
+♠ StackTrace - 
+   at ScreenToGif.Util.EncodingManager.EncodeWithFfmpeg(ExportPreset preset, List`1 listFrames, Int32 id, CancellationTokenSource tokenSource, String processing)
+   at ScreenToGif.Util.EncodingManager.<Encode>d__26.MoveNext()
+
+----------------------------------
+
+► Title - 
+	Encode
+▬ Message - 
+	Error while encoding the Gif with FFmpeg.
+○ Type - 
+	System.Exception
+♦ [Version] Date/Hour - 
+	[2.28.2] 08/15/2021 06:53:51
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void EncodeWithFfmpeg(ScreenToGif.Model.ExportPresets.ExportPreset, System.Collections.Generic.List`1[ScreenToGif.Model.FrameInfo], Int32, System.Threading.CancellationTokenSource, System.String)
+◘ Other - 
+	Command:
+-vsync auto -safe 0 -f concat -i "file:D:\Users\admin\AppData\Local\Temp\ScreenToGif\Recording\2021-08-15 06-34-18\Encode 2021-08-15 06-53-51-21\concat.txt" -loop 0 -lavfi palettegen=stats_mode=diff[pal],[0:v][pal]paletteuse=new=1:dither=sierra2_4a:diff_mode=rectangle -f gif -y "B:\Temp\ScreenToGifTestFFMPEGOAuto.gif"
+
+Result:
+
+ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Expected number for vsync but found: auto
+♠ StackTrace - 
+   at ScreenToGif.Util.EncodingManager.EncodeWithFfmpeg(ExportPreset preset, List`1 listFrames, Int32 id, CancellationTokenSource tokenSource, String processing)
+   at ScreenToGif.Util.EncodingManager.<Encode>d__26.MoveNext()
+
+----------------------------------
+

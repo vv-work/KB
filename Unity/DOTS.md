@@ -29,6 +29,9 @@ Entities - is like lightweight `GameObject`.
 `EntityManger` - is one **ring** to control them all.
 `EntityArchetype` - it does not have a name only type.
 
+#### Basic Example
+
+
 #### Create
 
 You can convert prefabs into entities or made your own spawner.
