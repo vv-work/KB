@@ -3,6 +3,7 @@
 ## ImageMagick
 
 ### PDF2JPG
+
 ```PowerShell
 foreach ($f in $files){
      $name = $f.Name -replace '.pdf'
@@ -14,4 +15,5 @@ foreach ($f in $files){
 
 ## ScreenToGif
 
-![BanchMark](Res/ScreenToGifBanch.png)
+<img src="Res/ScreenToGifSave.png" alt="drawing" height="400"/>
+<img src="Res/ScreenToGifBanch.png" alt="drawing" height="400"/>
