@@ -13,7 +13,7 @@ Starting from 2021 it's built-in into unity
 2. **Hierarchy**
 3. **Library**
 4. **Viewport**
-5. **CodePreiws
+5. **CodePreiws**
 6. **Inspector**
 
 ## Python Console

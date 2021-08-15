@@ -1,9 +1,0 @@
-# IIS 
-
-> It take me a while to thing about all possibilities . But quite obviously IIS wind
-
-
-## Quick IIS Net .Core hosting
-1. Install Net Core hosting Bandle
-    - (page)[https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.9-windows-hosting-bundle-installer]
-

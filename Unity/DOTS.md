@@ -4,9 +4,7 @@
 
 ## Questions
 
-0. SIMD Vecotrization ?
-1. ECS without Unity in VisualStudio?
-2. Async Await with ECS?
+1. Async Await with ECS?
 
 ## Links
 
@@ -429,6 +427,16 @@ class EnableThreads
 
 ### manifest.json
 
+
+#### 2021
+
+```json
+    "com.unity.entities": "0.17.0-preview.42",
+    "com.unity.rendering.hybrid": "0.11.0-preview.44",
+    "com.unity.dots.editor":"0.12.0-preview.6",
+```
+
+#### 2020
 ```json
 {
     "com.havok.physics": "0.4.1-preview.2",
