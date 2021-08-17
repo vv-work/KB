@@ -90,6 +90,7 @@ Super awesome vim search in multiple files
 `:source ~/.vimrc` - To reload source
 `:PlugInstall` - to Install new plugins
 `:PlugUpdate` - in case of update
+`:PlugClean` - remove unlisted plugins
 
 
 ### Vim Tree-View
