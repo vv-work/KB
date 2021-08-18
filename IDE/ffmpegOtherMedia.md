@@ -17,12 +17,20 @@ Split audio into the equal 30 min parts
 ```powershell
 ffmpeg -i .\ADHD-Relief.mp3 -f segment -segment_time 3000 -c copy ADHDRelief%03d.mp3
 ```
+### 
+
 
 ### Cut part of video 
+`-ss` - start teime
+`-t` - Duration 
 
 ```powershell
 ffmpeg --s 00:05:00 -i '.\input.mkv' -s 1280x720 -t 300 'out.mp4'
 ```
+```powershell
+ffmpeg -ss 00:07:34  -i input.mp4 -t 00:00:15 -s 1280x720 -vcodec copy -acodec copy output.mp4
+```
+
 ### Speed up 
 
 20x times `0.05=1/20`
