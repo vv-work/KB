@@ -50,3 +50,12 @@ Afater
 3. Speed reating
 4. Windup unity project
 5. Check Eye tracking and my s
+
+## VISP
+
+As far as I discovered there
+is no reason to continue using the 
+Vuforia whatsoever.
+
+https://github.com/lagadic/visp_unity/wiki/Unity-AR-demo-using-ViSP
+April tag is super asses
