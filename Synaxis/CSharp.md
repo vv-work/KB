@@ -11,5 +11,21 @@ var lowNums = from num in numbers
 ## Serialization
 
 
+```puml
+@startuml
+
+class Animal {
+    Say()
+}
+class Dog{
+    Say(string s)
+    Jump()
+}
+
+Animal *-- Dog 
+
+
+@enduml
+```puml
 ## Resources
 [Book]()

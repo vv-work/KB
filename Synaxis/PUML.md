@@ -21,7 +21,7 @@ interface       interface
 
 Types of interaction
 
-```pum
+```puml
 
 @startuml
 Class01 <|-- Class02

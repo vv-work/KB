@@ -1,6 +1,11 @@
 # TCP Syntaxis 
 
+![MyDicsk](res/../Web/res/MyDick.jpg)
 
+```csharp
+void Some(int a)
+{a*2 }
+```
 ##### Header
 * **IP**    (**I**nternet **P**rotocol)
 * **TCP**   (**T**ransaction **C**ontrol **P**rotocol)

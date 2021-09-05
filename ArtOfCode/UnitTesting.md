@@ -4,10 +4,31 @@
 
 - Unity Test Freamwork
 - TDD notes
-- 
 
+## Setup 
+
+- Nunit 
+- Nunit Test Runner
+
+- NSpec.dll
+- NSpec.Runner.dll
+
+- NSubstitue.dll
+
+- UnityEngine.dll
+- UNityEditor.dll
+
+```json
+"com.gustavopsantos.reflex": "https://github.com/gustavopsantos/reflex.git?path=/Reflex/Assets/Reflex/#1.0.0"
+```
+
+
+```PowerShell
+Install-Package NSubstitute -Version 4.2.2
+```
 
 ## UnitTesting
+
 
 ### Questions
 
