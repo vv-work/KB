@@ -9,6 +9,10 @@
 -  Just storage of file archiving?
 -  Git LFS ?
 
+## Git delete branch from server
+
+`git push origin --delete Ivan`
+
 ## Git gc and archive
 Remove unecessary files
 
