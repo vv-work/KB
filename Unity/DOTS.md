@@ -438,9 +438,11 @@ class EnableThreads
     "com.unity.rendering.hybrid": "0.11.0-preview.44",
     "com.unity.dots.editor":"0.12.0-preview.6",
 
+
     "com.unity.burst": "1.6.0-pre.4",
     "com.unity.jobs": "0.8.0-preview.23",
 
+    "com.unity.mathematics": "1.2.4",
 ```
 
 #### 2020

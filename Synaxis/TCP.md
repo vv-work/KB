@@ -1,28 +1,26 @@
 # TCP Syntaxis 
 
-![MyDicsk](res/../Web/res/MyDick.jpg)
-
-```csharp
-void Some(int a)
-{a*2 }
-```
 ##### Header
+
 * **IP**    (**I**nternet **P**rotocol)
 * **TCP**   (**T**ransaction **C**ontrol **P**rotocol)
 * **UDP**   (**U**ser **D**atagram **P**rotocol) 
 
 ##### Content
+
 * **HTTP**  (**H**yper **T**ext **T**ransaction **P**rotocol)
 * **HTTPS** (**H**yper **T**ext **T**ransaction **P**rotocol **S**ecure)
 * **FTP**   (**F**ile **T**ransaction **P**rotocol)
 * **SMTP**  (**S**imple **M**ail **T**ransaction **P**rotocol)
 
 ##### Extra
+
 * **AES**   (**A**dvenced **E**ncryption **S**tandart)
 * **REST**  (**Re**presentive **S**tate **T**ransfer)
 * **API**   (**A**plication **P**rograming **I**nterface)
 
 **NET**
+
 ***ASP**   (**A**ctive **S**erver **P**age)
 * **IIS**   (**I**nternet **I**nvormation **S**ervice)
 * **SOAP**  (**S**imple **O**bject **A**ccess **P**rotocol)
