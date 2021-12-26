@@ -1,6 +1,31 @@
 # ECS
 
-## My Unity ECS example
+## Unity ECS 
+
+### Create enity
+
+```csharp
+_entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+var entity = _entityManager.CreateEntity(typeof(LevelComponent));
+_entityManager.SetComponentData(entity, new LevelComponent(){Level = 10});
+```
+
+### Process System
+
+```csharp
+public class LevelUpSystem:ComponentSystem
+    {
+        protected override void OnUpdate()
+        {
+            Entities.ForEach(( LevelComponent lc) =>
+            {
+                lc.Level += 1f+Time.DeltaTime; 
+            });
+        }
+    }
+```
+
+### My Unity ECS example
 
 ![My ecs in Unity](res\MyECSinUnity.gif)
 

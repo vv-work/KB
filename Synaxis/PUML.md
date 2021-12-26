@@ -1,5 +1,8 @@
 # PUML
 
+```powershell
+java -jar "B:\MyPrograms\CLI\plantuml.jar"
+```
 - Resea
 ## Basic
 
