@@ -10,6 +10,9 @@
 
 ## FFMPEG
 
+### Crop TikTokVideo 
+ffmpeg -i input.mp4 -filter:v "crop=576:850" output.mp4
+
 ### Split Audio
 
 Split audio into the equal 30 min parts
