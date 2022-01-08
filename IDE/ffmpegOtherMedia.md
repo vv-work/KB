@@ -10,6 +10,17 @@
 
 ## FFMPEG
 
+###  Segment video and reset timesstamp
+```
+ffmpeg -i .\Adventure.Time.Distant.Lands.s01e01.WEB-DL.720p.NewStation.mkv -f segment -strttime 1 -segment_time 15:00 -c copy -reset_timestamps 1 E01-%03d.mp4
+```
+
+### Subtiitles
+```
+ffmpeg -i .\Adventure.Time.Distant.Lands.s01e02.WEB-DL.720p.NewStation.mkv -vf subtitles=Adventure.Time.Distant.Lands.s01e02.WEB-DL.720p.NewStation.mkv -ss 37:47 -d 01:00   SubTest.mp4
+```
+
+
 ### Crop TikTokVideo 
 ffmpeg -i input.mp4 -filter:v "crop=576:850" output.mp4
 
@@ -20,6 +31,9 @@ Split audio into the equal 30 min parts
 ```powershell
 ffmpeg -i .\ADHD-Relief.mp3 -f segment -segment_time 3000 -c copy ADHDRelief%03d.mp3
 ```
+### FLAC to mp3
+ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+egment -strftime 1
 ### 
 
 
