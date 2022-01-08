@@ -20,9 +20,9 @@
  
  - `:!` - execute in command line
  - `%` - current file name
+ - `:pu=strftime('%c')` gives date 08/01/2022 8:36:40 pm
 
 ## Set
-
  - `:set  number` - turn on numbers
  - `:set  nonumber` - turn off line numbers
  - `:set hlsearch` - turn on highlight on search
