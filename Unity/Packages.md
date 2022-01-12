@@ -1,5 +1,13 @@
 # Unity packages
 
+## Testing
+
+### NSubstitute
+
+```pwsh
+openupm add net.tnrd.nsubstitute
+```
+
 ## UI Builder
 
 

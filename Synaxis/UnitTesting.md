@@ -4,7 +4,7 @@
 
 ```powershell
  Install-Package NSubstitute.Analyzers.CSharp -Version 1.0.14
- ```
+```
 
 ### Usage
 
