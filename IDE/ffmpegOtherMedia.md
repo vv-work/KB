@@ -1,5 +1,9 @@
 # Media files convertation
 
+## Links
+
+[FFMPEG cheatsheet](https://gist.github.com/nickkraakman/e351f3c917ab1991b7c9339e10578049)
+
 ## List
 
 - ScreenToGif
@@ -9,6 +13,32 @@
 - imgtowebp
 
 ## FFMPEG
+
+### Scripting
+
+#### Hide output
+
+`-loglevel quiet`
+
+#### Limit CPU usage
+
+`-threads 12 `
+
+### Get info
+
+`ffprobe input.mp4`
+
+### 360 Videos
+
+[360 Video cheatsheet](https://gist.github.com/nickkraakman/e351f3c917ab1991b7c9339e10578049)
+
+My 360 compression. 
+*!Important:* has `-ss` and `-fs` 
+`ffmpeg -i .\mistok-src.mp4 -c:v libx264 -b:v 23M -pix_fmt yuv420p -c:a aac -b:a 192K -ss 03 -fs 90M mistok-5.mp4`
+
+
+### Limit file size
+`ffmpeg -i input -fs 10M -c copy output`
 
 ###  Segment video and reset timesstamp
 ```
