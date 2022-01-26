@@ -15,6 +15,6 @@
 
 ## Oclus sdk
 
-```
-B:\Res\AppData\Roaming\odh\ovr-platform-util.exe upload-quest-build --app-id 4778895315525657 --app-secret 4c97715bde301d62ad12fb61b7b90c2c --apk B:\Git\Pono2VR\Builds\Oculus\0.3.apk --channel LIVE
+``` powerShell
+B:\Res\AppData\Roaming\odh\ovr-platform-util.exe upload-quest-build --app-id 47788953155256 --app-secret 4c97715bde301d62ad12fb61b7b90c2c --apk B:\Git\Pono2VR\Builds\Oculus\1.10.apk --channel LIVE --obb B:\Git\Pono2VR\Builds\Oculus\1.10.main.obb
 ```

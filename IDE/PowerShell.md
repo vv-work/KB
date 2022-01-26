@@ -8,6 +8,21 @@
 ```powershell
 function subtract ($from, $count) { $from - $count } #function
 ```
+## Run custom Script
+
+It's quite usefully espacially when you need to automate building process.
+
+###  ScriptFile.ps1
+```ps
+$text = $args[0]
+echo $("You're input was "+$text)
+```
+### Invoke
+
+And then you can invoke it:
+
+`.\ScriptFile.ps1 "Hello world"`
+> output: You're input was Hello world
 
 ## Environment 
 

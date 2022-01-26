@@ -11,6 +11,7 @@
 - Flow-State
 
 ## Resources
+
  -[Forbes article](https://www.forbes.com/sites/andyswan/2016/10/05/7-work-ethic-commandments-for-an-entrepreneur/?sh=59e60614ce6a)
 
 ## Quesions/Future Actions
