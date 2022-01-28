@@ -4,6 +4,28 @@
 
 `<img src="drawing.jpg" alt="drawing" width="200"/>` - set custom image size
 
+
+## Markdown for Vim
+
+- [Github repo](https://github.com/preservim/vim-markdown)
+
+### Create vertical navigable table
+
+`:Toc`- create a quickfix vertical window navigable table of contents with the headers.
+
+### Folding
+
+zr: reduces fold level throughout the buffer
+zR: opens all folds
+zm: increases fold level throughout the buffer
+zM: folds everything all the way
+za: open a fold your cursor is on
+zA: open a fold your cursor is on recursively
+zc: close a fold your cursor is on
+`zC:` close a fold your cursor is on recursively
+
+Try :help fold-expr and :help fold-commands for details.
+
 ## MarkDowa to PDF
 
 - [project]://github.com/simonhaenisch/md-to-pdf)
