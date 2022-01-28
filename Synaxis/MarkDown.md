@@ -1,8 +1,24 @@
-# Markdown
+Markdown
 
-## Custom image size
+## Referecnes
 
-`<img src="drawing.jpg" alt="drawing" width="200"/>` - set custom image size
+- [StyleGuide](https://cirosantilli.com/markdown-style-guide/#option-header-atx)
+
+## Tableo
+
+
+`:TableFormat`
+
+```
+Before.
+
+| h    | Long header |
+|------|-------------|
+| abc  | def       |
+| abc2 | def2        |
+
+After.
+```
 
 
 ## Markdown for Vim
@@ -12,6 +28,9 @@
 ### Create vertical navigable table
 
 `:Toc`- create a quickfix vertical window navigable table of contents with the headers.
+`:InsertToc`
+`:InsertToc 3` for `H3`
+:
 
 ### Folding
 
@@ -30,8 +49,13 @@ Try :help fold-expr and :help fold-commands for details.
 
 - [project]://github.com/simonhaenisch/md-to-pdf)
 
-```PowerShell
-md-to-pdf ./**/*.md
+`md-to-pdf ./**/*.md`
+
+### Page break
+
+
+```html
+<div class="page-break"></div>
 ```
 
 ```PowerShell
@@ -61,3 +85,6 @@ Options:
   --config-file ............ Path to a JSON or JS configuration file
   --devtools ............... Open the browser with devtools instead of creating PDF
 ```
+## Custom image size
+
+`<img src="drawing.jpg" alt="drawing" width="200"/>` - set custom image size
