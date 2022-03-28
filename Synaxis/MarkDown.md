@@ -36,6 +36,7 @@ After.
 
 zr: reduces fold level throughout the buffer
 zR: opens all folds
+
 zm: increases fold level throughout the buffer
 zM: folds everything all the way
 za: open a fold your cursor is on
