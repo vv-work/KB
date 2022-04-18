@@ -89,3 +89,7 @@ Options:
 ## Custom image size
 
 `<img src="drawing.jpg" alt="drawing" width="200"/>` - set custom image size
+
+### MARP
+
+`![width:500px]()` - set custom image size

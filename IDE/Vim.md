@@ -6,20 +6,24 @@
 - [Python](https://www.vimfromscratch.com/articles/vim-for-python/)
 - [IPython](https://pythonawesome.com/seamlessly-run-python-code-from-vim-in-ipython/#installation)
 
-## Getting search in between
+## Reminders
+
+
+> C# code
+ ```cs 
+ void Some(){
+   for(int i=0;i<10;i++){
+     Console.WriteLine($"index {i}")
+   }
+ 	
+ } 
+```
+
+## Getting search in between <div>
 
 
 ```vim
 ::/\(hidden;">\)\@<=.\{-}\(\<div\)\@=
-
-%s\(hiden;">\)\@=.\{-}\(\<div\)\@=/gn
-:<img class="ggskin ggskin_svg"
-:%s\img class="ggskin ggskin_nodeimage"\\
-:%s/style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;" >
-
-:%s/></>\r</gc
-
-:a
 ```
 
 ## Questions
