@@ -7,7 +7,6 @@
 - [Marp React (animated)](https://github.com/marp-team/marp-react)
 - [MDX Deck](https://github.com/jxnblk/mdx-deck#examples)
 
-
 ## Questions
 
 1. Real time preview

@@ -7,6 +7,20 @@
 ```pwsh
 openupm add net.tnrd.nsubstitute
 ```
+## 2D Animation
+
+2D animation using sprites
+
+- [Sprite Swap](https://docs.unity3d.com/Packages/com.unity.2d.animation@6.0/manual/SLAsset.html)
+
+## Pixel Perfect
+
+
+- [documentation link](https://docs.unity3d.com/Packages/com.unity.2d.pixel-perfect@5.0/manual/index.html)
+
+![pixelPerfect](res\PixelPerfect.png)
+
+
 ## Recorder
 
 - [Documentation](https://docs.unity3d.com/Packages/com.unity.recorder@3.0/manual/index.html)
@@ -28,38 +42,46 @@ Out of pure logic a decided to user verions **3** due to recomendation and it's 
 - B Recoring gif in recorder version 3?
 - B Calling recorder from script.
 
+### Tasks
+
+- Make one JPEG
+- Make one gif with ffmpeg
+
 
 ### Resources
 
 ```cs
 
-var controllerSettings = ScriptableObject.CreateInstance<RecorderControllerSettings>();
-var TestRecorderController = new RecorderController(controllerSettings);
- 
-var videoRecorder = ScriptableObject.CreateInstance<MovieRecorderSettings>();
-videoRecorder.name = "My Video Recorder";
-videoRecorder.Enabled = true;
-videoRecorder.VideoBitRateMode = VideoBitrateMode.High;
- 
-videoRecorder.ImageInputSettings = new GameViewInputSettings
-{
-    OutputWidth = 640,
-    OutputHeight = 480
-};
- 
-videoRecorder.AudioInputSettings.PreserveAudio = true;
-//videoRecorder.OutputFile; // Change this to change the output file name (no extension)
- 
-controllerSettings.AddRecorderSettings(videoRecorder);
-controllerSettings.SetRecordModeToFrameInterval(0, 59); // 2s @ 30 FPS
-controllerSettings.FrameRate = 30;
- 
-RecorderOptions.VerboseMode = false;
-TestRecorderController.PrepareRecording();
-TestRecorderController.StartRecording();
- 
-// Wait a while
+void Record() {
+	
+	var controllerSettings = ScriptableObject.CreateInstance<RecorderControllerSettings>();
+	var TestRecorderController = new RecorderController(controllerSettings);
+	 
+	var videoRecorder = ScriptableObject.CreateInstance<MovieRecorderSettings>();
+	videoRecorder.name = "My Video Recorder";
+	videoRecorder.Enabled = true;
+	videoRecorder.VideoBitRateMode = VideoBitrateMode.High;
+	 
+	videoRecorder.ImageInputSettings = new GameViewInputSettings
+	{
+	    OutputWidth = 640,
+	    OutputHeight = 480
+	};
+	 
+	videoRecorder.AudioInputSettings.PreserveAudio = true;
+	//videoRecorder.OutputFile; // Change this to change the output file name (no extension)
+	 
+	controllerSettings.AddRecorderSettings(videoRecorder);
+	controllerSettings.SetRecordModeToFrameInterval(0, 59); // 2s @ 30 FPS
+	controllerSettings.FrameRate = 30;
+	 
+	RecorderOptions.VerboseMode = false;
+	TestRecorderController.PrepareRecording();
+	TestRecorderController.StartRecording();
+	 
+	// Wait a while
 
+}
 ```
 
 ## UI Builder

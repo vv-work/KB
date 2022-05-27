@@ -6,19 +6,6 @@
 - [Python](https://www.vimfromscratch.com/articles/vim-for-python/)
 - [IPython](https://pythonawesome.com/seamlessly-run-python-code-from-vim-in-ipython/#installation)
 
-## Reminders
-
-
-> C# code
- ```cs 
- void Some(){
-   for(int i=0;i<10;i++){
-     Console.WriteLine($"index {i}")
-   }
- 	
- } 
-```
-
 ## Getting search in between <div>
 
 
