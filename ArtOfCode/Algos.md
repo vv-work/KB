@@ -40,12 +40,37 @@ Supported in gzip.
 
 ## LZ Family
 
-`5:3`
+![LZSS](res\LZSS_example.png)
 
-**Backrefrecne** -
-**Sliding Window** -
+### Tasks 
+
+- BackRefrence script
+- `A LASS; A LAD; A SALAD; ALASKA`
+- Backreferceoveral
+- LZSS vs LZ77 implementaion
 
 ### Family lines
+
+![LZ Family width:50%](res\LZFamily.png)
+
+**LZ77** - also known as **LZ1** 
+**LZ78** - also knows as **LZ2**
+**LZSS** - **L**emper **Z**iv **S**torer **S**zymanki
+**LZW** - 
+
+### Terms
+
+![LZ BackRef](res\LZBackRef.png)
+
+32K for **GZIP**
+
+- **Backrefrecne** - Is refrecne that data was already there
+
+- **Sliding Window** - Have limitation *Previous* and *Future* data.
+
+- **Look Ahead** 
+
+- **Backreference overlap** `2:6` 
 
 
 DEFLATE->LZSS->LZ77 
@@ -55,18 +80,38 @@ Gif->LZW->LZ78->LZ77
 Symbol table
 
 LZMA->LZ77
+
+### RLE
+
+
+**RLE** **R**un- **L**enght **E**ncoding
+
+`12W1B12W3B24W1B14W`-> `WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW`
+
+
 ### LZ77
+
+![LZ77](res\LZ77.png)
+
 Achives compression by replacing repeated occurences of data with references.
 
 As well known as **LZSS**
 
-**LZ77** - also known as **LZ1** 
-**LZ78** - also knows as **LZ2**
-**LZSS** - is the same as LZ77 but add the additional bit to identify what data infront. 
+
+## LZSS
+
 
 **LZSS** - **L**empel- **Z**iv- **S**torer-Szymanski
 
-![LZSS](res\LZSS_example.png)
+![LZSS](res\LZSS.png)
+
+### LZ78
+
+![LZ78](res\LZ78.png)
+
+The smae as **LZ77** but with dictionary.
+Writen by the Abraham Lember and Jacom Ziv themself.
+
 
 ### History 
 
@@ -80,7 +125,7 @@ in 1978
 
 
 > from
-
+L
 `00000000 00000000 01111111 11111111 10000011 11111111`
 
 > into
