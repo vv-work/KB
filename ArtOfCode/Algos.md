@@ -44,6 +44,8 @@ Supported in gzip.
 
 ### Tasks 
 
+- Implement **LZ78**
+- Implement **LZW**
 - BackRefrence script
 - `A LASS; A LAD; A SALAD; ALASKA`
 - Backreferceoveral
