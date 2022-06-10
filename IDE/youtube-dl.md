@@ -1,11 +1,17 @@
-# Youtube-dl 
+# yt-dlp
 
 ## Best Downloading options
 
 
-```
-yt-dlp --cookies "B:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --embed-thumbnail --write-description  https://www.youtube.com/c/SebastianLague/playlists 
+### Download one vidoe
 
+```bash
+
+yt-dlp --cookies "B:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" --embed-thumbnail 
+```
+
+### Donlaod Playlist
+```bash
 yt-dlp --cookie "B:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'  --embed-thumbnail  https://www.youtube.com/c/SebastianLague/playlists
 
 ```
