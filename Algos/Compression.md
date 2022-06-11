@@ -3,10 +3,10 @@
 ## Todo 
 
 - Download canterbury corpus
-- 
+- Test our compression with diffrent compressions.
+- Create `CLI` to try our diffrent with Centerbery corpus data
 
 ## Questions
-
 
 - [ ] LZ78 vs LZW ?
 - [ ] And of LZ family lecture ?
@@ -14,13 +14,29 @@
 
 - [x] Good notes?
 
-### C
-
-- What is hex dump?
+##  B
 
 - [x] Basic explanation on LZ77 and Huffman coding
 - [x] Test gzip in windows ? 
 - [x] What the diffrence between LZ77 vs LZ78 vs LZSS
+
+### C
+
+- What is hex dump?
+- LZMA vs LZMA2 vs BZIP2
+
+## Compression 
+
+- Centery corpus bzip
+- UCDAVIC 7z
+
+### UCDAVIC
+
+- [Link](https://fiehnlab.ucdavis.edu/staff/kind/collector/benchmark/7zip-benchmark)
+
+Input: **11 Gbyt** Windws XP VM
+![Banchmarks7Z](res\7zipcompressionbenchmark.png)
+
 
  
 ## LZ Family
@@ -45,9 +61,10 @@
 **LZSS** - **L**emper **Z**iv **S**torer **S**zymanki
 **LZW** -  **L**empel **Z**iv **W** 
 
-## LZW
+### Terms 
 
-- `9-bit` to seprate symbols from refs ### Terms ![LZ BackRef](res\LZBackRef.png) 32K for **GZIP**
+![LZ BackRef](res\LZBackRef.png) 32K for **GZIP**
+
 - **Backrefrecne** - Is refrecne that data was already there
 
 - **Sliding Window** - Have limitation *Previous* and *Future* data.
@@ -65,6 +82,15 @@ Symbol table
 
 LZMA->LZ77
 
+
+## LZW
+
+- `9-bit` to seprate symbols from refs 
+- Standard dictionary of 256 symbols pre defined
+- Had Dictionary
+
+ 
+![LZW](res\LZW.png)
 
 ### LZ77
 
