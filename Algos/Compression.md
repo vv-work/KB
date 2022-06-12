@@ -6,6 +6,18 @@
 - Test our compression with diffrent compressions.
 - Create `CLI` to try our diffrent with Centerbery corpus data
 
+### Tasks 
+
+- Implement **LZW** 
+    - coompression
+    - decompression
+- Implement **LZ78**
+- Implement **LZW**
+- BackRefrence script
+- `A LASS; A LAD; A SALAD; ALASKA`
+- Backreferceoveral
+- LZSS vs LZ77 implementaion
+
 ## Questions
 
 - [ ] LZ78 vs LZW ?
@@ -14,7 +26,7 @@
 
 - [x] Good notes?
 
-##  B
+###  B
 
 - [x] Basic explanation on LZ77 and Huffman coding
 - [x] Test gzip in windows ? 
@@ -43,14 +55,6 @@ Input: **11 Gbyt** Windws XP VM
 
 ![LZSS](res\LZSS_example.png)
 
-### Tasks 
-
-- Implement **LZ78**
-- Implement **LZW**
-- BackRefrence script
-- `A LASS; A LAD; A SALAD; ALASKA`
-- Backreferceoveral
-- LZSS vs LZ77 implementaion
 
 ### Family lines
 
@@ -85,12 +89,36 @@ LZMA->LZ77
 
 ## LZW
 
+![LZW](res\LZW.png)
+
+- **W** stands for Welch
 - `9-bit` to seprate symbols from refs 
 - Standard dictionary of 256 symbols pre defined
 - Had Dictionary
+- Does not require headers
+- **cScSc**
+- 1984
+- GIF 
+- LZW has patent to it.
 
- 
-![LZW](res\LZW.png)
+Was created in 1984. And it's caught on as a relatively simple and fast compression scheme. 
+
+
+### Algo
+
+![LZW Algo](res\LZWAlgo.png)
+
+#### Decompression
+
+![LZW Algo](res\LZWAlgoD.png)
+
+### Compress 
+
+Ancient unix tool 
+
+`compress input.txt`
+
+`compress -d input.txt.Z`
 
 ### LZ77
 
@@ -143,6 +171,9 @@ L
 
 - [RFC 1951](https://datatracker.ietf.org/doc/html/rfc1951)
 
+- Has better preformance
+- gzip and zip
+- no patent
 - Test gzip in windows ? 
 Supported in gzip.
 
