@@ -47,10 +47,9 @@
 - [Link](https://fiehnlab.ucdavis.edu/staff/kind/collector/benchmark/7zip-benchmark)
 
 Input: **11 Gbyt** Windws XP VM
+
 ![Banchmarks7Z](res\7zipcompressionbenchmark.png)
 
-
- 
 ## LZ Family
 
 ![LZSS](res\LZSS_example.png)
@@ -86,6 +85,15 @@ Symbol table
 
 LZMA->LZ77
 
+### History 
+
+Abraham Lempel - Is from lviv
+Presented LZ77 (Lempel-Ziv in 1977)
+
+Jacom Ziv - presented improved version
+in 1978
+
+**RLE** **R**un- **L**enght **E**ncoding
 
 ## LZW
 
@@ -146,17 +154,6 @@ The smae as **LZ77** but with dictionary.
 Writen by the Abraham Lember and Jacom Ziv themself.
 
 
-### History 
-
-Abraham Lempel - Is from lviv
-Presented LZ77 (Lempel-Ziv in 1977)
-
-Jacom Ziv - presented improved version
-in 1978
-
-**RLE** **R**un- **L**enght **E**ncoding
-
-
 > from
 L
 `00000000 00000000 01111111 11111111 10000011 11111111`
@@ -186,7 +183,29 @@ Supported in gzip.
 - [Deflate White Paper](http://www.infinitepartitions.com/art001.html)
 - [Youtube Lecture](https://youtu.be/oi2lMBBjQ8s)
 
+### FileStructyre
+
+![FileStructure](res\DEFLATEFS.png)
+
+### Block Type
+
+
+
+![DEFLATE BLock Type](res\DEFLATEBT.png)
+
+### Literal/Length and Distance Symbols
+
+![DEFLATE Refernce Length ](res\DEFLATEBL.png)
+
+### Back Distance
+
+![DEFLATE Back Distance](res\DEFLATEBD.png)
+
 ## Huffman coding
+
+BADBAC = `101100101101`
+
+![HuffmanTree](res\HuffmanTree.png)
 
 - Huffman tree nodes.
 
