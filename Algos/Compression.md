@@ -76,6 +76,7 @@ Input: **11 Gbyt** Windws XP VM
 
 - **Backreference overlap** `2:6` 
 
+- **CL** - **C**ode **L**ength
 
 DEFLATE->LZSS->LZ77 
 Length Distance pairs
@@ -172,7 +173,8 @@ L
 - gzip and zip
 - no patent
 - Test gzip in windows ? 
-Supported in gzip.
+- Supported in gzip.
+
 
 `.gz` - file stands for **GZIP** file
 `.tar` - stands for multiple files
@@ -180,6 +182,7 @@ Supported in gzip.
 
 ### Links
 
+- [gzsta.py](scripts\gzstat.py)
 - [Deflate White Paper](http://www.infinitepartitions.com/art001.html)
 - [Youtube Lecture](https://youtu.be/oi2lMBBjQ8s)
 
@@ -188,8 +191,8 @@ Supported in gzip.
 ![FileStructure](res\DEFLATEFS.png)
 
 ### Block Type
-
-
+	
+![DEFLATE BLock Type](res\DEFLATEBTYPE.png)
 
 ![DEFLATE BLock Type](res\DEFLATEBT.png)
 

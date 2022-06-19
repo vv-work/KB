@@ -81,23 +81,6 @@ def binary_string_big_endian(v, num_bits):
     return result
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class DecodingException(Exception):
     pass
 
