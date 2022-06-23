@@ -1,5 +1,8 @@
 # Compression
 
+[Princton Algos ref](http://localhost/pdf/Algos2Compression.pdf)
+
+
 ## Todo 
 
 - Download canterbury corpus
@@ -16,10 +19,13 @@
 - BackRefrence script
 - `A LASS; A LAD; A SALAD; ALASKA`
 - Backreferceoveral
-- LZSS vs LZ77 implementaion
+- LZSS vs LZ77 implementaionlgo\Algorithms Part II\Week 5 Data Compression\slides_55DataCompression.pdf
 
 ## Questions
 
+- [ ] What is the last part of the Deflate Video
+- [ ] What I am missins
+-
 - [ ] LZ78 vs LZW ?
 - [ ] And of LZ family lecture ?
 - [ ] LZW  Notes?
@@ -180,6 +186,10 @@ L
 
 `.gz` - file stands for **GZIP** file
 `.tar` - stands for multiple files
+
+### Questions 
+
+- [ ] Do I implent all links in video
 
 
 ### Links
