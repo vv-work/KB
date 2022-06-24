@@ -1,12 +1,9 @@
 # Rules of foucs
 
-
 1. Sit & Think
 2. Airplane Mode 4 hour
 3. Habit: Pay in Front
 4. Visualize and plan
-
-
 
 ## Sit&Think 
 

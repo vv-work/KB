@@ -189,7 +189,11 @@ L
 
 ### Questions 
 
-- [ ] Do I implent all links in video
+- [ ] Do I implent all links in video?  
+- [ ] How to use gzstat.py ? 
+- [ ] Where to find testing data for our algo? 
+- [ ] What Unit test can I write
+
 
 
 ### Links
@@ -233,6 +237,10 @@ L
 ### Block Types 
 
 ![DEFLATE Block Type 1](./res/DEFLATEBT1.png)
+
+### Assignemtn
+
+`gzip -d`
 
 ## Huffman coding
 
