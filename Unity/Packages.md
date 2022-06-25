@@ -106,3 +106,9 @@ Starting from 2021 it's built-in into unity
 Allows Generate Data for image recognition
 
 [Package Link](https://docs.unity3d.com/Packages/com.unity.perception@0.6/manual/SetupSteps.html)
+
+## Consolation
+
+- [GitHub repo](https://github.com/mminer/consolation)
+
+![Consolation](./res/Consolation.png)

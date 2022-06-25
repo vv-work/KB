@@ -60,7 +60,7 @@ Our data and it comes in many forms:
 
 ### System
 
-![ECS System](res/BasicSystem.png)
+![ECS System](./res/BasicSystem.png)
 
 #### Instantiating
 
@@ -142,14 +142,14 @@ If group not specified it will go to the World default group.
 `EntityArchetype`  - is combination of entities if we remove `Renderer`.
 Then archetype will be **dynamically** changed.
 
-![archetypes](res/ArchetypeDiagram.png)
+![archetypes](./res/ArchetypeDiagram.png)
 
 ### Memory Chunks
 
 `ArchetypeChunk` - allocated memory by chunk.
 When **dynamic** changed entity archetype it will be move to new chunk.
 
-![chunk](res/ArchetypeChunkDiagram.png)
+![chunk](./res/ArchetypeChunkDiagram.png)
 
 ### Entity Queries
 
@@ -270,6 +270,7 @@ JobHandle jh = JobHandle.CombineDependencies(handles);
 
 // Doing a lot of jobs at once
 public static void ScheduleBatchedJobs(); 
+
 ```
 
 ### IJobParallelFor
@@ -277,6 +278,7 @@ public static void ScheduleBatchedJobs();
 You need to set the size of array and it's endex before running;
 
 ```c#
+
 struct IncrementByDeltaTimeJob: IJobParallelFor
 {
     public NativeArray<float> values;
@@ -294,13 +296,14 @@ jobData.value = value;
 jobData.deltaTime = Time.deltaTime;
 
 //Make sense execute multiple jobs per batch from 1 to 64
-JobHandle handle = jobData.Schedule(result.Length, 32);
+JobHandle handle = jobData.Schedule(./result.Length, 32);
 
 ```
 
 **Example**
 
 ```c#
+
 using UnityEngine;
 using Unity.Collections;
 using Unity.Jobs;
@@ -353,11 +356,12 @@ class ApplyVelocityParallelForSample : MonoBehaviour
         velocity.Dispose();
     }
 }
+
 ```
 
 ### ITransformParallel
 
-``
+
 
 ### ECS has ScheduleBatchedJobs implemented
 
@@ -381,15 +385,15 @@ var temp = nativeArray[0]; temp++;
 
 Should be magical just add:
 `[BurstCompile]` to the Job struct and magic.
-![Megic](res/Magic.gif)
+![Megic](./res/Magic.gif)
 
-k### Burst Menu
+### Burst Menu
 
-![Burst Menu](res/burst-menu.png)
+![Burst Menu](./res/burst-menu.png)
 
 ### Burst Inspector
 
-![BurstInspector](res/burst-inspector.png)
+![BurstInspector](./res/burst-inspector.png)
 
 ### Not done research on Burst
 
@@ -397,7 +401,7 @@ k### Burst Menu
 
 ## Algos
 
-![](res/simd.jpeg)
+![simd](./res/simd.jpeg)
 
 
 ## CookBook
@@ -435,14 +439,13 @@ class EnableThreads
 
 ```json
     "com.unity.entities": "0.17.0-preview.42",
+
     "com.unity.rendering.hybrid": "0.11.0-preview.44",
     "com.unity.dots.editor":"0.12.0-preview.6",
-
 
     "com.unity.burst": "1.6.0-pre.4",
     "com.unity.jobs": "0.8.0-preview.23",
 
-    "com.unity.mathematics": "1.2.4",
 ```
 
 #### 2020
