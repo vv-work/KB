@@ -2,7 +2,6 @@
 
 [Princton Algos ref](http://localhost/pdf/Algos2Compression.pdf)
 
-
 ## Todo 
 
 - Download canterbury corpus

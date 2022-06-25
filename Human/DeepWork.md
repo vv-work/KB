@@ -1,5 +1,6 @@
 # Deep Work
 
+![Deep Work](./res/DeepWork.jpeg) 
 ![Deep Work](./res/DeepWork.jpg) 
 
 Tech lead sad the same he sad it's a skill to sit on the computer for long periods of time.
