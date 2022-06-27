@@ -213,8 +213,8 @@ L
 - `CM` 		= 0x08
 - `FLAGS` 	= 
 - `MTIME` 	= 
-- `XFL` = 
-- `OS` = 08
+- `XFL`		= 
+- `OS` 		= 08
 
 
 ### Links
