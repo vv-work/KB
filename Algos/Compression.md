@@ -175,7 +175,9 @@ L
 
 ## GZIP Deflate
 
-**RULE #1 PUSH leas significal bit of number FIRST**	
+**RULE #1 PUSH least significal bit of number FIRST*	
+
+**LSB** - **L**east **S**ignificint **B**it 
 
 - [RFC 1951](https://datatracker.ietf.org/doc/html/rfc1951)
 
@@ -184,12 +186,13 @@ L
 - Supported in gzip.
 
 
+
 `.gz` - file stands for **GZIP** file
 `.tar` - stands for multiple files
 
 ### Questions 
 
-- [ ] Do I implent all links in video?  
+- [ ] Do I implent all links in video?
 - [ ] How to use gzstat.py ? 
 - [ ] Where to find testing data for our algo? 
 - [ ] What Unit test can I write
@@ -205,16 +208,35 @@ L
 
 ### HEADERS
 
-> TODO: SCREEN shot of bytes
+
+
 ![GZIP HEADERS](./res/GZIPHeaders.jpg)
+
+Those `10 bytes` should be always present
 
 - `MAGIC1` 	= 0x1f
 - `MAGIC2` 	= 0x8b
 - `CM` 		= 0x08
-- `FLAGS` 	= 
-- `MTIME` 	= 
-- `XFL`		= 
-- `OS` 		= 08
+- `FLAGS` 	= 0x00 for container
+- `MTIME`4bytes	= Unix timestam (**LSB** pushed first)
+- `XFL`		= 0x00
+- `OS` 		= 0x03
+    - 0x00 FAT
+    - 0x01 Omiga
+    - 0x02 VMS
+    - 0x03 **UNIX**
+    - 0x04 ATARI
+    - 0x05 WinNT
+    - 0x07 OLD MacOS
+    - 0x08 Z system
+    - 0x10 TOPS-20
+    - 0x11 NTFS
+
+#### Footer
+
+- `CRC32` - is CRC-32 checksum calculates from the each byte of the uncompressed data. `4 byte` numberRule#1 **LSB** first
+- `ISIZE` - just size of oriignal uncompressed fileit's a number **LSB** first.
+
 
 
 ### Links
