@@ -1,6 +1,6 @@
 # Compression
 
-[Princton Algos ref](http://localhost/pdf/Algos2Compression.pdf)
+- [Princton Algos ref](http://localhost/pdf/Algos2Compression.pdf)
 
 ## Todo 
 
@@ -22,6 +22,8 @@
 
 ## Questions
 
+- [x] Good notes?
+
 - [ ] What is the last part of the Deflate Video
 - [ ] What I am missins
 -
@@ -29,7 +31,6 @@
 - [ ] And of LZ family lecture ?
 - [ ] LZW  Notes?
 
-- [x] Good notes?
 
 ###  B
 
@@ -172,14 +173,14 @@ L
 
 `00010001 00001111 00000101 00001010`
 
-## Deflate
+## GZIP Deflate
+
+**RULE #1 PUSH leas significal bit of number FIRST**	
 
 - [RFC 1951](https://datatracker.ietf.org/doc/html/rfc1951)
 
 - Has better preformance
-- gzip and zip
 - no patent
-- Test gzip in windows ? 
 - Supported in gzip.
 
 
@@ -193,11 +194,32 @@ L
 - [ ] Where to find testing data for our algo? 
 - [ ] What Unit test can I write
 
+### Notes 
+
+- CLI
+	- `hexdump -C SALAD.txt`,
+	- `gzip SALAD.txt encoded.gz`
+	- `hexdump -C encoded.gz`,
+- RFC 1952 RFC 1951
+- HEADER; Comress blocks, Footer
+
+### HEADERS
+
+> TODO: SCREEN shot of bytes
+![GZIP HEADERS](./res/GZIPHeaders.jpg)
+
+- `MAGIC1` 	= 0x1f
+- `MAGIC2` 	= 0x8b
+- `CM` 		= 0x08
+- `FLAGS` 	= 
+- `MTIME` 	= 
+- `XFL` = 
+- `OS` = 08
 
 
 ### Links
 
-- [gzsta.py](scripts\gzstat.py)
+- [gzstat.py](scripts\gzstat.py)
 - [Deflate White Paper](http://www.infinitepartitions.com/art001.html)
 - [Youtube Lecture](https://youtu.be/oi2lMBBjQ8s)
 

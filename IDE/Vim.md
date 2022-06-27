@@ -107,6 +107,12 @@ Super awesome vim search in multiple files
 - Documentation
 - Vim MarkDown syntaxis formated
 
+### Tabular
+
+[Github link](https://github.com/godlygeek/tabular)
+
+Text aligning tools
+
 ## Vimtutor
 
 vim C:\tools\vim\vim82\tutor\tutor
