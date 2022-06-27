@@ -13,6 +13,45 @@
 ::/\(hidden;">\)\@<=.\{-}\(\<div\)\@=
 ```
 
+## Plugins
+
+
+### vim-plug
+
+`~\.vimrc` - file to edit
+`:source ~/.vimrc` - To reload source
+`:PlugInstall` - to Install new plugins
+`:PlugUpdate` - in case of update
+`:PlugClean` - remove unlisted plugins
+
+## Extensions
+
+- See the file hirarchy
+- Intellisens
+- Documentation
+- Vim MarkDown syntaxis formated
+
+### Tabular
+
+[Github link](https://github.com/godlygeek/tabular)
+
+Text aligning tools
+
+## Vimtutor
+
+vim C:\tools\vim\vim82\tutor\tutor
+
+## NERDTree
+
+[Github link](https://github.com/preservim/nerdtree)
+```vim
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+```
 ## Questions
 
 - Top plugins
@@ -84,37 +123,4 @@ Super awesome vim search in multiple files
 `zz` - Scroll to the screen center
 `zt` - Scroll to the Top
 `zb` - Scroll to the Bottom
-
-## Plugins
-
-
-### vim-plug
-
-`~\.vimrc` - file to edit
-`:source ~/.vimrc` - To reload source
-`:PlugInstall` - to Install new plugins
-`:PlugUpdate` - in case of update
-`:PlugClean` - remove unlisted plugins
-
-
-### Vim Tree-View
-
-
-## Extensions
-
-- See the file hirarchy
-- Intellisens
-- Documentation
-- Vim MarkDown syntaxis formated
-
-### Tabular
-
-[Github link](https://github.com/godlygeek/tabular)
-
-Text aligning tools
-
-## Vimtutor
-
-vim C:\tools\vim\vim82\tutor\tutor
-
 

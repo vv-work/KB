@@ -23,11 +23,9 @@
 ## Questions
 
 - [x] Good notes?
-
 - [ ] What is the last part of the Deflate Video
-- [ ] What I am missins
--
-- [ ] LZ78 vs LZW ?
+- [ ] What I am missins -
+- [x] LZ78 vs LZW ?
 - [ ] And of LZ family lecture ?
 - [ ] LZW  Notes?
 
@@ -206,9 +204,11 @@ L
 - RFC 1952 RFC 1951
 - HEADER; Comress blocks, Footer
 
+### RULE#1: Least significant bit first
+
+![GZIP LSB](./res/GZIPLSB.jpg)
+
 ### HEADERS
-
-
 
 ![GZIP HEADERS](./res/GZIPHeaders.jpg)
 
