@@ -51,6 +51,7 @@
 - [Link](https://fiehnlab.ucdavis.edu/staff/kind/collector/benchmark/7zip-benchmark)
 
 Input: **11 Gbyt** Windws XP VM
+![Compression Banch](./res/CompressionBanch.jpg)
 
 ![Banchmarks7Z](./res/7zipcompressionbenchmark.png)
 
@@ -190,10 +191,46 @@ L
 
 ### Questions 
 
+- [ ] Name of the corpus
 - [ ] Do I implent all links in video?
 - [ ] How to use gzstat.py ? 
 - [ ] Where to find testing data for our algo? 
 - [ ] What Unit test can I write
+
+### Roadmap
+
+- HuffmanCoding
+- LZSS 
+
+### Unit tests
+
+- [ ] GenreateHuffmanTree() 
+- [ ] LZSS() 
+- [ ] `PushBit(byte b)`
+- [ ] `PullBit():byte`
+- [ ] `CreteFileHeader(Data d):byte[]`
+- [ ] `ReadFileHdaers(byte[] b):Data`
+
+
+```c#
+void PishByte(){
+	throw new NotImplementedException();
+}
+void GenerateHuffmanTree(string s):HuffmanTree;
+void CreateHuffmanTree(string s):HuffmanTree;
+
+class HuffmanTree{
+	public Node RootNode;
+}
+
+struct Node{
+
+	public bool IsValue;
+	public char Value{red}
+	public Node Left;
+	public Node Right;
+}
+```
 
 ### Notes 
 
@@ -208,6 +245,8 @@ L
 
 ![GZIP LSB](./res/GZIPLSB.jpg)
 
+we push it the revers `110` as `011` but only numbers not prefix codes. 
+
 ### HEADERS
 
 ![GZIP HEADERS](./res/GZIPHeaders.jpg)
@@ -216,7 +255,7 @@ Those `10 bytes` should be always present
 
 - `MAGIC1` 	= 0x1f
 - `MAGIC2` 	= 0x8b
-- `CM` 		= 0x08
+- `CM` 		= 0x08 (is DEFLATE)
 - `FLAGS` 	= 0x00 for container
 - `MTIME`4bytes	= Unix timestam (**LSB** pushed first)
 - `XFL`		= 0x00
@@ -241,7 +280,7 @@ Those `10 bytes` should be always present
 
 ### Links
 
-- [gzstat.py](scripts\gzstat.py)
+- [gzstat.py](.\scripts\gzstat.py)
 - [Deflate White Paper](http://www.infinitepartitions.com/art001.html)
 - [Youtube Lecture](https://youtu.be/oi2lMBBjQ8s)
 
@@ -249,43 +288,70 @@ Those `10 bytes` should be always present
 
 ![FileStructure](./res/DEFLATEFS.png)
 
-### Block Type
+### Block Types
 	
-![DEFLATE BLock Type](./res/DEFLATEBTYPE.png)
+![DEFLATE BLock Type](./res/GZIPBlockTypes.png)
+
+#### Block Type 0
 
 ![DEFLATE BLock Type](./res/DEFLATEBT.png)
 
+- `IS_LAST` - is last or not
+- `BTYPE` - block type
+- `PADDING` - just padding
+- `LEN`  - number of bytes in the block Rule#1
+- `~LEN` - flips swaped the size 
+- `BITSTREAM` - 
+
+##### LZSS
+
+It uses **LZSS** encoding
+![GZIPLZSS](./res/GZIPLZSS.jpg)
 ### Literal/Length and Distance Symbols
 
 ![DEFLATE Refernce Length ](./res/DEFLATEBL.png)
 
-### Back Distance
+- We cna't incode backreference of size less then 2
 
-![DEFLATE Back Distance](./res/DEFLATEBD.png)
-
-### LL Code
-
-![DEFLATE LL Code](./res/DEFLATELLCODE.png)
-
-![DEFLATE LL CODE](./res/DEFLATELLCODE2.png)
-
-### Prefix 
-
-![DEFLATE Prefix](./res/DEFLATEPrefix.png)
-
-### EOB 
+##### EOB 
 
 ![DEFLATE EOB](./res/DEFLATEEOB.png)
 
-### Block Types 
+##### Distance Code
 
-![DEFLATE Block Type 1](./res/DEFLATEBT1.png)
+![DEFLATE Back Distance](./res/DEFLATEBD.png)
 
-### Assignemtn
+##### LL Code
 
-`gzip -d`
+![DEFLATE LL Code](./res/DEFLATELLCODE.png)
+
+**LL Code** first then **DC Code**
+![DEFLATE LL CODE](./res/DEFLATELLCODE2.png)
+
+##### Prefix 
+
+![DEFLATE Prefix](./res/DEFLATEPrefix.png)
+
+#### Block Type 1
+ 
+![GZIP BType1](./res/GZIPBT1.jpg)
+
+#### Block Type 2
+ 
+![GZIP BType2](./res/GZIPBT2.jpg)
+
+- Block type 2 is *nightmare* we need store those code tables
+
+**LL** - Code Length Code
+**CL** - Code Length Code Length code
+
+![GZIPRecomendation](./res/GZIPB2Rec.jpg)
+
+#### HCLEN
 
 ## Huffman coding
+
+- Pakcage generelazation
 
 BADBAC = `101100101101`
 

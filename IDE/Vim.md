@@ -44,6 +44,7 @@ vim C:\tools\vim\vim82\tutor\tutor
 ## NERDTree
 
 [Github link](https://github.com/preservim/nerdtree)
+
 ```vim
 
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -91,7 +92,6 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 Super awesome vim search in multiple files
 
-
 ## Concept 
 
  I think it might be a great idea to completly switch to vim
@@ -112,7 +112,6 @@ Super awesome vim search in multiple files
 <kbd>Ctrl</kbd>+<kbd>]</kbd> - Move to tag in vim help
 <kbd>Ctrl</kbd>+<kbd>O</kbd> - Get to begining
 <kbd>Ctrl</kbd>+<kbd>T</kbd> - Get to previous location
-
 ## Scrolling
 
 <kbd>Ctrl</kbd>+<kbd>U</kbd> - Scroll up 
