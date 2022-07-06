@@ -14,7 +14,11 @@
 For motoko non-dfx projects.
 `$(vessel bin)/moc` - command to start working with a prject or something
 
-## Let Declaration
+## Variable declation 
+
+if u declare variable through the `let` you would not be able to latter change it or use incide of the loop
+
+### Let Declaration
 
 `let <pat> = <exp>`
 - `<exp>` has type `T`
@@ -27,7 +31,7 @@ For motoko non-dfx projects.
 
 ```
 
-## Var Declation
+### Var Declation
 
 **VAR** is *mutable* declaration `var <id> (: <typ>)? = <exp>`
 
@@ -40,4 +44,41 @@ For motoko non-dfx projects.
 The declaration type `<id> <typ-params>? = <typ>` declares a new type constructor `<id>`, with optional type parameters `<typ-params>` and definition `<typ>`.
 
 The declaration type `C < X0 <: T0>, …​, Xn <: Tn > = U` is well-formed provided:
+
+
+## Making a loop 
+
+```Motoko
+
+label l loop {
+  i += 1;
+  Debug.print(" I am in the fucking loop"); 
+  Debug.print(debug_show(i));
+  if(i >= 10)
+    break l;
+}
+```
+
+### while loop
+
+```Motoko
+     public func OurLoop() {
+
+        var i = 0;
+        while(i < 10) {
+        i += 1;
+        Debug.print(" I am in the fucking loop"); 
+        Debug.print(debug_show(i));
+        }
+    };
+```
+
+### 
+
+Actor - is a class canister( I get a canister 
+Modules -  Set of functions or even a class or variables
+Classes  -
+
+If using Cllass make sure that output is  *stable*!!!
+
 
