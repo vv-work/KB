@@ -1,5 +1,23 @@
 # Motoko
 
+##Questions
+
+- Order (how to use how to crate) 
+    - Lyamda methods.
+
+- Question on dhall. 
+
+- Unit testing ?
+    - how to correctly right unitt test
+    - Sutites,Matchers, Testables? 
+- Async/Await testing
+
+- Iter ( toChar)?
+
+- Array freezing/unfizing usage of buffers.
+	
+    	
+
 ## Unit testing
 
  [Motoko color repo](https://github.com/ByronBecker/motoko-color) Repo with unit tests setup to start making the unit test on local machine

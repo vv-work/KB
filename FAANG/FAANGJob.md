@@ -6,8 +6,14 @@
 - Unreal
 - Dfinity
 
+### GitHub
+
+- [Interview Questions](https://github.com/kdn251/interviews)
+> Personal gauide to the tecnical engineering interview really good one
+- [Leetcode repo of tomijaga](https://github.com/tomijaga/leetcode)
 
 ### Articles
+
 - [Sergiy Google Interview](https://dou.ua/lenta/articles/google-interview/)
 - [PhD in Google](https://dou.ua/lenta/interviews/research-scientist-from-google/)
 - [Internship at Google](https://dou.ua/lenta/articles/internship-in-google-microsoft-sap/)
