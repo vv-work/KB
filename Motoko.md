@@ -2,19 +2,19 @@
 
 ##Questions
 
-- Order (how to use how to crate) 
+- [ ] Order (how to use how to crate) 
     - Lyamda methods.
 
-- Question on dhall. 
+- [ ]  Question on dhall. 
 
-- Unit testing ?
+- [ ]  Unit testing ?
     - how to correctly right unitt test
     - Sutites,Matchers, Testables? 
-- Async/Await testing
+- [ ] Async/Await testing
 
-- Iter ( toChar)?
+- [ ] Iter ( toChar)?
 
-- Array freezing/unfizing usage of buffers.
+- [ ] Array freezing/unfizing usage of buffers.
 	
     	
 
@@ -65,6 +65,16 @@ The declaration type `C < X0 <: T0>, …​, Xn <: Tn > = U` is well-formed prov
 
 
 ## Making a loop 
+
+### For loop 
+
+```motoko
+    for(i in Iter.range(0,size-1)){
+      Debug.print(i);
+    };
+```
+
+### Labeled loop
 
 ```Motoko
 
