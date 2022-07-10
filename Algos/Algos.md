@@ -1,5 +1,16 @@
 # Algorithms
 
+## O(n)
+
+![BigO](./res/BigO.jpeg)
+![BigO2](./res/BigO2.jpg)
+
+
+## Sorting 
+
+![DataStracturesAndSorting](./res/DataStracturesSorting.png)
+![DataStracturesAndSorting2](./res/DataStracturesSorting2.png)
+
 ## Navigation
 
 - A*
