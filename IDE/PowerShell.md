@@ -5,9 +5,17 @@
 
 ## Basics
 
+
 ```powershell
 function subtract ($from, $count) { $from - $count } #function
 ```
+
+## Download file
+
+```powershell
+Invoke-WebRequest -Uri $url 
+```
+
 ## Run custom Script
 
 It's quite usefully espacially when you need to automate building process.
