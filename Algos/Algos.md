@@ -8,7 +8,14 @@
 
 ## Sorting 
 
+
+[Link for cheetSheet](https://raw.githubusercontent.com/vv-work/KB/main/Algos/res/DataStracturesSorting.png)
 ![DataStracturesAndSorting](./res/DataStracturesSorting.png)
+
+</br>
+</br>
+
+[Link for cheatsheet](https://raw.githubusercontent.com/vv-work/KB/main/Algos/res/DataStracturesSorting2.png)
 ![DataStracturesAndSorting2](./res/DataStracturesSorting2.png)
 
 ## Navigation
