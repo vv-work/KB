@@ -48,7 +48,7 @@ root
 
 ## Vessel 
 
-**Vessel** - Is a package manager for motoko programming language
+**Vessel** - Is a package manager for motoko specificely
 
 `vessel init`
 
@@ -65,6 +65,9 @@ root
 }
 
 ```
+
+`package-set.dhall`
+
 ```dhall
 let upstream = https://github.com/dfinity/vessel-package-set/releases/download/mo-0.6.21-20220215/package-set.dhall sha256:b46f30e811fe5085741be01e126629c2a55d4c3d6ebf49408fb3b4a98e37589b
 let Package =
@@ -93,7 +96,22 @@ let
 in  upstream # additions # overrides
 ```
 
+#### Run vessel check
 
+`$(vessel bin)/moc $(vessel sources) --check` - check our files
+
+
+`$(vessel bin)/moc -r test/zeroTest.mo` - check our files
+
+
+### Import package 
+
+To import pckage we need :
+
+1. In `package-set.dhall` define package `array` and github link
+2. In `main.mo` define `import mo:arra/Array`
+
+ 
 
 ## Field visability    	
 
