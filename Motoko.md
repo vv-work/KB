@@ -2,10 +2,11 @@
 
 ##Questions
 
+- [ ]  Question on dhall. 
+	- How to correctly  reference on GitHub
+
 - [ ] Order (how to use how to crate) 
     - Lyamda methods.
-
-- [ ]  Question on dhall. 
 
 - [ ]  Unit testing ?
     - how to correctly right unitt test
@@ -16,7 +17,90 @@
 
 - [ ] Array freezing/unfizing usage of buffers.
 	
-    	
+## Modules 
+
+Are files basically
+
+```motoko
+import Counter "../src/Counter";
+import Counter "Counter";
+import Result "mo:base/Counter";
+import {map,find,field, fold = fold} "mo:base/Array";
+
+
+module some{}
+module {}
+
+```
+## Folder Structure
+
+```motoko
+
+root
+|
+--src
+|
+--test
+|
+--example
+
+```
+
+## Vessel 
+
+**Vessel** - Is a package manager for motoko programming language
+
+`vessel init`
+
+`$bin\vessel --version` or `vessel --version`
+
+**Dhall**-  is a programmable configuration language that you can think of as: JSON + functions + types + imports
+
+`vessel.dhall`
+
+```dhall
+{
+	dependencies = [ "base" ], 
+	compiler = Some "0.6.2" 
+}
+
+```
+```dhall
+let upstream = https://github.com/dfinity/vessel-package-set/releases/download/mo-0.6.21-20220215/package-set.dhall sha256:b46f30e811fe5085741be01e126629c2a55d4c3d6ebf49408fb3b4a98e37589b
+let Package =
+    { name : Text, version : Text, repo : Text, dependencies : List Text }
+
+let
+  -- This is where you can add your own packages to the package-set
+  additions =
+    [] : List Package
+
+let
+  {- This is where you can override existing packages in the package-set
+
+     For example, if you wanted to use version `v2.0.0` of the foo library:
+     let overrides = [
+         { name = "foo"
+         , version = "v2.0.0"
+         , repo = "https://github.com/bar/foo"
+         , dependencies = [] : List Text
+         }
+     ]
+  -}
+  overrides =
+    [] : List Package
+
+in  upstream # additions # overrides
+```
+
+
+
+## Field visability    	
+
+- `private` - enclosing object 
+- `public` 
+- `system` - actor field
+
 
 ## Unit testing
 
@@ -105,7 +189,7 @@ label l loop {
 
 Actor - is a class canister( I get a canister 
 Modules -  Set of functions or even a class or variables
-Classes  -
+Classes  - is part of the module but is seprate class each one by one.
 
 If using Cllass make sure that output is  *stable*!!!
 
