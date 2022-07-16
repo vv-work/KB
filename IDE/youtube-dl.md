@@ -6,6 +6,11 @@
 ### Download one vidoe
 
 ```bash
+yt-dlp -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" -o '%(playlist_index)s - %(title)s [%(id)s].%(ext)s'  --embed-thumbnail  https://www.youtube.com/c/SebastianLague/playlists
+
+```
+
+```bash
 
 yt-dlp --cookies "B:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" --embed-thumbnail 
 ```

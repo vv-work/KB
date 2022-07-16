@@ -2,6 +2,8 @@
  
  Streaming from ARKIt to the heands  https://github.com/asus4/ARKitStreamer;
 
+> Extra notes that dosen't really metter
+
 ##
 [LeanTouch](http://gameprogrammingpatterns.com/contents.html)
 >Best way according to unity to add touches to AR app.
