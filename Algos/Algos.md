@@ -5,6 +5,11 @@
 ![BigO](./res/BigO.jpeg)
 ![BigO2](./res/BigO2.jpg)
 
+## Standrarts
+
+-  **IEEE 754** - Float numbers
+-  **RFC 1951** - DEFLATE
+-  **RFC 1952** - GZIP
 
 ## Sorting 
 
