@@ -14,7 +14,7 @@
 
 ## FFMPEG
 
-### Scripting
+### Cahange default language
 
 #### Hide output
 
@@ -34,19 +34,20 @@
 
 My 360 compression. 
 *!Important:* has `-ss` and `-fs` 
-`ffmpeg -i .\mistok-src.mp4 -c:v libx264 -b:v 23M -pix_fmt yuv420p -c:a aac -b:a 192K -ss 03 -fs 90M mistok-5.mp4`
+```bash
+ffmpeg -i .\mistok-src.mp4 -c:v libx264 -b:v 23M -pix_fmt yuv420p -c:a aac -b:a 192K -ss 03 -fs 90M mistok-5.mp4
+```
 
 
 ### Limit file size
 `ffmpeg -i input -fs 10M -c copy output`
 
 ###  Segment video and reset timesstamp
-```
+```bash
 ffmpeg -i .\Adventure.Time.Distant.Lands.s01e01.WEB-DL.720p.NewStation.mkv -f segment -strttime 1 -segment_time 15:00 -c copy -reset_timestamps 1 E01-%03d.mp4
 ```
 
-### Subtiitles
-```
+```bash
 ffmpeg -i .\Adventure.Time.Distant.Lands.s01e02.WEB-DL.720p.NewStation.mkv -vf subtitles=Adventure.Time.Distant.Lands.s01e02.WEB-DL.720p.NewStation.mkv -ss 37:47 -d 01:00   SubTest.mp4
 ```
 
@@ -90,8 +91,9 @@ ffmpeg -i 'input.mkv' -filter:v "setpts=0.05*PTS" SpeedUp.mp4
 `-f gif` 
 Format we wan't output into
 
-`ffmpeg -i animated.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4
-`
+```bash
+ffmpeg -i animated.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4
+```
 ### Main
 
 `-i StickAround.mp4`
@@ -113,7 +115,9 @@ ffmpeg -ss 61.0 -t 2.5 -i StickAround.mp4 -f gif StickAround.gif
 ```
 
 ### Crop the video
-`ffmpeg -i ForEugene.mp4 -filter:v 'crop=iw-840' 'EugeneCrop.mp4'`
+```bash
+ffmpeg -i ForEugene.mp4 -filter:v 'crop=iw-840' 'EugeneCrop.mp4'
+```
 
 #### Resize
 

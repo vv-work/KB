@@ -6,6 +6,27 @@
 
 ## Data Structuress 
 
+### Built-In Data types
+
+- Lits
+- Sets
+- Dictionary
+- Tuple
+
+#### Set
+
+
+#### Dictionary
+
+```py
+dic = dict()
+dic['a'] = 5
+
+if 'a' in dic:
+	dic['a']= dic['a'] +1
+
+```
+
 ### Stack&Queue
 
 [Chris Albon Notes](http://localhost/ChrisNotes/python/basics/queues_and_stacks/)
@@ -37,5 +58,3 @@ del staff['Tom'];staff
 # Add entry 
 Staff['Guido'] = 'guido@gmail.org;
 ```
-
-
