@@ -1,7 +1,14 @@
 # Motoko
 
-##Questions
+## Links 
 
+- [Base index](https://github.com/dfinity/motoko/blob/master/doc/md/base/index.md)
+
+## Questions
+
+- [ ] What the heck is NNS and how it work
+- [ ] How does ICP swork in gerneral
+- [ ] Good template for Motoko Vessel project.
 - [ ]  Question on dhall. 
 	- How to correctly  reference on GitHub
 
@@ -203,7 +210,79 @@ label l loop {
     };
 ```
 
-### 
+## HashMap
+
+```motoko
+ let users = HashMap.HashMap<Principal, Text>(0, Principal.equal, Principal.hash);
+
+```
+
+## Option type
+
+`?Nat`
+Null Break `Nat!`
+
+
+
+## Custom Type
+
+```motoko
+
+public type Person = {
+  name : Text;
+  age : Nat;
+};
+
+let tom : Person = {
+  name = "Tom Cruise";
+  age = 59;
+};
+```
+
+## UnitTests
+
+[DocumentaitonLink](https://kritzcreek.github.io/motoko-matchers/Matchers.html)
+
+
+### Bool test
+
+` M.equals(T.bool(true))),`
+
+### Full test
+```motoko
+import M "mo:matchers/Matchers";
+import T "mo:matchers/Testable";
+import S "mo:matchers/Suite";
+
+
+let suite = S.suite("My test suite", [
+    S.suite("Nat tests", [
+        S.test("10 is 10", 10, M.equals(T.nat(10))),
+        S.test("5 is greater than three", 5, M.greaterThan<Nat>(3)),
+    ])
+]);
+S.run(suite)
+```
+
+### Switch
+
+```motoko
+switch x { case (pat1) e1; …; case _ en }
+```
+
+### Assert
+
+```motoko
+import M "mo:matchers/Matchers";
+import T "mo:matchers/Testable";
+
+assertThat(5 + 5, M.equals(T.nat(10)));
+assertThat(5 + 5, M.allOf<Nat>([M.greaterThan(8), M.lessThan(12)]));
+assertThat([1, 2], M.array([M.equals(T.nat(1)), M.equals(T.nat(2))]));
+```
+
+
+##  Terms
 
 Actor - is a class canister( I get a canister 
 Modules -  Set of functions or even a class or variables

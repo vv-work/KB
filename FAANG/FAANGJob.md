@@ -14,6 +14,7 @@
 
 ### Articles
 
+- [380K Selary](https://dou.ua/lenta/interviews/get-job-in-usa-during-pandemic/)
 - [Sergiy Google Interview](https://dou.ua/lenta/articles/google-interview/)
 - [PhD in Google](https://dou.ua/lenta/interviews/research-scientist-from-google/)
 - [Internship at Google](https://dou.ua/lenta/articles/internship-in-google-microsoft-sap/)
@@ -29,3 +30,4 @@
 - Speak to ppl.
 
 
+### 
