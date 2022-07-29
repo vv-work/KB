@@ -285,22 +285,9 @@ assertThat([1, 2], M.array([M.equals(T.nat(1)), M.equals(T.nat(2))]));
 ```
 ## Types
 
-### Questions
-
-- Iters
-- Func
-- Trie
-- AssocList?
-
-## AssocList
-
-LinkedList - basically
 ### Buffer
-
 `import Buffer "mo:base/Buffer";
-let b:Buffer = Buffer.Buffer<Nat>(5);` - importing type
-
-`Buffer.fromVarArray<Nat>(var 0,1,2,3)).toArray()`
+let b:Buffer = Buffer.Buffer<Nat>(5);`
 
 
 ##  Terms
