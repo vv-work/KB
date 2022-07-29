@@ -213,12 +213,6 @@ label l loop {
     };
 ```
 
-## HashMap
-
-```motoko
- let users = HashMap.HashMap<Principal, Text>(0, Principal.equal, Principal.hash);
-
-```
 
 ## Option type
 
@@ -287,14 +281,15 @@ assertThat([1, 2], M.array([M.equals(T.nat(1)), M.equals(T.nat(2))]));
 
 ### Questions
 
-- Iters
-- Func
-- Trie
-- AssocList?
+- [ ] Iters?
+- [ ] Func?
+- [ ] Trie?
+- [ ] AssocList?
 
 ## AssocList
 
 LinkedList - basically
+
 ### Buffer
 
 `import Buffer "mo:base/Buffer";
@@ -302,6 +297,20 @@ let b:Buffer = Buffer.Buffer<Nat>(5);` - importing type
 
 `Buffer.fromVarArray<Nat>(var 0,1,2,3)).toArray()`
 
+### Iter
+
+```motoko
+    for(i in Iter.range(0,size-1)){
+      Debug.print(i);
+    };
+```
+
+## HashMap
+
+```motoko
+ let users = HashMap.HashMap<Principal, Text>(0, Principal.equal, Principal.hash);
+
+```
 
 ##  Terms
 
