@@ -305,12 +305,28 @@ let b:Buffer = Buffer.Buffer<Nat>(5);` - importing type
     };
 ```
 
-## HashMap
+### HashMap
 
 ```motoko
  let users = HashMap.HashMap<Principal, Text>(0, Principal.equal, Principal.hash);
 
 ```
+
+### Text
+
+#### `concat`
+
+```motoko
+	let textA = "Hello ";
+	let textB = "World!";
+	let textOut = Text.concat(textA,textB);
+	Debug.print(debug_show(textOut));
+```
+
+## Debug
+
+`import Debug "mo:base/Debug";`
+`Debug.show(debug_show(iter.size()));`
 
 ##  Terms
 
