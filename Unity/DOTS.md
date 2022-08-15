@@ -22,6 +22,8 @@
 - [Component](#component) - Data
 - [System](#system) - Behaviour
 
+
+
 ### Entities
 
 Entities - is like lightweight `GameObject`.
