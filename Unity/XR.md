@@ -62,9 +62,15 @@ Vuforia whatsoever.
 https://github.com/lagadic/visp_unity/wiki/Unity-AR-demo-using-ViSP
 April tag is super asses
 
+## VR 
+
+### Mock
+
 ## MRTK
 
 ## Ouclus	
+
+
 
 ### Questions
 
@@ -79,8 +85,21 @@ April tag is super asses
  
 It's to make it work like a desktop headset
 
+### Passthrouh
+
+Allows to work in the XR requires some setting
+
+First of all OpenAR on backednd
 
 
+1. Color Space Linear 
+2. **IL2CPP**
+3. **ARM64**
+4. XR-Plugin Manger -> Oculus
+5. Oculus->Tools->OVR Utilities Plugin
 
+### MRTK on Oculus Quest 2
+
+Banch of shinanigans
 
 

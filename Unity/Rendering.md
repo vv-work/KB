@@ -13,4 +13,27 @@
 Everything connected to the rendering 
 
 - Shaders
-- zà
+
+## Stereo Rendering
+
+[Stereo Rendering](https://docs.unity3d.com/Manual/SinglePassStereoRendering.html)
+
+## Post-processing
+
+### Links
+
+- [Unity post-processing stack](https://github.com/Unity-Technologies/PostProcessing/wiki)
+- [Kino custom post-processing](https://github.com/keijiro/Kino)
+
+## Shader
+
+
+
+### Outline Shader
+
+- [Sobel Outline](https://github.com/ssell/UnitySobelOutline)
+![SobelOutlineGif](.\res\SobelOutline.gif)
+
+- [Outline Shader](https://roystan.net/articles/outline-shader.html)
+
+![oultineShader](.\res\outline-demo.png)
