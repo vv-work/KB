@@ -66,7 +66,6 @@ April tag is super asses
 
 ### Mock
 
-## MRTK
 
 ## Ouclus	
 
@@ -98,8 +97,28 @@ First of all OpenAR on backednd
 4. XR-Plugin Manger -> Oculus
 5. Oculus->Tools->OVR Utilities Plugin
 
-### MRTK on Oculus Quest 2
+
+## MRTK
+
+### Installation 
+
+- Mixed Reaality Feature Tool for Unity
+
+` D:\DevTools\MixedReality\MixedRealityFeatureTool.exe` 
 
 Banch of shinanigans
 
+
+### Hololens 2
+
+- [Microsoft Getting Started Hololsnes](https://docs.microsoft.com/en-us/learn/paths/beginner-hololens-2-tutorials/)
+- [HoloLens Learning portal](https://docs.microsoft.com/en-us/hololens/?WT.mc_id=mixedreality_product)
+
+#### Build UWP
+
+- Windows SDK
+
+### MRTK on Oculus Quest 2
+
+Banch of shinanigans
 
