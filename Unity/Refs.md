@@ -15,6 +15,8 @@
 
 ## Education
 
+- [Aweseom collection of Rambling and Rendering](https://www.vertexfragment.com/ramblings/)
+
 - [HTML Tutorials](https://www.raywenderlich.com/unity)
 
 - [Trello board with everything](https://trello.com/b/Z6cDRyis/good-coding-practices-in-unity-unofficial)

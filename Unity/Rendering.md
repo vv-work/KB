@@ -22,6 +22,7 @@ Everything connected to the rendering
 
 ### Links
 
+- [Official Documentation](https://docs.unity3d.com/Packages/com.unity.postprocessing@3.1/index.html)
 - [Unity post-processing stack](https://github.com/Unity-Technologies/PostProcessing/wiki)
 - [Kino custom post-processing](https://github.com/keijiro/Kino)
 
