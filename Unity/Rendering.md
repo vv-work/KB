@@ -32,9 +32,9 @@ Everything connected to the rendering
 
 ### Outline Shader
 
-- [Sobel Outline](https://github.com/ssell/UnitySobelOutline)
-![SobelOutlineGif](.\res\SobelOutline.gif)
+- [Sobel Outline](https://www.vertexfragment.com/ramblings/unity-postprocessing-sobel-outline/)
+![SobelOutlineGif](./res/SobelOutline.gif)
 
 - [Outline Shader](https://roystan.net/articles/outline-shader.html)
 
-![oultineShader](.\res\outline-demo.png)
+![oultineShader](./res/outline-demo.png)
