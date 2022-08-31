@@ -5,9 +5,15 @@
 
 ## Basics
 
-
 ```powershell
 function subtract ($from, $count) { $from - $count } #function
+```
+## Set TAB for suggestions
+
+```bash
+nvim $PROFILE
+
+Import-Module PSReadline Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 ```
 
 ## Download file

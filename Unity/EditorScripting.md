@@ -47,3 +47,25 @@ public class LookAtPointEditor : Editor
     }
 }
 ```
+## Custom RenderPiepline Asset
+
+Another thing that I like in this example is it can work with or without editor
+
+```csharp
+
+[ExecuteInEditMode]
+public class BasicAssetPipe:RenderPipelineAsset 
+{
+    [SerializeField]
+    private Color _clearColor = Color.green;
+#if UNITY_EDITOR
+    [UnityEditor.MenuItem("SRPDemo/CreateBasic")]
+    static void CreateBasicAssetPipeline()
+    {
+	var instance = ScriptableObject.CreateInstance<BasicAssetPipe>();
+	UnityEditor.AssetDatabase.CreateAsset(instance,"Assets/BleedingPipe.asset");
+
+
+    }
+#endif
+```

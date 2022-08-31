@@ -1,5 +1,6 @@
 # Image Magick
 
+
 ## Downscale all images in folder
 
 ```ps

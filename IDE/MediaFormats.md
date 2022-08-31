@@ -1,6 +1,13 @@
 # Media Formats
 
+### Webp to jpg
+```bash
+dwebp .<S-F3>Q  	\InGrave.webp -o InGrave.png
+```
+
 ## ImageMagick
+
+
 
 ### PDF2JPG
 
