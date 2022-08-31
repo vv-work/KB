@@ -56,6 +56,8 @@ And then you can invoke it:
 $env:Path +=";B:\MyPrograms\Git"
 
 #More complex
+
+```bash
 $Value= $env:Path
 [System.Environment]::SetEnvironmentVariable('Path',$Value,[System.EnvironmentVariableTarget]::Process);
 
@@ -63,6 +65,7 @@ $Value= $env:Path
 [System.Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::Machine);
 [System.Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::User);
 ```
+
 ## Install My script
 
 ```powershell
@@ -111,14 +114,14 @@ Get-ExecutionPolicy -List
 ### Powershell Shortcut Location
 
 >C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
-```powershell
+```bash
 B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -noexit
 C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -noexit (. B:\Lib\Proj\PS\Default.ps1)
 ```
 >Path = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
 
 ### For terminal
-```powershell 
+```bash
 
 B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -noexit
 
@@ -127,20 +130,21 @@ B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -n
 
 ## Autostart jupyter
 
-```PowerShell
-Start-Process "jupyter-notebook.exe" "--no-browser --notebook-dir=B:\Lib\Jup\" -WindowStyle Hidden
-``` 
+```bash
+ Start-Process 'jupyter-notebook.exe' '--no-browser --notebook-dir=B:\Lib\Jup\ ' -WindowStyle Hidden
+```
 ## CSharp
 
 
 ### Create array
 
-```pwsh
+```bash
 
 $testlist = [System.Collections.ArrayList]::new()
 $testlist.Add('Name')
-foreach($n in $testList){
 
+foreach($n in $testList){
+	rm $n -force
 }
 
 ```
