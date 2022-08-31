@@ -2,7 +2,6 @@
 
 ## Questions
 
-
 - SRP ?
 - HDR vs LDR ?
 - Linear vs Gamma ?

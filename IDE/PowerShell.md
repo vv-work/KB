@@ -1,9 +1,16 @@
 # PowerShell
 
+
+
 ## Emoji 
 🔥🤔💖t
 
 ## Basics
+
+### Get text from file
+```pwsh
+Get-Content file.xt
+```
 
 ```powershell
 function subtract ($from, $count) { $from - $count } #function
@@ -66,7 +73,9 @@ $Value= $env:Path
 To Start independment instance of *Visual Studio Code*:
 
 ```powershell
+
  start-job {code}
+
 ```
 
 ## Starting job in current location 
@@ -92,12 +101,15 @@ Get-ExecutionPolicy -List
 ## Making shortcut
 
 ### IIS manager location 
+
 >%windir%\system32\inetsrv\InetMgr.exe
 
 ### Winodws Terminal Location
+
 >D:\Users\admin\AppData\Local\Microsoft\WindowsApps\Microsoft.WindowsTerminal_8wekyb3d8bbwe
 
 ### Powershell Shortcut Location
+
 >C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
 ```powershell
 B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -noexit
@@ -107,6 +119,7 @@ C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -noexit (. B:\Lib\Proj
 
 ### For terminal
 ```powershell 
+
 B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -noexit
 
 ```
@@ -117,3 +130,17 @@ B:\MyPrograms\PowerShell\7\pwsh -f "B:\Lib\Proj\PS\Default.ps1" -wd "B:\Temp" -n
 ```PowerShell
 Start-Process "jupyter-notebook.exe" "--no-browser --notebook-dir=B:\Lib\Jup\" -WindowStyle Hidden
 ``` 
+## CSharp
+
+
+### Create array
+
+```pwsh
+
+$testlist = [System.Collections.ArrayList]::new()
+$testlist.Add('Name')
+foreach($n in $testList){
+
+}
+
+```
