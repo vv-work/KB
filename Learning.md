@@ -22,8 +22,6 @@
 - Should I really do it right now ?
 - Should Make quick notes?
 
-
-
 ## SQ3R
 
 - Survey
@@ -32,12 +30,13 @@
 - Recall
 - Review
 
-
 - **Survey** Before reading just quickly review book and moke notes on it's content
 - **Questions** After that ask the questions you want to know answers.
 - **Read**  Trying to look for answers for my questions.
 - **Recall** Try to summerize what you just read.
 - **Review**
 
+## Offline learning
 
+I have this crazy concept of learning without internet 
 

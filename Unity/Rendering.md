@@ -22,7 +22,7 @@
 
 ## Practice
 
-- [Make it work](https://blog.unity.com/technology/srp-overview)
+- [Scriptable Renderer pipeline](https://blog.unity.com/technology/srp-overview)
 - Shader Graph projects
 
 ## Resources
@@ -357,6 +357,16 @@ context.Submit();
 
 ## Shader
 
+### Questions
+
+- Vertex Shader vs Pixel Shader ?
+- UV ?
+- Queue ?
+- ZWrite ON ?
+- Color Mask 0 ?
+- GBuffer ?
+
+
 ### Links
 - [Writing Shader](https://docs.unity3d.com/Manual/shader-writing.html)
 
@@ -369,6 +379,7 @@ context.Submit();
 ### Outline Shader
 
 - [Sobel Outline](https://www.vertexfragment.com/ramblings/unity-postprocessing-sobel-outline/)
+
 ![SobelOutlineGif](./res/SobelOutline.gif)
 
 - [Outline Shader](https://roystan.net/articles/outline-shader.html)
