@@ -21,7 +21,7 @@ yt-dlp --cookies "B:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=108
 
 ### Donlaod Playlist
 ```bash
-yt-dlp --cookie "B:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'  --embed-thumbnail  https://www.youtube.com/c/SebastianLague/playlists
+yt-dlp --cookie "j:\Lib\Proj\MyIDE\youtube.com_cookies.txt" -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]" -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'  --embed-thumbnail  https://www.youtube.com/c/SebastianLague/playlists
 
 ```
 
