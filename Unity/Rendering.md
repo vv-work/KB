@@ -13,7 +13,6 @@
 
 - Study Materials
 - Shader ?
-
 - Culling ?
 - Batching ?
 - g-buffer ?
@@ -378,6 +377,16 @@ context.Submit();
 
 ### Outline Shader
 
+##### Terms
+
+**Sobel Operator** - is a classid edge detection convolution filter
+
+##### Links
+
+- [Pixal Paper on Toon Shader](https://graphics.pixar.com/library/ToonRendering/paper.pdf)
+
+- [Unity custom post-processing Angle Silhouette](https://www.vertexfragment.com/ramblings/unity-deferred-post-processing/)
+
 - [Sobel Outline](https://www.vertexfragment.com/ramblings/unity-postprocessing-sobel-outline/)
 
 ![SobelOutlineGif](./res/SobelOutline.gif)
@@ -385,3 +394,56 @@ context.Submit();
 - [Outline Shader](https://roystan.net/articles/outline-shader.html)
 
 ![oultineShader](./res/outline-demo.png)
+
+#### Vertex Fragmen Outline Post-Processing
+
+- [Article link](https://www.vertexfragment.com/ramblings/unity-postprocessing-sobel-outline/)
+
+##### Questions
+
+- What is changing when I change rendering path ?
+- What is `cull` in cg
+- Is there any information about color of outline
+- Conection between Shader and Post Processing 
+- How to get one of the Buffers
+- What are those buffers ? 
+- What is Surfece normals ?
+- What is Depth only in post processing?
+- What is HLSL shader ?
+
+![SobleRabit](./res/SobelRabit.jpg)
+
+![SobleDepthNormals](./res/SobelDepthNormals.jpg)
+
+`PostProcessEffectRenderer`
+
+## Post-Processing
+
+### Questions
+
+- What are the stages of PostProcessing ?
+- What buffers do we have access to ? 
+- What type of Shader do we use for Post Processing ?
+
+### Links
+
+- [Post Processing Stack v2](https://docs.unity3d.com/Packages/com.unity.postprocessing@3.2/manual/index.html)
+- [Surface Angle Sihouuette with Unity Post-Processing](https://www.vertexfragment.com/ramblings/unity-deferred-post-processing/)
+
+    
+### Surface Angle Silhoutte 
+
+- [Link](https://www.vertexfragment.com/ramblings/unity-deferred-post-processing/)
+
+![Silhouette](./res/silhouette-banner.png)
+
+#### Questions
+
+- What a fuck is GBuffer ?
+- How to access GBuffer ? 
+- Extra GBuffer layer ?	
+
+
+#### Reconstruction the Scene
+
+![ReconstruciotnScene](./res/silhouette-scene-depth-normal.png)

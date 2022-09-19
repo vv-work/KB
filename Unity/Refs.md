@@ -79,16 +79,18 @@ Web AR Ads boost  sales - [link](https://arinsider.co/2020/09/09/how-can-brands-
 TenserFlow Face and Hand Tracking - [link](https://blog.tensorflow.org/2020/03/face-and-hand-tracking-in-browser-with-mediapipe-and-tensorflowjs.html)
 
 
-https://ai.googleblog.com/2019/03/real-time-ar-self-expression-with.html 
+[RealTemeAr](https://ai.googleblog.com/2019/03/real-time-ar-self-expression-with.html)
 
 ## Links from David
-![](/Res/image8.gif)
+
+![linkfromDavid](/Res/image8.gif)
+[MyFavorite](https://storage.googleapis.com/tfjs-models/demos/facemesh/index.html)
 [TenserFlowJS](https://github.com/pamruta/TensorFlowJS)
 [FaceAPI-JS](https://github.com/justadudewhohacks/face-api.js/)
-[MyFavorite](https://storage.googleapis.com/tfjs-models/demos/facemesh/index.html)
-[TutorForFaceMesh])(https://www.npmjs.com/package/@tensorflow-models/facemesh) 
+[TutorForFaceMesh](https://www.npmjs.com/package/@tensorflow-models/facemesh) 
 
 
 ## Unity WEB Face tracking
-https://www.banuba.com/blog/unity-ar-foundation-face-tracking-and-banuba-face-ar-compared
+
+[Unity Web Face Tracking](https://www.banuba.com/blog/unity-ar-foundation-face-tracking-and-banuba-face-ar-compared)
 
