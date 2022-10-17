@@ -1,7 +1,25 @@
 # yt-dlp
 
+
+
 ## Best Downloading options
 
+### Current best
+
+#### For all playslist on channel
+
+```pwsh
+yt-dlp --cookies B:\Lib\Proj\MyIDE\youtube.com_cookies.txt -f "bv*[height<=1080][ext=webm]+ba[ext=webm]"--embed-thumbnail --embed-subs  -o "%(playlist)s/%(playlist_index)s - %(title)s [%(id)s].%(ext)s" https://www.youtube.com/playlist?list=PLm323Lc7iSW_LxZFPkgEZVc3HSMXrP2f
+```
+
+#### mp4
+```pwsh
+yt-dlp --cookies B:\Lib\Proj\MyIDE\youtube.com_cookies.txt -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]"--embed-thumbnail --write-subs   https://www.youtube.com/watch?v=D4YTJ2W5q4Y
+```
+### mkv
+```pwsh
+yt-dlp --cookies B:\Lib\Proj\MyIDE\youtube.com_cookies.txt -f "bv*[height<=1080][ext=webm]+ba[ext=webm]"--embed-thumbnail --embed-subs   https://www.youtube.com/watch?v=D4YTJ2W5q4Y
+```
 
 ### Download one vidoe
 
@@ -37,3 +55,8 @@ To avoid blurry parts and download mature music
 ```powershell
 youtube-dl --cookie B:\Lib\Proj\MyIDE\yt-cookies.txt -x --audio-format "mp3" https://www.youtube.com/watch?v=anEMXOyCCqc
 ```
+
+## Downloading with subtitle
+
+--write-subs
+

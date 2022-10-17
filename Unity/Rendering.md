@@ -19,6 +19,10 @@
 - Optimization ?
 - Demo Project ?
 
+## Roadmap
+
+- [ ] Scriptbable Render Pipelin
+
 ## Practice
 
 - [Scriptable Renderer pipeline](https://blog.unity.com/technology/srp-overview)
@@ -26,6 +30,7 @@
 
 ## Resources
 
+- [Doom Frame Rendering](http://www.adriancourreges.com/blog/2016/09/09/doom-2016-graphics-study/)
 - [Official Documentation Unity Graphics Manuals](https://docs.unity3d.com/Manual/Graphics.html)
 - [Official Tutorials](https://learn.unity.com/search?k=[%22q%3AGraphics%22])
 - [Official Graphic Optimization](https://learn.unity.com/tutorial/optimizing-graphics-in-unity#)
@@ -430,6 +435,21 @@ context.Submit();
 - [Post Processing Stack v2](https://docs.unity3d.com/Packages/com.unity.postprocessing@3.2/manual/index.html)
 - [Surface Angle Sihouuette with Unity Post-Processing](https://www.vertexfragment.com/ramblings/unity-deferred-post-processing/)
 
+#### Insparation
+
+##### Keijiro Kino project
+
+- [Github link](https://github.com/keijiro/Kino)
+
+![Kino Streak](./res/Kino-Streak.gif)
+![Kino Streak](./res/Kino-Glitch.gif)
+
+##### Doom Frame Rendering
+
+- [Article link](http://www.adriancourreges.com/blog/2016/09/09/doom-2016-graphics-study/)
+r
+![Doom Frame](./res/DoomFrame.jpg)
+
     
 ### Surface Angle Silhoutte 
 
@@ -447,3 +467,39 @@ context.Submit();
 #### Reconstruction the Scene
 
 ![ReconstruciotnScene](./res/silhouette-scene-depth-normal.png)
+
+
+#### Stereo Render
+
+
+
+![Stereo render](./res/SinglePassStereoRendering2.gif)
+
+- [Unity guide into Single Pass Stereo Rendering](https://docs.unity3d.com/Manual/SinglePassStereoRendering.html)
+
+##### Questions
+
+- A0 Pixel shader vs Vertex Shader ?
+- A1 Diffrence in rendering between normal and Transperent?
+- Buffers for maps in Unity ?
+- What diffrences between nomral and Stereo Rendere ?
+- Vertex vs Fragment shader.
+- ZWrite ONhttps://github.com/Unity-Technologies/UniversalRenderingExamples vs ZWrite OFF
+
+
+### Unieversal Rendering Pipeline
+
+![Universal Rendering Examples](./res/URPExamples.jpg)
+
+- [Gihub URP Examples](https://github.com/Unity-Technologies/UniversalRenderingExamples)
+
+#### Links
+
+-  [Main page](https://unity.com/srp/universal-render-pipeline#extendable-and-customizable)
+
+
+
+
+##### Questions
+
+- What id diffrence betwenn default shader and lit by URP

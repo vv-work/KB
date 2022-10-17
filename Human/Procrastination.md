@@ -1,16 +1,12 @@
 # Procrastination
 
-## 8 tiny habits to stop procrastination
+- Procrastination is a habit
+- MelRobins talk about it
+- Procrastination is a form of stress relief
+- Stress is a trigger 
 
 
-![8tinyhabits ](./res/8tinyhabits.webp)
-
-[Video Link](https://www.youtube.com/watch?v=dq_WCdTlPtU)
-
-Basically saying I sort of struggle with procrastination so any fo thoise
-
-
-> If you're job is to eat the frog,
->  it's best to do first thing in the morniong 🌄
->
-
+1. Acknowledge the stress(if you scrolling telegram)
+2. Count 5-4-3-2-1
+3. Interupt the procrastination habit
+4. Do 1 Thing (only 5 minutes)
