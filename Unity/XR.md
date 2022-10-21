@@ -1,3 +1,10 @@
+# XR
+
+## Top links
+
+- [XR Interactive Toolkit Examples Unity Technology](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples) 
+
+
 ## ARKit Face Tracking
  
  Streaming from ARKIt to the heands  https://github.com/asus4/ARKitStreamer;
@@ -5,6 +12,7 @@
 > Extra notes that dosen't really metter
 
 ##
+
 [LeanTouch](http://gameprogrammingpatterns.com/contents.html)
 >Best way according to unity to add touches to AR app.
 
@@ -65,10 +73,16 @@ April tag is super asses
 ## VR 
 
 ### Mock
-
-
 ## Ouclus	
 
+### Specs Quest 2 
+
+- [Unity setup](https://developer.oculus.com/unity/)
+- [link Andorid Setup](https://developer.oculus.com/documentation/native/android/mobile-studio-setup-android/)
+
+- API Level 26
+- Android 8 Oreo 
+- Use Oculus XR Plusing not OpenXR plugin
 
 
 ### Questions
@@ -122,4 +136,27 @@ Banch of shinanigans
 ### MRTK on Oculus Quest 2
 
 Banch of shinanigans
+I was trying to make Oculus Quest 2 to work with. 
 
+## Unity Packages
+
+### List
+
+- XR Plugin managment
+- XR Interactive Toolkit
+- Open XR Plugin
+- Oculus XR Plugin
+
+- Widnows XR Plugin
+- Magic Leap XR Plguing
+
+#### AR
+
+- AR Foundation
+- ARKit XR Plugin
+- ARKit Face Tracking
+- ARCore XR Plugin
+
+### Questions
+
+- Should I install both OpenXR and OculusXR plugin
