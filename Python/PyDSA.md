@@ -33,7 +33,8 @@ if 'a' in dic:
 
 ### Set
 
-> Basics
+Is like Hash set but a bit more complicated
+
 
 ```python	
 BRI = set(['brazil','canada','ukraine']
