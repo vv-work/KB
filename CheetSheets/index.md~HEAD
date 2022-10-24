@@ -1,0 +1,228 @@
+# CheetSheets 
+ <style> img{max-width: 126%;}
+ </style>
+## Sections
+- [.index.md.un~](#.index.md.un~) 
+- [Begginers-Python-Cheat-Sheet](#Begginers-Python-Cheat-Sheet) 
+- [ChoseMl](#ChoseMl) 
+- [index.md](#index.md) 
+- [index.md~](#index.md~) 
+- [Intermediate-Python-Cheat-Sheet-1](#Intermediate-Python-Cheat-Sheet-1) 
+- [MarkDown-0](#MarkDown-0) 
+- [MarkDown-1](#MarkDown-1) 
+- [MarkDown](#MarkDown) 
+- [ml_model_scikit_learn](#ml_model_scikit_learn) 
+- [Neural Network Cells](#Neural Network Cells) 
+- [Neural Network Graphs](#Neural Network Graphs) 
+- [Neural Networks Zoo](#Neural Networks Zoo) 
+- [NeuralNetworkCells](#NeuralNetworkCells) 
+- [NeuralNetworkGraphs](#NeuralNetworkGraphs) 
+- [NeuralNetworksZoo](#NeuralNetworksZoo) 
+- [P-Basics](#P-Basics) 
+- [P-Bokeh](#P-Bokeh) 
+- [P-Importing Data](#P-Importing Data) 
+- [P-ImportingData](#P-ImportingData) 
+- [P-JupyterNotebook](#P-JupyterNotebook) 
+- [P-Keras](#P-Keras) 
+- [P-MatplostLibcheatsheets-0](#P-MatplostLibcheatsheets-0) 
+- [P-MatplostLibcheatsheets-1](#P-MatplostLibcheatsheets-1) 
+- [P-MatplostLibcheatsheets](#P-MatplostLibcheatsheets) 
+- [P-Matplotlib](#P-Matplotlib) 
+- [P-Numpy](#P-Numpy) 
+- [P-Pandas](#P-Pandas) 
+- [P-PySpark](#P-PySpark) 
+- [P-SciKit](#P-SciKit) 
+- [P-SciPy](#P-SciPy) 
+- [P-Seaborn](#P-Seaborn) 
+- [P-Tensorflow](#P-Tensorflow) 
+- [pdf](#pdf) 
+- [PSCheetSheet](#PSCheetSheet) 
+- [Python-RegEx-Cheatsheet](#Python-RegEx-Cheatsheet) 
+- [VIM](#VIM) 
+## Files
+<a name=".index.md.un~"> 
+ ### .index.md.un~ 
+ </a> 
+
+ ![.index.md.un~](.\.index.md.un~) 
+ <a name="Begginers-Python-Cheat-Sheet"> 
+ ### Begginers-Python-Cheat-Sheet 
+ </a> 
+
+ ![Begginers-Python-Cheat-Sheet](.\Begginers-Python-Cheat-Sheet.png) 
+ <a name="ChoseMl"> 
+ ### ChoseMl 
+ </a> 
+
+ ![ChoseMl](.\ChoseMl.png) 
+ <a name="index.md"> 
+ ### index.md 
+ </a> 
+
+ ![index.md](.\index.md) 
+ <a name="index.md~"> 
+ ### index.md~ 
+ </a> 
+
+ ![index.md~](.\index.md~) 
+ <a name="Intermediate-Python-Cheat-Sheet-1"> 
+ ### Intermediate-Python-Cheat-Sheet-1 
+ </a> 
+
+ ![Intermediate-Python-Cheat-Sheet-1](.\Intermediate-Python-Cheat-Sheet-1.png) 
+ <a name="MarkDown-0"> 
+ ### MarkDown-0 
+ </a> 
+
+ ![MarkDown-0](.\MarkDown-0.jpg) 
+ <a name="MarkDown-1"> 
+ ### MarkDown-1 
+ </a> 
+
+ ![MarkDown-1](.\MarkDown-1.jpg) 
+ <a name="MarkDown"> 
+ ### MarkDown 
+ </a> 
+
+ ![MarkDown](.\MarkDown.jpg) 
+ <a name="ml_model_scikit_learn"> 
+ ### ml_model_scikit_learn 
+ </a> 
+
+ ![ml_model_scikit_learn](.\ml_model_scikit_learn.png) 
+ <a name="Neural Network Cells"> 
+ ### Neural Network Cells 
+ </a> 
+
+ ![Neural Network Cells](.\Neural Network Cells.jpg) 
+ <a name="Neural Network Graphs"> 
+ ### Neural Network Graphs 
+ </a> 
+
+ ![Neural Network Graphs](.\Neural Network Graphs.jpg) 
+ <a name="Neural Networks Zoo"> 
+ ### Neural Networks Zoo 
+ </a> 
+
+ ![Neural Networks Zoo](.\Neural Networks Zoo.jpg) 
+ <a name="NeuralNetworkCells"> 
+ ### NeuralNetworkCells 
+ </a> 
+
+ ![NeuralNetworkCells](.\NeuralNetworkCells.jpg) 
+ <a name="NeuralNetworkGraphs"> 
+ ### NeuralNetworkGraphs 
+ </a> 
+
+ ![NeuralNetworkGraphs](.\NeuralNetworkGraphs.jpg) 
+ <a name="NeuralNetworksZoo"> 
+ ### NeuralNetworksZoo 
+ </a> 
+
+ ![NeuralNetworksZoo](.\NeuralNetworksZoo.jpg) 
+ <a name="P-Basics"> 
+ ### P-Basics 
+ </a> 
+
+ ![P-Basics](.\P-Basics.jpg) 
+ <a name="P-Bokeh"> 
+ ### P-Bokeh 
+ </a> 
+
+ ![P-Bokeh](.\P-Bokeh.jpg) 
+ <a name="P-Importing Data"> 
+ ### P-Importing Data 
+ </a> 
+
+ ![P-Importing Data](.\P-Importing Data.jpg) 
+ <a name="P-ImportingData"> 
+ ### P-ImportingData 
+ </a> 
+
+ ![P-ImportingData](.\P-ImportingData.jpg) 
+ <a name="P-JupyterNotebook"> 
+ ### P-JupyterNotebook 
+ </a> 
+
+ ![P-JupyterNotebook](.\P-JupyterNotebook.jpg) 
+ <a name="P-Keras"> 
+ ### P-Keras 
+ </a> 
+
+ ![P-Keras](.\P-Keras.jpg) 
+ <a name="P-MatplostLibcheatsheets-0"> 
+ ### P-MatplostLibcheatsheets-0 
+ </a> 
+
+ ![P-MatplostLibcheatsheets-0](.\P-MatplostLibcheatsheets-0.jpg) 
+ <a name="P-MatplostLibcheatsheets-1"> 
+ ### P-MatplostLibcheatsheets-1 
+ </a> 
+
+ ![P-MatplostLibcheatsheets-1](.\P-MatplostLibcheatsheets-1.jpg) 
+ <a name="P-MatplostLibcheatsheets"> 
+ ### P-MatplostLibcheatsheets 
+ </a> 
+
+ ![P-MatplostLibcheatsheets](.\P-MatplostLibcheatsheets.jpg) 
+ <a name="P-Matplotlib"> 
+ ### P-Matplotlib 
+ </a> 
+
+ ![P-Matplotlib](.\P-Matplotlib.jpg) 
+ <a name="P-Numpy"> 
+ ### P-Numpy 
+ </a> 
+
+ ![P-Numpy](.\P-Numpy.jpg) 
+ <a name="P-Pandas"> 
+ ### P-Pandas 
+ </a> 
+
+ ![P-Pandas](.\P-Pandas.jpg) 
+ <a name="P-PySpark"> 
+ ### P-PySpark 
+ </a> 
+
+ ![P-PySpark](.\P-PySpark.jpg) 
+ <a name="P-SciKit"> 
+ ### P-SciKit 
+ </a> 
+
+ ![P-SciKit](.\P-SciKit.jpg) 
+ <a name="P-SciPy"> 
+ ### P-SciPy 
+ </a> 
+
+ ![P-SciPy](.\P-SciPy.jpg) 
+ <a name="P-Seaborn"> 
+ ### P-Seaborn 
+ </a> 
+
+ ![P-Seaborn](.\P-Seaborn.jpg) 
+ <a name="P-Tensorflow"> 
+ ### P-Tensorflow 
+ </a> 
+
+ ![P-Tensorflow](.\P-Tensorflow.jpg) 
+ <a name="pdf"> 
+ ### pdf 
+ </a> 
+
+ ![pdf](.\pdf) 
+ <a name="PSCheetSheet"> 
+ ### PSCheetSheet 
+ </a> 
+
+ ![PSCheetSheet](.\PSCheetSheet.jpg) 
+ <a name="Python-RegEx-Cheatsheet"> 
+ ### Python-RegEx-Cheatsheet 
+ </a> 
+
+ ![Python-RegEx-Cheatsheet](.\Python-RegEx-Cheatsheet.jpg) 
+ <a name="VIM"> 
+ ### VIM 
+ </a> 
+
+ ![VIM](.\VIM.png) 
+ 

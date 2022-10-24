@@ -98,4 +98,28 @@ ls -al ~/.ssh
 $ ssh-keygen -t ed25519 -C "yuriy.paramonov@outlook.com"
 # Check is there any files already
 ```
+## Submodule Subdirectory 
 
+### Submodule
+
+Every time I try to subrepository to my repo I got this shit:
+
+```
+warning: adding embedded git repository: Submodule
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Submodule
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Submodule
+hint:
+hint: See "git help submodule" for more information.
+```
+
+`git rm --cached Submodule` - Is key to fix this shit
+## Cherypick
