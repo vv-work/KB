@@ -82,7 +82,11 @@ git branch -d <branch name>
 ```
 
 # Remove file from history
+
+```bash
+git rm "Assets\External\1PumpkinExport\CorryMarryXmas.anim"
     git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch Assets\External\1PumpkinExport\CorryMarryXmas.anim' --prune-empty --tag-name-filter cat -- --all
+```
 
 
 ## SSH
@@ -123,3 +127,4 @@ hint: See "git help submodule" for more information.
 
 `git rm --cached Submodule` - Is key to fix this shit
 ## Cherypick
+

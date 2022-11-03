@@ -69,3 +69,33 @@ public class BasicAssetPipe:RenderPipelineAsset
     }
 #endif
 ```
+
+## ScriptableOjbect
+
+- [Official Guide](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
+
+```csarp
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+public class SpawnManagerScriptableObject : ScriptableObject
+{
+    public string prefabName;
+
+    public int numberOfPrefabsToCreate;
+    public Vector3[] spawnPoints;
+}
+
+```
+
+## Attributes 
+
+- [Attributes](https://docs.unity3d.com/ScriptReference/PropertyAttribute.html)
+
+```csarp
+[IconAttribue]
+[TextArea]
+[Tooltip("Health value between 0 and 100.")]
+```
+
+
