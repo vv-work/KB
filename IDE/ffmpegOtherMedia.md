@@ -1,8 +1,23 @@
 # Media files convertation
 
+
 ## Links
 
 [FFMPEG cheatsheet](https://gist.github.com/nickkraakman/e351f3c917ab1991b7c9339e10578049)
+
+## Gifsi Gif to Webp
+
+`ffmpeg -i video.mp4 frame%04d.png`
+`gifski -o file.gif frame*.png`
+`gif2webp [options] input_file.gif -o output_file.webp`
+
+!Imporatant the output and input file may be normal but something like -vf subtitiles=./tmp/video. shout use `/` instead of Windows standard `\`
+
+
+## Burn Subtitiles
+
+! `subtitles =./file/address` not `subtitle=.\file\address`
+`ffmpeg -i video.mkv -vf subtitles=./local/video.mkv .\res\out.avi`
 
 ## List
 
@@ -53,6 +68,7 @@ ffmpeg -i .\Adventure.Time.Distant.Lands.s01e02.WEB-DL.720p.NewStation.mkv -vf s
 
 
 ### Crop TikTokVideo 
+
 ffmpeg -i input.mp4 -filter:v "crop=576:850" output.mp4
 
 ### Split Audio
@@ -63,8 +79,10 @@ Split audio into the equal 30 min parts
 ffmpeg -i .\ADHD-Relief.mp3 -f segment -segment_time 3000 -c copy ADHDRelief%03d.mp3
 ```
 ### FLAC to mp3
-ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
-egment -strftime 1
+
+`ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+egment -strftime 1`
+
 ### 
 
 
@@ -122,3 +140,31 @@ ffmpeg -i ForEugene.mp4 -filter:v 'crop=iw-840' 'EugeneCrop.mp4'
 #### Resize
 
 `ffmpeg -i some.mkv -s 1280x720 output.mp4`
+
+## Scripts
+
+### MrLoopGif
+
+This script generate
+
+```PowerShell
+$style = "'Fontsize=36,Fontname=Hack,OutlineColour=&H40000000,BorderStyle=3'"
+
+function MakeSubs {
+	ffmpeg -i $($in) -map "0:2" $subs
+}
+
+function MakeFrames {
+
+	rm $frames
+	ffmpeg -i $($in) -s $scale -ss $($ss) -t $t -vf "subtitles=$($subs):force_style=$($style), fps=12" 'frame%04d.png'
+
+}
+function MakeGifFromFrames {
+
+	rm $gout
+	#gifski -o $gout frame*.png
+	gifski -o $gout --quality 80 --fps=12 "frame*.png" 
+	ii $gout
+}
+```

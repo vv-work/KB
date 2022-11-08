@@ -7,7 +7,39 @@
 
 ## Basics
 
+### Function
+
+```pwsh
+function Test-MrParameter {
+
+    param (
+        $ComputerName
+    )
+
+    Write-Output $ComputerName
+
+}
+```
+**Test**
+
+```
+Get-Command -Name Test-MrParameter -Syntax
+```
+
+**Outpu**
+
+>Test-MrParameter [[-ComputerName] <Object>]
+
+
+
+### Get File size in mb
+
+```pwsh
+$(Get-Item $flie).Length/1mb
+```
+
 ### Get text from file
+
 ```pwsh
 Get-Content file.xt
 ```
