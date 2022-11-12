@@ -472,10 +472,9 @@ r
 #### Stereo Render
 
 
-
 ![Stereo render](./res/SinglePassStereoRendering2.gif)
-
 - [Unity guide into Single Pass Stereo Rendering](https://docs.unity3d.com/Manual/SinglePassStereoRendering.html)
+- [Unity File with all the referecnecs](https://github.com/TwoTailsGames/Unity-Built-in-Shaders/blob/master/CGIncludes/HLSLSupport.cginc)
 
 ##### Questions
 
@@ -496,8 +495,6 @@ r
 #### Links
 
 -  [Main page](https://unity.com/srp/universal-render-pipeline#extendable-and-customizable)
-
-
 
 
 ##### Questions
