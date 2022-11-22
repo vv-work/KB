@@ -13,3 +13,18 @@
  `Win`+`H` -  Horizontal Split
  `Win`+`V` -  Vertical Split
 
+**i3WM** Ubuntu awe.
+
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" --legacy systems
+```
+
+`/etc/netplan/99_config.yaml`
+
+`sudo netplan apply`
+
+`cat e.txt` - see incide file
+`echo " command" >>e.txt` - Write To file
+

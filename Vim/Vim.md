@@ -12,6 +12,15 @@
 ```vim
 ::/\(hidden;">\)\@<=.\{-}\(\<div\)\@=
 ```
+## Remember
+
+`33G` - Going to the line number needed
+`Ctrl+]` - to go to specific seciont of vim help
+
+ - `:s/pattern/replace/g` - find and replace in current line
+ - `:%s///replace/g` - replace last search in entire e
+ - `%` - serch in entire e
+ - `:help :substitute`
 
 ## Plugins
 
