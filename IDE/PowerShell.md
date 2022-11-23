@@ -180,3 +180,19 @@ foreach($n in $testList){
 }
 
 ```
+
+## Processes
+
+### Stop process
+
+
+```pwsh
+Stop-Process -Name ApplicationName
+
+Stop-process -Name Chrome
+Stop-process -Id processId
+```
+### Start Process
+```bash
+ Start-Process 'jupyter-notebook.exe' '--no-browser --notebook-dir=B:\Lib\Jup\ ' -WindowStyle Hidden
+```
