@@ -2,7 +2,6 @@
 
 ## Resources
 
-- [Torrent collection on self improvment](https://rutracker.org/forum/tracker.php?rid=43141996)
 
 ## Unity 
 
@@ -14,6 +13,24 @@
 
 ![UnityDemos](./res/UnityDemos.jpg)
 - [Unity Demo page](https://unity.com/demos)
+
+## ProceduralMeshGeneration
+
+
+### Basics
+
+![NormalsAndTangents](./res/Images/NormalsAndTangentsHeader.png)
+
+- [curved Lines](http://www.code-spot.co.za/2020/11/10/procedural-meshes-for-lines-in-unity/)
+- [Circles and half Circles](http://www.code-spot.co.za/2020/11/04/generating-meshes-procedurally-in-unity/)
+- [Mesh Generation Normals](http://www.code-spot.co.za/2020/11/25/procedural-meshes-in-unity-normals-and-tangents/)
+
+### CatLikeCoding
+
+![CatLikeCoding](.\res\img\CatLikeCoding.png)
+
+- [Cat Like coding Tututorials](https://catlikecoding.com/unity/tutorials/)
+
 
 ## Science
 

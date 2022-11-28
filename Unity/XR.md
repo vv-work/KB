@@ -90,6 +90,60 @@ April tag is super asses
 - New Unity Input system ?
 - Oculus link
 
+### Multipass	
+
+- [Multi passes part 1](https://developer.oculus.com/documentation/unity/po-advanced-gpu-pipelines/)
+
+`Single-pass`- is like awesom and e.t.c
+but bitch I have like two options 
+
+1. `Multiview` - Single pass rendering
+2. `Multi Pass`
+
+
+Pass 1 doesn’t get FFR as it’s not rendering to the VrApi swapchain.
+Pass 2 doesn’t get FFR as although it is rendering to the VrApi swapchain, it’s no-depth-buffer full-screen-pass executes as Direct Mode, deactivating FFR.
+
+On the tools side, it’s simple to figure out if something is rendering as Direct Mode. The entire surface will render as a “single tile:”
+
+```MarkDown
+Surface 1 | 1216x1344 | color 32bit, depth 0bit, stencil 0 bit, MSAA 1 | 1 1216x1344 bins | 2.01 ms | 1 stages : Render 2.01ms
+Multiple Passes: Part 2 - Subpass Theory
+```
+
+Vulkan has introduced a more tile-friendly way to execute multipass rendering: subpasses. Some extensions try to simulate that behavior on OpenGL ES, such as ARM_framebuffer_fetch, but especially with MSAA, their use is not encouraged.
+
+
+Surface1 (Pass1)
+render
+store
+render
+store
+
+Surface2 (Pass2)
+render
+store
+render
+store
+
+to:
+
+Surface1
+render
+render
+store
+render
+render
+store
+```
+
+### URP build
+
+
+- It's better to use OepnGL ES now
+
+*Issue: * if using **URP** MSAA level to 4x dosen't see
+
 ### Links
 
 - [Oficial Documentation](https://developer.oculus.com/quest/)

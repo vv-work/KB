@@ -1,13 +1,15 @@
 # Git
 
+
+
 ## Questions
 
+-  Git Chery Pick
+-  Git Merge withNVIM
+-  Git take --their --our
 
 -  Git stash
--  Git switch
--  Other services except github.
 -  Just storage of file archiving?
--  Git LFS ?
 
 ## Git delete branch from server
 
@@ -126,5 +128,7 @@ hint: See "git help submodule" for more information.
 ```
 
 `git rm --cached Submodule` - Is key to fix this shit
+
+
 ## Cherypick
 
