@@ -6,7 +6,7 @@
 ## Unity 
 
 
-![board](res/TrelloBoard.png)
+![board](./res/TrelloBoard.png)
 
 
 ### Demos
@@ -19,7 +19,7 @@
 
 ### Basics
 
-![NormalsAndTangents](./res/Images/NormalsAndTangentsHeader.png)
+![NormalsAndTangents](./res/img/CubeMesh1.png)
 
 - [curved Lines](http://www.code-spot.co.za/2020/11/10/procedural-meshes-for-lines-in-unity/)
 - [Circles and half Circles](http://www.code-spot.co.za/2020/11/04/generating-meshes-procedurally-in-unity/)
@@ -31,8 +31,14 @@
 
 - [Cat Like coding Tututorials](https://catlikecoding.com/unity/tutorials/)
 
+### Github Repo
+
+![Procedural Mesh Generation](./res/img/ProceduralMeshGeneration.png)
+
+- [Github link](https://github.com/Syomus/ProceduralToolkit)
 
 ## Science
+
 
 [Physical property based materials](https://google.github.io/filament/Filament.md.html)
 
@@ -48,8 +54,10 @@
 
 
 ## Important
-Coolest  [UnityMeshGneration](https://github.com/mattatz/unity-teddy) I ever saw in my life
-Open WebGL examples [ling](https://enoxsoftware.github.io/OpenCVForUnity/webgl_example/index.html)
+
+- [UnityMeshGneration](https://github.com/mattatz/unity-teddy)
+- [GameDevPatterns](http://gameprogrammingpatterns.com/contents.html)
+- [OpenCVExamples](https://enoxsoftware.github.io/OpenCVForUnity/webgl_example/index.html)
 
 ## Graphics 
 
@@ -69,9 +77,8 @@ Open WebGL examples [ling](https://enoxsoftware.github.io/OpenCVForUnity/webgl_e
 
 ## Unity Path Finding
 
-[GameDevCatalog] (http://www-cs-students.stanford.edu/~amitp/gameprog.html)
-[CatLikeCode] (https://catlikecoding.com/)
-[GameDevPatterns](http://gameprogrammingpatterns.com/contents.html)
+- [GameDevCatalog](http://www-cs-students.stanford.edu/~amitp/gameprog.html)
+ 
 
 ### FX
 
