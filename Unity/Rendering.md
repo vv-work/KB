@@ -344,6 +344,25 @@ context.Submit();
 
 ![URPExamples](./res/URPExamples.jpg)
 
+
+### Depth PrePass
+
+- [Depth Pre-Pass URP discussion on Unity Forum](https://forum.unity.com/threads/need-clarification-on-urps-use-of-the-depth-prepass.1004577/)
+
+> The reason DoF works regardless is that postprocessing will tell the forward renderer that it needs a depth texture, this is if PostProcessing is enabled on the camera, not wether DoF itself exists on a volume profile somewhere.
+
+
+[StackOverflow Question](https://stackoverflow.com/questions/72778841/is-depth-sorting-redundant-if-using-depth-prepass)
+
+**Answer:**
+
+Sorting with the depth pre-pass can still be helpful. Some depth buffers have functionality that can cull entire groups of fragments with a single test. Hierarchical depth buffers, Hi-Z, whatever the particular name for it is, these technologies exist. And they work best when you render in a roughly front-to-back order.
+
+Can also be used for: 
+- [Dealing with Transperency](https://stackoverflow.com/questions/37780345/opengl-how-to-create-order-independent-transparency/37783085#37783085)
+
+
+
 ## HRDRP
 
 

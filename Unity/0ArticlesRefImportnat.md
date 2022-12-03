@@ -52,3 +52,40 @@
 - [Automus Simulation in Unity](https://blog.unity.com/manufacturing/jump-start-your-autonomous-simulation-development-with-unitys-simviz-solution)
 
 ![AirSime](./res/Gif/AirSim.gif)
+
+
+## Graphics
+
+![Unity new graphic Features](./res/UnityVFX.gif)
+
+0. [Unity new official graphical features](https://portal.productboard.com/unity/1-unity-platform-rendering-visual-effects/tabs/3-universal-pipeline)
+
+1. [Cyanilum GIANT URP ShaderGraph Randering and visualizaiton collection](https://www.cyanilux.com/resources/)
+> Even make copy locally `CyaniluxResources.md`
+
+2. [Unity blog introduction to URP + numbers on optimization](https://blog.unity.com/technology/how-the-lightweight-render-pipeline-is-evolving)
+
+
+
+
+### URP Edge Detection
+
+![Difrent outline from article](./res/DifrentOutline.gif)
+
+1. [Article Solution](https://alexanderameye.github.io/notes/edge-detection-outlines/)
+2. [More advenced article on URP Outline](https://kyriota.com/2022/08/02/Unity_Pixelated_Art_Style_In_URP/)
+3. [Tree.js solution with intresting live demo](https://omar-shehata.medium.com/how-to-render-outlines-in-webgl-8253c14724f9)
+4. [Article with GBuffer in URP](https://kyriota.com/2022/08/02/Unity_Pixelated_Art_Style_In_URP/)
+5. [ Depth and Z Test on URP](https://www.cyanilux.com/tutorials/depth/)
+6. [ Main article pormises working solution but dosen't work](https://alexanderameye.github.io/notes/edge-detection-outlines/)
+
+
+### Shader graph
+
+[ Unity Blog Normal mapping on Shader Graph](https://blog.unity.com/technology/normal-map-compositing-using-the-surface-gradient-framework-in-shader-graph)
+
+### AR/VR/XR
+
+![Preformance of SinglePass vs MultiPass](SinglePassInstancingVsM ultiPassRenderingTime.png)
+
+- [Unity Blog Maximize Preformance with Stereio Rendering](https://blog.unity.com/technology/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering)
