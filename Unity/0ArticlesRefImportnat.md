@@ -65,6 +65,11 @@
 
 2. [Unity blog introduction to URP + numbers on optimization](https://blog.unity.com/technology/how-the-lightweight-render-pipeline-is-evolving)
 
+#### Unity Toon Shader
+
+![Unity Toon shader](./res/UnityToonShader.gif)
+
+- [GitHub project](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project)
 
 
 
