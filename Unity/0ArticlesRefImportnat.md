@@ -89,3 +89,9 @@
 ![Preformance of SinglePass vs MultiPass](SinglePassInstancingVsM ultiPassRenderingTime.png)
 
 - [Unity Blog Maximize Preformance with Stereio Rendering](https://blog.unity.com/technology/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering)
+
+### ML/CV
+
+![Syntetic Humans](./res/SyntheticHumans.png)
+
+- [Syntetic Huamans Unity Computer Vision part of Perception package](https://github.com/Unity-Technologies/com.unity.cv.synthetichumans/wiki/Synthetic-Humans-Tutorial)
