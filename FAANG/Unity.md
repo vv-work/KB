@@ -28,6 +28,8 @@ Is a team I wan't to be part
 
 #### Ukr
 - [Alex Rogovskyi](https://www.linkedin.com/in/alex-rogovskyi-a83a1366/) - Unity Zaporizhie, Kharkiev Kiev, Vancouver now.
+- [Volodymyr Vernygora](https://www.linkedin.com/in/volodymyr-vernygora-b3a23080/) - Vinitsia, Lviv, N-ix, Vancouver, Unity Computer Vision.
+- [Fedir Fonarov](https://www.linkedin.com/in/fedir-fonarov/) - Zhtomir, Kiev, Vancouver start working there in October Bussiness Anaylist
 
 
 #### NonUkr
