@@ -8,6 +8,10 @@
 - [Oksana Halushko](https://www.linkedin.com/in/oksanahlushko/) Product manager at Meta in Vanccouver
 - [Ved Nikolic](https://www.linkedin.com/in/vednikolic/) Reality labs
 
+- [Artem Schytana](https://www.linkedin.com/in/artem-shchetyna/) Toronoto Ukrainian University AI
+
+- [Artur Koro](https://www.linkedin.com/in/artur-korop-b3545569/) Toronto Kiev .Net C# GlobalLogic-> Amazon
+
 
 - [Sohail Head of Rendering at Oculus](https://www.linkedin.com/in/sohail-shafii-%E2%96%AA%EF%B8%8F-bb25382a/)
 - [Gasser Unity3D developer at Meta San Francisco](https://www.linkedin.com/in/gasser-aboubakr-014a84121/)
