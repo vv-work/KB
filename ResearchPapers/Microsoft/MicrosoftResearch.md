@@ -14,10 +14,16 @@
 
 ## Shape invariant
 
-![](./res/ShapeINvariant3D.png)
+![SharpInverian](./res/ShapeINvariant3D.png)
 
 - [Shape Invariant](./pdf/2203.04041.pdf)
 
 - [Pixel Perfect structure from Motion](./res/2108.08291.pdf)
 
 - [Cross platform localization and mapping](https://arxiv.org/pdf/2012.01377.pdf)
+
+## Cube Alignment
+
+![Cube Alignment](./res/CubeAlginment.png)
+
+- [Reserch Paper PDF](./res/1703.05834.pdf)
