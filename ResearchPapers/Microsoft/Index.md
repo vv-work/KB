@@ -27,3 +27,15 @@
 ![Cube Alignment](./res/CubeAlginment.png)
 
 - [Reserch Paper PDF](./res/1703.05834.pdf)
+
+## Sensor Streaming
+
+![Sensor Streaming](./res/HoloLensSensorStreaming.png)
+
+- [Reserch Paper PDF](./res/2211.02648v1.pdf)
+
+## Hololens Vuforia Neuronavigation
+
+![HoloLens Vuforia NeuroNaviation](./res/HoloLensVuforiaNeuroNaviagation.png)
+
+- [Reserch Paper PDF](./res/Augmenting_Microsofts_HoloLens_with_Vuforia_Track.pdf)
