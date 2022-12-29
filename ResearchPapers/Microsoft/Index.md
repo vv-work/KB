@@ -39,3 +39,14 @@
 ![HoloLens Vuforia NeuroNaviation](./res/HoloLensVuforiaNeuroNaviagation.png)
 
 - [Reserch Paper PDF](./res/Augmenting_Microsofts_HoloLens_with_Vuforia_Track.pdf)
+
+## Existing Solutions
+
+### Curve Serface
+
+They have nice SDK for shape Detection.
+
+![CurvSur](./res/CurvSurf.png)
+
+- [Web page](https://developers.curvsurf.com/)
+- [Github HoloLens Demo](https://github.com/CurvSurf/FindSurface-HoloLensDemo-UWP)
