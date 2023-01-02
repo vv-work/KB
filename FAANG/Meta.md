@@ -2,6 +2,9 @@
 
 ## People
 
+- [Mykola Lysenko](https://www.linkedin.com/in/mykola-lysenko-989a1489/) - Mykola is Engineer Manager at Meta in Vancouver Canada 
+- [Iryna Hoffman](https://www.linkedin.com/in/irinak/) - Senior Director Meta AI, San Francisco from Lviv Urkaien
+
 - [Vlad H.](https://www.linkedin.com/in/nek0pi/) - Vlad in Canada originally from Odessa Ukraine , works at meta as Unity Dev.
 - [Mykola Lysenko](https://www.linkedin.com/in/mykola-lysenko-989a1489/) From Kieve works as Engineer Manager at Meta. 
 - [Oleksandr B.](https://www.linkedin.com/in/oleksandr-b-b31a5b5a/) Software engineer in meta London
