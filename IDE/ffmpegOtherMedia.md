@@ -1,9 +1,20 @@
 # Media files convertation
 
 
+
 ## Links
 
 [FFMPEG cheatsheet](https://gist.github.com/nickkraakman/e351f3c917ab1991b7c9339e10578049)
+
+## Subs
+
+Generate and burn YouTube like subs
+
+```bash
+yt-dlp --write-auto-subs      https://www.youtube.com/watch?v=ZXsQAXx_ao0
+
+ffmpeg -i '.\Shia LaBeouf ＂Just Do It＂ Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner) [ZXsQAXx_ao0].mp4' -vf "subtitles=DoIt.vtt:force_style='Fontsize=24,Fontname=Roboto,OutlineColour=&H40000000,BorderStyle=3'"  DoIt.mp4
+```
 
 ## Gifsi Gif to Webp
 
@@ -15,6 +26,9 @@
 
 
 ## Burn Subtitiles
+
+`ffmpeg -i input.mp4 -vf "subtitles=subtitle.srt:force_style='Fontname=Roboto,OutlineColour=&H40000000,BorderStyle=3'" output.mp4`
+
 
 ! `subtitles =./file/address` not `subtitle=.\file\address`
 `ffmpeg -i video.mkv -vf subtitles=./local/video.mkv .\res\out.avi`
