@@ -11,9 +11,10 @@
 Generate and burn YouTube like subs
 
 ```bash
-yt-dlp --write-auto-subs      https://www.youtube.com/watch?v=ZXsQAXx_ao0
+yt-dlp --write-auto-subs --sub-langs ru https://www.youtube.com/watch?v=0mJ4W2R_MMo
 
-ffmpeg -i '.\Shia LaBeouf ＂Just Do It＂ Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner) [ZXsQAXx_ao0].mp4' -vf "subtitles=DoIt.vtt:force_style='Fontsize=24,Fontname=Roboto,OutlineColour=&H40000000,BorderStyle=3'"  DoIt.mp4
+
+ffmpeg -i 'HaosIn.webm' -vf "subtitles=HaosIn.vtt:force_style='Fontsize=36,Fontname=Roboto,OutlineColour=&H40000000,BorderStyle=3'" -s 1280x720 Haos.mp4
 ```
 
 ## Gifsi Gif to Webp
