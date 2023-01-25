@@ -100,3 +100,5 @@
 ![Syntetic Humans](./res/SyntheticHumans.png)
 
 - [Syntetic Huamans Unity Computer Vision part of Perception package](https://github.com/Unity-Technologies/com.unity.cv.synthetichumans/wiki/Synthetic-Humans-Tutorial)
+
+- [Unity Text to Speech](https://github.com/voxell-tech/UnityTTS)

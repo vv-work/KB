@@ -76,3 +76,7 @@ I belive become part of Unity Perception team is my goal.
 - [Daen Lee](https://www.linkedin.com/in/daeunlee-dana/)
 
 - [Holic Zhou](https://www.linkedin.com/in/holic-zhou/)
+
+- [ Senior Technology Lead](https://www.linkedin.com/in/brosenoff/) - Ben Rosenoff, Senior Technolgy Lead + XR advocate loves Quest Pro
+
+- [ Ben Redcliff](https://www.linkedin.com/in/benradcliffe/) - Tehcnial Lead at Unity
