@@ -7,5 +7,7 @@ Collection of everything you need for DeepWork.
 ## Top:
 
 - [Cheat Sheet](./CheatShet/index.md)
+- [Algos](./Algos/index.md)
+- [Compression](./Algos/Compression/index.md)
 - [AI ML CV](./AI-ML-CV/index.md)
 - [Python](./Python/index.md)

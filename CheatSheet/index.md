@@ -3,18 +3,6 @@
 - [Python Detecated](.\Python\index.md)
 
 
-
-## A1Python-RegEx-Cheatsheet.jpg
-
- 
-![A1Python-RegEx-Cheatsheet.jpg](./res/A1Python-RegEx-Cheatsheet.jpg)
-
- 
-## A3VIM.png
-
- 
-![A3VIM.png](./res/A3VIM.png)
-
  
 ## ABegginers-Python-Cheat-Sheet.png
 
@@ -136,3 +124,13 @@
 ![PSCheetSheet.jpg](./res/PSCheetSheet.jpg)
 
  
+## A1Python-RegEx-Cheatsheet.jpg
+
+ 
+![A1Python-RegEx-Cheatsheet.jpg](./res/A1Python-RegEx-Cheatsheet.jpg)
+
+ 
+## A3VIM.png
+
+ 
+![A3VIM.png](./res/A3VIM.png)
