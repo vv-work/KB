@@ -1,8 +1,11 @@
 # Knowledge Base
 
-My notes about different aspects of software engineering.
+Collection of everything you need for DeepWork.
+
+![Deep Work](./Human/res/DeepWork.jpeg)
 
 ## Top:
-- [TensorFlow Cheat Sheet](ML/tf-cheatsheet.md)
-- [Python](Python/Python.md)
-- [Python Cheat Sheet](Python/CheatSheet/index.md)
+
+- [Cheat Sheet](./CheatShet/index.md)
+- [AI ML CV](./AI-ML-CV/index.md)
+- [Python](./Python/index.md)
