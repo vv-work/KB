@@ -1,11 +1,17 @@
 # CheetSheet Collection
 
+![Deep Work](../Human/res/DeepWork.jpeg)
+
+## Top cheat sheets
+
 - [❗👍🏻Python Nutshell](./Python/index.md)
-- [❗👍🏻Machine Learning](./ML/index.md)
 - [❗👍🏻Algos&DS NutSheel](./Algos/index.md)
+- [❗👍🏻Machine Learning](./ML/index.md)
+
+- [AI ML CV](../AI-ML-CV/index.md)
+- [Compression](../Algos/Compression/index.md)
 
 
- 
 ## ABegginers-Python-Cheat-Sheet.png
 
  
@@ -24,18 +30,7 @@
 ![B1P-MatplostLibcheatsheets-1.jpg](./res/B1P-MatplostLibcheatsheets-1.jpg)
 
  
-## D0MarkDown-0.jpg
 
- 
-![D0MarkDown-0.jpg](./res/D0MarkDown-0.jpg)
-
- 
-## DMarkDown-1.jpg
-
- 
-![DMarkDown-1.jpg](./res/DMarkDown-1.jpg)
-
- 
 ## Intermediate-Python-Cheat-Sheet-1.png
 
  
