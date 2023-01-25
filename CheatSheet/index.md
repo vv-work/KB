@@ -1,6 +1,8 @@
 # CheetSheet Collection
 
-- [Python Detecated](.\Python\index.md)
+- [❗👍🏻Python Nutshell](./Python/index.md)
+- [❗👍🏻Machine Learning](./ML/index.md)
+- [❗👍🏻Algos&DS NutSheel](./Algos/index.md)
 
 
  
