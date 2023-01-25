@@ -11,6 +11,12 @@
 -  **RFC 1951** - DEFLATE
 -  **RFC 1952** - GZIP
 
+## Data Structures
+
+### Trie
+
+![DataStructures](./res/TrieDataStructure.png)
+
 ## Sorting 
 
 
