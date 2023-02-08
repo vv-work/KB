@@ -1,6 +1,9 @@
 # PowerShell
 
 
+## Saving env variables
+
+`$env:OPENAI_API_KEY = "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"`
 
 ## Emoji 
 🔥🤔💖t
@@ -85,7 +88,7 @@ And then you can invoke it:
 `B:\myprograms\powershell\7\Modules\` - current location
 
 #Best Way
-$env:Path +=";B:\MyPrograms\Git"
+`$env:Path +=";B:\MyPrograms\Git"`	k
 
 #More complex
 

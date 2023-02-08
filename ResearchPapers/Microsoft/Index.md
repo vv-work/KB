@@ -1,5 +1,21 @@
 # Microsoft Research
 
+
+
+- [Applied Machine Learning Days YouTube](https://www.youtube.com/watch?v=jVOzMoz5ikI)
+
+![Computer Vision for Mixed Reality Marc Pollefeyes](./res/MarkPollefeysAtComputerVisionForMixedReality.png)
+
+
+- [Microsoft Sharepd Autonomoy](https://www.microsoft.com/en-us/research/video/mixed-reality-for-shared-autonomy/)
+
+![Shared Autonomy](./res/SharedAutononmyPart2.png)
+
+
+- [Switss CV Research workshop 2022](https://www.microsoft.com/en-us/research/event/swiss-joint-research-center-workshop-2022/videos/)
+
+![Swiss Research Workshop 2022](./res/SwissCVResearch.png)
+
 - [HoloLens Better algignment Article](https://manoramajha.medium.com/alignment-in-mr-475444cba3ec)
 
 - [Shareed autonomy with MiwxedReality Zurich](https://www.microsoft.com/en-us/research/video/mixed-reality-for-shared-autonomy/)
