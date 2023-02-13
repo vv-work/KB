@@ -1,5 +1,32 @@
 # Media files convertation
 
+## Cutting video into equal chunks
+
+```powershell
+$if="NeetCode-PythonForInterview.mp4"
+$d =$(gl)
+$total_size=$(ffprobe -v error -show_entries format=size -of default=noprint_wrappers=1:nokey=1 $if)
+$chunk = $(10*1024*1024)
+```
+
+```powershell
+
+$input_file = "NeetCode-PythonForInterview.mp4"
+$output_dir = $(gl)
+
+New-Item -ItemType Directory -Path $output_dir -Force | Out-Null
+
+$total_size = (Get-ChildItem $input_file).Length
+$chunk_size = 10MB
+$num_chunks = [Math]::Ceiling($total_size / $chunk_size)
+
+for ($i=0; $i -lt $num_chunks; $i++) {
+    $start = $i * $chunk_size
+    $output_file = Join-Path $output_dir "chunk$(`"{0:D3}`" -f $i).mp4"
+    ffmpeg -i $input_file -c copy -fs $chunk_size -ss $start $output_file
+}
+
+```
 
 
 ## Links

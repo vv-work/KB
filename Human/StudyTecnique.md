@@ -1,4 +1,4 @@
-# My study technique
+#B:\Git\1Hololens\MixedReality-QRCode-Sample\Sample\Builds\NewBuild\AppPackages\SampleQRCodes My study technique
 
 ## List
 
