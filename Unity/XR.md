@@ -1,5 +1,6 @@
 # XR
 
+
 ## Top links
 
 - [XR Interactive Toolkit Examples Unity Technology](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples) 
@@ -10,8 +11,7 @@
  Streaming from ARKIt to the heands  https://github.com/asus4/ARKitStreamer;
 
 > Extra notes that dosen't really metter
-
-##
+ 
 
 [LeanTouch](http://gameprogrammingpatterns.com/contents.html)
 >Best way according to unity to add touches to AR app.
@@ -221,3 +221,11 @@ I was trying to make Oculus Quest 2 to work with.
 ### Questions
 
 - Should I install both OpenXR and OculusXR plugin
+
+## HoloLens2
+
+### Emulator 
+
+**Location:**
+> C:\Program Files (x86)\Windows Kits\10\Emulation
+
