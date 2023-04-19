@@ -4,7 +4,21 @@
 
 ## Outline
 
-- Stack and Queue
+- [Stack and Queue](#stack--queue)
+- [Stack](#stack)
+- [Problems](#problems)
+  - [20 Valid Parentheses](#20-valid-parentheses)
+- [Queue](#queue)
+- [Greedy](#greedy)
+- [Dynamic programming](#dynamic-programming)
+    - [Types](#types)
+     
+## Links
+
+- [LeetCode Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)
+- [LeetCode DS&Algo Crash Course](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course/)
+- [NeetCode 150](https://neetcode.io/practice)
+- [Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/)
 
 ## Stack & Queue
 
@@ -110,13 +124,19 @@ class Solution:
                 right -= 1
         return max_area
 ```
+### 
 
 
 
 
+## Dynamic programming
+
+### Types
 
 
-
-
+- [Fibonachi numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+- [LeetCode DP Intro](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/712/dynamic-programming/4539/)
+- [1D DP](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/712/dynamic-programming/4541/) 
+- [2D DP](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/712/dynamic-programming/4542/)
 
 

@@ -10,6 +10,12 @@
 6. `Varyings` and `Attributes` what is the diffrence
 7. ComputeBuffs ?
 8. Shadow Caster Pass - is it a shader or a pass?
+9. Passes how can we use them ? What are they?
+> Yes
+10. Why do we have multiple subshaders in one shader?
+> Diffrent version of Unity
+12. Some practical tutorial to get close enough experience to write a outline shader
+
 
 
 ## Basics
@@ -40,6 +46,21 @@
 **Cg** - is a high-level language that is used to write shaders. It is a superset of GLSL. Cg is used in OpenGL, and GLSL is used in WebGL.
 
 **Fragment** shader vs **Vertex** shader - the **fragment** shader is executed for each *pixel* of the mesh, while the **vertex** shader is executed for each *vertex* of the *mesh/*.
+
+**Varyings** - are variables that are passed from the vertex shader to the fragment shader. They are used to pass data between the vertex and fragment shaders, such as vertex positions, normals, and texture coordinates.
+
+#### Shader Types
+
+
+| Fragment Shader Use Cases                               | Vertex Shader Use Cases                                  |
+|---------------------------------------------------------| --------------------------------------------------------- |
+| 1. Per-pixel lighting calculations                      | 1. Deformation of 3D models (e.g. skinning, morphing)    |
+| 2. Advanced texturing techniques (e.g. normal mapping)  | 2. Tessellation and displacement mapping                 |
+| 3. Image post-processing (e.g. bloom, blur,outline)     | 3. Procedural geometry generation                         |
+| 4. Screen space effects (e.g. reflections, refractions) | 4. Particle systems and vertex animation                  |
+| 5. Shader-based fog and atmospheric effects             | 5. Vertex-based ambient occlusion                         |
+| 6. Stylized shading (e.g. cel-shading, hatching)        | 6. Implementing custom LOD systems                        |
+| 7. Color grading and tone mapping                       | 7. Instancing and GPU culling for optimization           |
 
 #### Computer Buffers
 
@@ -178,4 +199,94 @@ Shader "Example/URPUnlitShaderBasic"
         }
     }
 }
+```
+
+#### Stereo Shader
+
+```shaderlab
+    Properties
+    { }
+
+    SubShader
+    {
+        Tags { "RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline" }
+
+        Pass
+        {
+            HLSLPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipeline.core/ShaderLibrary/UnityInstancing.hlsl"
+
+            UNITY_VERTEX_INPUT_INSTANCE_ID
+
+            struct Attributes
+            {
+                float4 positionOS   : POSITION;
+                half3 normal        : NORMAL;
+            };
+
+            struct Varyings
+            {
+                float4 positionHCS  : SV_POSITION;
+                half3 normal        : TEXCOORD0;
+                UNITY_VERTEX_OUTPUT_STEREO
+            };
+
+            Varyings vert(Attributes IN)
+            {
+                Varyings OUT;
+                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
+                OUT.normal = TransformObjectToWorldNormal(IN.normal);
+                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(OUT)
+                return OUT;
+            }
+
+            half4 frag(Varyings IN) : SV_Target
+            {
+                UNITY_SETUP_INSTANCE_ID(IN)
+                half4 color = 0;
+                color.rgb = IN.normal * 0.5 + 0.5;
+                return color;
+            }
+            ENDHLSL
+        }
+    }
+  ```
+### Show us depth only  
+
+![Shader](./res/img/ShaderRender.png)
+
+```shaderlab
+
+        Pass
+        {
+            Name "DepthOnly"
+            Tags{"LightMode" = "DepthOnly"}
+
+            ZWrite On
+            ColorMask 0
+
+            HLSLPROGRAM
+            #pragma only_renderers gles gles3 glcore d3d11
+            #pragma target 2.0
+
+            #pragma vertex DepthOnlyVertex
+            #pragma fragment DepthOnlyFragment
+
+            // -------------------------------------
+            // Material Keywords
+            #pragma shader_feature_local_fragment _ALPHATEST_ON
+
+            //--------------------------------------
+            // GPU Instancing
+            #pragma multi_compile_instancing
+
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/UnlitInput.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/DepthOnlyPass.hlsl"
+            ENDHLSL
+        }
+
 ```

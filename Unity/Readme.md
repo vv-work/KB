@@ -15,6 +15,20 @@ Here is collection of my researches on the Rendering and opportunities to create
 r
 ![Doom Frame](./res/DoomFrame.jpg)
 
+### Basics
+
+#### Ambient Occlusion
+
+##### Light bouncing
+![Ambient Occlusion 2](./res/img/diagram_single_vs_multi_scatter.png)
+
+##### In Unity
+
+![Ambient Occlusion](./res/img/Unity_AO.jpg)
+
+
+
+
 ### Edge outline
 
 
