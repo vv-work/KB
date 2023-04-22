@@ -1,11 +1,10 @@
-# URP Shaders
+## URP Shaders
 
 ## Questions
 
 1. What the diffrence between Cg/HLSL
 2. Diffrence between shader types Surface Shader, Unlit Shader, Image Effect Shader, Computer Shader.
 3. `CGPROGRAM` and `ENDCG`
-4. `HLSLPROGRAM` and `ENDHLSL`
 5. What is `Pass` and `SubShader`?
 6. `Varyings` and `Attributes` what is the diffrence
 7. ComputeBuffs ?
@@ -18,11 +17,27 @@
 
 
 
+
+### New terms
+
+1. `Varyings` vs `Attributes`
+2. `ComputeBuffs` 
+3. `Render Pass`  - [Custom Render Pass](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.0/api/UnityEngine.Rendering.Universal.ScriptableRenderPass.html)
+4. `Depth Prepass` 
+5. `IntermediateTextureMode` - [link](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/api/UnityEngine.Rendering.Universal.IntermediateTextureMode.html)
+7. `Render Feature` - [link](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/urp-renderer-feature.html)
+
+
+
 ## Basics
 
 ### Links
 
+- [!!! Japanies URP Render Feature for **SINGLE PASS**](https://tsgcpp.hateblo.jp/entry/2022/03/23/011330)
+- [Official Documentation](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/urp-renderer-feature.html)
 - [Examples by Unity](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.0/manual/writing-shaders-urp-basic-unlit-structure.html)
+- [URP Edge Detection Outlines]
+
 - 
 ### Input
 
