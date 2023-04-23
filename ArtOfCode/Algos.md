@@ -131,12 +131,13 @@ class Solution:
 
 ## Dynamic programming
 
+- [LeetCode DP Intro](https://tinyurl.com/ya68vadn)
+
 ### Types
 
+- [B-Up(Bottom Up)](https://en.wikipedia.org/wiki/Fibonacci_number)
+- [1D DP](https://tinyurl.com/5xhvxdrn) 
+- [2D DP](https://tinyurl.com/2p82kfha)
 
-- [Fibonachi numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
-- [LeetCode DP Intro](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/712/dynamic-programming/4539/)
-- [1D DP](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/712/dynamic-programming/4541/) 
-- [2D DP](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/712/dynamic-programming/4542/)
 
 
