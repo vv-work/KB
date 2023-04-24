@@ -6,4 +6,4 @@
 
 ![Math CheatSheet](./res/MathCheatSheet.png)
 
-- [pdf file](./res/pdf/MathCheatSheet.pdf)
+- [pdf File](./res/pdf/MathCheatSheet.pdf)

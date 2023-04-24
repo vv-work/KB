@@ -1,6 +1,9 @@
 # Algorithms
 
+
 ![CheetSheet](./res/algo/LeetCodeChatsheet.png)
+
+![Math Secret](./res/MathSumSecret.jpg)
 
 ## Outline
 
@@ -136,8 +139,47 @@ class Solution:
 ### Types
 
 - [B-Up(Bottom Up)](https://en.wikipedia.org/wiki/Fibonacci_number)
+- T-Dn(Top Down)
 - [1D DP](https://tinyurl.com/5xhvxdrn) 
 - [2D DP](https://tinyurl.com/2p82kfha)
 
+### Signes it's DP
+
+1. The problem will be asking for an optimal value (max or min) of something, or the number of ways to do something.
+    - What is the minimum cost of doing ...
+    - What is the maximum profit of ...
+    - How many ways are there to ...
+2. What is the longest possible ...
+    - At each step, you need to make a "decision", and decisions affect future decisions.
+    - A decision could be picking between two elements
+    - Decisions affecting future decisions could be something like "if you take this element, then you can't take that element in the future"
+
+### Problems
+
+- [70 Climbin Stairs](#### Clibming Stairs)
+- [1416 Restore the Array](#restore-the-array)
+
+#### Climbing Stairs
+
+- [link](https://leetcode.com/problems/climbing-stairs/)
+
+##### Solution
 
 
+![Fi Formual](./res/FiFormula.png)
+
+```python
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        sqrt5 = math.sqrt(5)
+        phi = (1 + sqrt5) / 2
+        psi = (1 - sqrt5) / 2
+
+        return round((math.pow(phi, n+1) - math.pow(psi, n+1)) / sqrt5)
+```
+
+![Fibonachi staris](./res/Fibonacci_climbing_stairs.svg)
+
+#### Restore the array
+
+- [link](https://leetcode.com/problems/restore-the-array/)
