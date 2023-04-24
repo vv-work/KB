@@ -15,13 +15,24 @@
 - [Greedy](#greedy)
 - [Dynamic programming](#dynamic-programming)
     - [Types](#types)
-     
+
+
 ## Links
 
-- [LeetCode Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)
-- [LeetCode DS&Algo Crash Course](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course/)
+- [LeetCode Top Interview Questions](https://tinyurl.com/38hh47up)
+- [LeetCode DS&Algo Crash Course](https://tinyurl.com/yvrv5znb)
 - [NeetCode 150](https://neetcode.io/practice)
 - [Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/)
+
+## Courses
+
+### LeetCode Algo&DSA
+
+**25-50 hours** - To complete the course
+
+[Course link](https://tinyurl.com/yvrv5znb)
+
+![Leet Code Crash Couse](./res/leetcode/CrashCouse.png)
 
 ## Stack & Queue
 
@@ -102,7 +113,62 @@ def isValid(self, s:str) -> bool
 > **Queue** is a **FIFO** data structure. The first element added to the queue will be the first element retrieved from the queue.
 > 
 
-### Greedy 
+### Heaps(heapq)
+
+
+**1.5-3.5 hours** - to complite this section
+
+[link](https://tinyurl.com/bdew8u9y)
+
+1. `heapq.heapify(x)` - Transforms a regular list `x` into a heap. In the resulting heap, the smallest element is at the root.
+2. `heapq.heappush(heap, ele)` - Pushes the value `ele` onto the heap, maintaining the heap invariant.
+3. `heapq.heappop(heap)` - Pops and returns the smallest item from the heap, maintaining the heap invariant.
+4. `heapq.heappushpop(heap, ele)` - Pushes `ele` onto the heap and then pops and returns the smallest item from the heap.
+5. `heapq.heapreplace(heap, ele)` - Pops and returns the smallest item from the heap, and then pushes the new item `ele`. The value of `ele` can be larger than the replaced item.
+6. `heapq.nlargest(n, iterable, key=None)` - Returns the `n` largest elements from the `iterable` in descending order.
+7. `heapq.nsmallest(n, iterable, key=None)` - Returns the `n` smallest elements from the `iterable` in ascending order.
+
+```python
+
+# Import important to get info
+import heapq
+
+# Our Input can be any array
+arr = [1, 5, 8, 3, 2, 9]
+
+# We heapify our array
+heapq.heapify(arr)
+
+# To remove and return the smallest element, use heapq.heappop()
+smallest = heapq.heappop(arr)
+print("Smallest element removed:", smallest)
+print("Heap after removing smallest element:", arr)
+
+# To add a new element to the heap, use heapq.heappush()
+heapq.heappush(arr, 4)
+print("Heap after adding new element:", arr)
+
+# To push a new element onto the heap and then pop and return the smallest item from the heap, use heapq.heappushpop()
+smallest_after_push = heapq.heappushpop(arr, 7)
+print("Smallest element after pushing 7:", smallest_after_push)
+print("Heap after heappushpop:", arr)
+
+# To pop and return the smallest item from the heap, and then push the new item, use heapq.heapreplace()
+smallest_replaced = heapq.heapreplace(arr, 6)
+print("Smallest element replaced:", smallest_replaced)
+print("Heap after heapreplace:", arr)
+
+# To find the n smallest elements in the array, use heapq.nsmallest()
+n = 3
+n_smallest = heapq.nsmallest(n, arr)
+print(f"{n} smallest elements:", n_smallest)
+
+# To find the n largest elements in the array, use heapq.nlargest()
+n_largest = heapq.nlargest(n, arr)
+print(f"{n} largest elements:", n_largest)
+```
+
+## Greedy 
 
 > LeetCode asking to find maximum or minimum value, it is a good sign to use greedy algorithm.
  
@@ -128,6 +194,7 @@ class Solution:
         return max_area
 ```
 ### 
+
 
 
 
