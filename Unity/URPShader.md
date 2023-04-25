@@ -14,7 +14,9 @@
 10. Why do we have multiple subshaders in one shader?
 > Diffrent version of Unity
 12. Some practical tutorial to get close enough experience to write a outline shader
-
+13. What are `RenderFeatures` in URP ?
+14. How to make custom `RenderPass` in URP ?
+15. For what do we use `GBuffer` Pass ?
 
 
 
