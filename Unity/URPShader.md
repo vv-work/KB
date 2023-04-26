@@ -1,4 +1,4 @@
-## URP Shaders
+# URP Shaders
 
 ## Questions
 
@@ -17,6 +17,16 @@
 13. What are `RenderFeatures` in URP ?
 14. How to make custom `RenderPass` in URP ?
 15. For what do we use `GBuffer` Pass ?
+16. What is material PassIndex `drawSettings.overrideMaterialPassIndex = -1;`?
+17. What does `SetShaderPass`  and ShaderTagId
+`drawSettings.SetShaderPassName(0, new ShaderTagId("SRPDefaultUnlit"));`
+18. What is that filter and how to use it
+```shaderlab
+  var filterSettings = new FilteringSettings(RenderQueueRange.all, layerMask: layerMask);
+
+  context.DrawRenderers(renderingData.cullResults, ref drawSettings, ref filterSettings);
+
+```
 
 
 
