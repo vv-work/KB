@@ -1,5 +1,16 @@
 # URP Shaders
 
+## Links
+
+- [What is the right Way to implement single Pass with OpenXR](https://community.khronos.org/t/what-is-the-right-way-to-implement-single-pass-rendering-with-openxr/109157)
+- [Random Color per Normal](https://www.reddit.com/r/unity_tutorials/comments/zppa48/random_color_per_normal_using_shader_graph_tut_in/)
+
+![Surface ID Outline](./res/img/SurfaceIDOutline.webp)
+- [Mars First Logistics Solution on reedit](https://www.reddit.com/r/Unity3D/comments/taq2ou/improving_edge_detection_in_my_game_mars_first/)
+
+![Full Screen OUtline](./res/img/FullScreenOutline.jpg)
+- [Full Screen Outline in Unity](https://github.com/daniel-ilett/shaders-fullscreen-outlines)
+
 ## Questions
 
 1. What the diffrence between Cg/HLSL
@@ -76,18 +87,239 @@
 
 **Varyings** - are variables that are passed from the vertex shader to the fragment shader. They are used to pass data between the vertex and fragment shaders, such as vertex positions, normals, and texture coordinates.
 
+| Term                      | Acronym |
+|---------------------------|---------|
+| Universal Render Pipeline | **URP** |
+| Render Feature            | **RF**  |
+| Single Pass Instanced     | **SPI** |
+| Render Texture            | **RT**  |
+
 #### Shader Types
 
 
 | Fragment Shader Use Cases                               | Vertex Shader Use Cases                                  |
-|---------------------------------------------------------| --------------------------------------------------------- |
+|---------------------------------------------------------| ---------------------------------------------------------|
 | 1. Per-pixel lighting calculations                      | 1. Deformation of 3D models (e.g. skinning, morphing)    |
 | 2. Advanced texturing techniques (e.g. normal mapping)  | 2. Tessellation and displacement mapping                 |
-| 3. Image post-processing (e.g. bloom, blur,outline)     | 3. Procedural geometry generation                         |
-| 4. Screen space effects (e.g. reflections, refractions) | 4. Particle systems and vertex animation                  |
-| 5. Shader-based fog and atmospheric effects             | 5. Vertex-based ambient occlusion                         |
-| 6. Stylized shading (e.g. cel-shading, hatching)        | 6. Implementing custom LOD systems                        |
+| 3. Image post-processing (e.g. bloom, blur,outline)     | 3. Procedural geometry generation                        |
+| 4. Screen space effects (e.g. reflections, refractions) | 4. Particle systems and vertex animation                 |
+| 5. Shader-based fog and atmospheric effects             | 5. Vertex-based ambient occlusion                        |
+| 6. Stylized shading (e.g. cel-shading, hatching)        | 6. Implementing custom LOD systems                       |
 | 7. Color grading and tone mapping                       | 7. Instancing and GPU culling for optimization           |
+
+## Rendering Path 
+
+### Deffered vs Forwards
+
+- [Defferec Rendering Path Official Manual](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.0/manual/rendering/deferred-rendering-path.html)
+
+![Foward vs Deffered](./res/img/Forward-vs-Deffered.png)
+
+| Feature                             | Forward 🅵                        | Deferred 🅳                                            |
+|-------------------------------------|----------------------------------|-------------------------------------------------------|
+| Real-time lights per object         | Limited (9 lights) 💡            | Unlimited lights 🌟                                   |
+| Normal encoding                     | No encoding (accurate) ✔️         | Two options: 🅰️ Lossy encoding 🅱️ Octahedron encoding   |
+| MSAA (Anti-aliasing)                | Supported ✅                     | Not supported ❌                                      |
+| Vertex lighting                     | Supported ✅                     | Not supported ❌                                      |
+| Camera stacking                     | Supported ✅                     | Limited support (base: Deferred, overlay: Forward) ⚠️  |
+| Per-pixel normal encoding           | Ecnoding ❌ (Accurate normal)    | <ul><li>Quantization of normals in G-buffer (loss of accuracy, better performance).</li><li>Octahedron encoding (accurate normals, might have significant performance impact on mobile GPUs).</li></ul>For more information, see the section [Encoding of normals in G-buffer](rendering/deferred-rendering-path.md#accurate-g-buffer-normals). |
+
+
+
+**Forward Rendering** 🅵:
+- Traditional rendering technique 🏛️
+- Processes each object in the scene individually 🖼️
+- Calculates lighting for each object, considering all the lights affecting it 🔦
+- Can be computationally expensive for complex scenes with many lights ⏳
+- Handles transparency and various materials more easily 🌈
+
+**Deferred Rendering** 🅳:
+- Modern rendering technique 🌐
+- Separates geometry rendering and lighting calculations 🔍
+- Renders geometry and material properties into separate buffers (G-Buffer) 📊
+- Performs lighting pass using G-Buffer, calculating the contribution of each light 💡
+- More efficient for scenes with numerous lights, but struggles with transparency 🌫️
+
+
+### <a name="render-passes"></a>Deferred Rendering Path render Passes
+
+The following table shows the sequence of Render Pass events in the Deferred Rendering Path.
+
+<table>
+    <thead>
+    <tr>
+        <th>Render Pass events</th>
+        <th>Deferred Rendering Path Passes</th>
+        <th>SSAO Renderer Feature Passes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>BeforeRendering</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingShadows</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingShadows</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingPrePasses</td>
+        <td>Depth, or depth and normal prepass (Forward only materials)</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingPrePasses</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingGbuffer</td>
+        <td>G-buffer Pass (GBufferPass)</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>&#160;</td>
+        <td>Copy G-buffer depth texture</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingGbuffer</td>
+        <td>&#160;</td>
+        <td>SSAO (optional)</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingDeferredLights</td>
+        <td>&#160;</td>
+        <td rowspan="4"><img src="./res/img/rendering-deferred_decorator-or.png" /></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Deferred rendering (stencil)</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingDeferredLights</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingOpaques</td>
+        <td>Opaque Forward-only Materials</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingOpaques</td>
+        <td>&#160;</td>
+        <td>SSAO and blending (optional)</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingSkybox</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingSkybox</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingTransparents</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingTransparents</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>BeforeRenderingPostProcessing</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRenderingPostProcessing</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>AfterRendering</td>
+        <td>&#160;</td>
+        <td>&#160;</td>
+    </tr>
+    <tbody>
+</table>
+
+### Relevant code files
+
+This section contains the list of files that contain the code related to the Deferred Rendering Path.
+
+* The main class that handles the Deferred Rendering Path:
+
+    ```
+    com.unity.render-pipelines.universal\Runtime\DeferredLights.cs
+    ```
+
+* ScriptableRenderPass for the G-Buffer pass:
+
+    ```
+    com.unity.render-pipelines.universal\Runtime\Passes\GBufferPass.cs
+    ```
+
+* ScriptableRenderPass for the deferred shading pass:
+
+    ```
+    com.unity.render-pipelines.universal\Runtime\Passes\DeferredPass.cs
+    ```
+
+* Shader asset for the deferred shading:
+
+    ```
+    com.unity.render-pipelines.universal\Shaders\Utils\StencilDeferred.shader
+    ```
+
+* Utility functions for the deferred shading:
+
+    ```
+    com.unity.render-pipelines.universal\Shaders\Utils\Deferred.hlsl
+    ```
+
+* Utility functions for storing and loading the Material properties from the G-buffer:
+
+    ```
+    com.unity.render-pipelines.universal\Shaders\Utils\UnityGBuffer.hlsl
+    ```
+
+## ShaderLab Pass tags
+
+To enable Unity to render a shader in the Deferred Rendering Path, the shader must have a Pass with the following tag definition:
+
+`"LightMode" = "UniversalGBuffer"`
+
+Unity executes the shader with such `LightMode` tag during the G-buffer Pass.
+
+To indicate that Unity must render a certain Material in the Forward-only Pass in the Deferred Rendering Path, add the following tags to a shader Pass:
+
+`"LightMode" = "UniversalForwardOnly"`
+
+`"LightMode" = "DepthNormalsOnly"`
+
+To specify the shader lighting model (Lit, SimpleLit), use the `UniversalMaterialType` tag.
+
+For more information, see the section [URP Pass tags: LightMode](../urp-shaders/urp-shaderlab-pass-tags.md#lightmode).
+
+
+#### G-Buffer
+
+![Deffered G-Buffer](./res/img/DefferedG-Buffer.png)
+
+#### Normals
+
+![G-Buffer Normals](./res/img/DefferedNormalsOnOff.png)
 
 #### Computer Buffers
 
