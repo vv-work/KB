@@ -34,6 +34,37 @@
 
 ![Leet Code Crash Couse](./res/leetcode/CrashCouse.png)
 
+## Array & String
+
+
+### Sliding Window
+
+![Sliding Window Meme](./res/memes/sliding-window.gif)
+
+![Sliding window](./res/algo/sliding-window.gif)
+
+
+- [Amotized Analysis](https://en.wikipedia.org/wiki/Amortized_analysis)
+
+#### Code Example
+
+```python
+def sldidingWindow(arr):
+    left = ans =curr = 0
+
+    def windowCondition(arr,start,end):
+        return True #here is some logic of this condition
+
+    for right in range(len(arr)):
+        # do logic with particular sliding window
+
+        while windowCondition(arr,left,right):
+            left+=1
+        #update answ
+
+    return ans
+```
+
 ## Stack & Queue
 
 **FIFO** (**F**irst **I**n **F**irst **O**ut) and **LIFO** (**L**ast **I**n **F**irst **O**ut) are two common data structures. They are used to store data in a specific order. The order is determined by the way the data is added and removed from the data structure.
@@ -68,6 +99,9 @@ class Stack:
 ```
 
 #### Problems
+
+- [1065 Index pair of string](https://leetcode.com/problems/index-pairs-of-a-string/description/)
+> Super simple I was looking for indexes to remove but it all can be done with pop
 
 ##### 20 Valid Parentheses
 
@@ -105,9 +139,6 @@ def isValid(self, s:str) -> bool
     return not stack
 ```
 
-
-            
-        
 ### Queue
 
 > **Queue** is a **FIFO** data structure. The first element added to the queue will be the first element retrieved from the queue.
