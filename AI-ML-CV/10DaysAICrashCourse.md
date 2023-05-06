@@ -2,6 +2,12 @@
 
 ## Links 
 
+- [MSFT/C9 python getting started](https://github.com/microsoft/c9-python-getting-started)
+- [MSFT/ML for beginners](https://github.com/microsoft/ML-For-Beginners)
+- [MSFT/Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners)
+- [MSFT/Computer Vision](https://github.com/microsoft/computervision-recipes)
+
+
 ## Study plan 
 
 - [x] Day 0: MNIST basics
