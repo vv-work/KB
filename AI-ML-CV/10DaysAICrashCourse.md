@@ -6,6 +6,7 @@
 - [MSFT/ML for beginners](https://github.com/microsoft/ML-For-Beginners)
 - [MSFT/Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners)
 - [MSFT/Computer Vision](https://github.com/microsoft/computervision-recipes)
+- [PyTorch Step-by-step](https://github.com/dvgodoy/PyTorchStepByStep)
 
 
 ## Study plan 
