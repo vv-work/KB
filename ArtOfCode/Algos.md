@@ -224,11 +224,16 @@ class Solution:
                 right -= 1
         return max_area
 ```
-### 
+### Some text
 
 
-
-
+> I am doing something really smart 
+```python
+def solution(a:int):
+    a:int = 5.0
+    for x in range(0,5):
+        print(f'{x})
+```
 
 ## Dynamic programming
 
