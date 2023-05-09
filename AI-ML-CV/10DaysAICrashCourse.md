@@ -2,6 +2,7 @@
 
 ## Links 
 
+- [Sebstian Lague ML video](https://www.youtube.com/watch?v=hfMk-kjRv4c)
 - [MSFT/C9 python getting started](https://github.com/microsoft/c9-python-getting-started)
 - [MSFT/ML for beginners](https://github.com/microsoft/ML-For-Beginners)
 - [MSFT/Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners)
@@ -21,6 +22,15 @@
 - [ ] Day 7: Regularization and Hyperparameter Tuning
 - [ ] Day 8: Model Evaluation and Deployment
 - [ ] Day 9: OpenCV Basics
+
+
+## Ideas for video 
+
+Education starting with basics from 
+
+> Vectors(list,array) -> Matrix -> Tensors
+
+
 
 ## Day 0
 
