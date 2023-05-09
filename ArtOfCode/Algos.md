@@ -3,7 +3,22 @@
 
 ![CheetSheet](./res/algo/LeetCodeChatsheet.png)
 
+
 ![Math Secret](./res/MathSumSecret.jpg)
+
+
+### Big O
+
+![Big O](./res/leetcode/big_o.png)
+
+
+
+#### Amortized Analyses
+
+- [Amortized Analyses](https://en.wikipedia.org/wiki/Amortized_analysis)
+
+> It's like when you have nested loop but it's not **O(N^2)**
+**Robert Tarjan** in his 1985 paper Amortized Computational Complexity. 
 
 ## Outline
 
@@ -34,7 +49,7 @@
 
 ![Leet Code Crash Couse](./res/leetcode/CrashCouse.png)
 
-## Array & String
+## Array & String & Matrix
 
 
 ### Sliding Window
@@ -65,6 +80,41 @@ def sldidingWindow(arr):
     return ans
 ```
 
+### Matrix
+
+
+![Sameple Matrix](./res/leetcode/sample_1911.png)
+
+**Arrays in Python**
+
+```python
+Input: mat = [[1,2,3],
+              [4,5,6],
+              [7,8,9]]
+```
+
+
+#### Tasks
+
+- [1572 Matrix Diaganoal Sum](https://tinyurl.com/2ru2cjuj)
+
+##### 1572 Matrix Diagonal Sum
+
+```python
+class Solution:
+    def diagonalSum(self, mat: List[List[int]]) -> int:
+        res = 0
+        ln = len(mat)
+        for i in range(ln):
+            l = i
+            r = ln-1-i
+            if l==r:
+                res += mat[i][l]
+            else:
+                res += mat[i][l] +mat[i][r]
+        return res
+
+```
 ## Stack & Queue
 
 **FIFO** (**F**irst **I**n **F**irst **O**ut) and **LIFO** (**L**ast **I**n **F**irst **O**ut) are two common data structures. They are used to store data in a specific order. The order is determined by the way the data is added and removed from the data structure.
