@@ -83,7 +83,21 @@ def sldidingWindow(arr):
 ### Matrix
 
 
+#### Simple Matrix
+
+```markdown
 ![Sameple Matrix](./res/leetcode/sample_1911.png)
+![Tensors](./res/algo/tensors.jpg)
+![Vectors](./res/algo/vectors.jpg)
+```
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./res/algo/vectors.jpg" style="width: 33%;margin-right: 5px;">
+  <img src="./res/leetcode/sample_1911.png" style="width: 33%; margin-right: 5px;">
+  <img src="./res/algo/tensors.jpg" style="width: 33%; ">
+</div>
+
+
 
 **Arrays in Python**
 
@@ -115,6 +129,51 @@ class Solution:
         return res
 
 ```
+
+##### 54 Spiral Matrix
+
+  <img src="./res/leetcode/spiral1.jpg" style="width: 40%;margin-left: 30%;">
+
+  <details>
+  <summary>Click here to reveal the Python code</summary>
+ <pre>
+
+```python
+
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        res = [ ]
+        col,row = len(matrix[0]), len(matrix)
+        left,top =0,0
+        right,bottom = col-1,row-1
+
+        while len(res)<col*row:
+            # left -> right
+            for i in range(left,right+1):
+                res.append(matrix[top][i])
+
+            # top -> down
+            for i in range(top+1,bottom+1):
+                res.append(matrix[i][right])
+
+            # right -> left
+            if top!=bottom:
+                for i in range(right-1,left-1,-1):
+                    res.append(matrix[bottom][i])
+
+            if left!=right:
+                for i in range(bottom-1,top,-1):
+                    res.append(matrix[i][left])
+            left,top = left +1, top+1
+            right,bottom = right-1, bottom -1
+        return res
+
+```
+
+</pre>
+
+</details>
+
 ## Stack & Queue
 
 **FIFO** (**F**irst **I**n **F**irst **O**ut) and **LIFO** (**L**ast **I**n **F**irst **O**ut) are two common data structures. They are used to store data in a specific order. The order is determined by the way the data is added and removed from the data structure.
