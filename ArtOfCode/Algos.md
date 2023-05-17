@@ -22,10 +22,14 @@
 
 ## Outline
 
-- [Stack and Queue](#stack--queue)
-- [Stack](#stack)
-- [Problems](#problems)
-  - [20 Valid Parentheses](#20-valid-parentheses)
+- [Arrays and Strings]
+- [Hashing]
+
+- [LinkedList](#linked-list)
+- [Stack and Queue](#stack--queue) 
+    - [Stack](#stack)
+    - [Problems](#problems)
+      - [20 Valid Parentheses](#20-valid-parentheses)
 - [Queue](#queue)
 - [Greedy](#greedy)
 - [Dynamic programming](#dynamic-programming)
@@ -50,6 +54,58 @@
 ![Leet Code Crash Couse](./res/leetcode/CrashCouse.png)
 
 ## Array & String & Matrix
+
+### TwoPointers
+
+- [LeetCode](https://tinyurl.com/2ru2cjuj)
+
+#### Appliance 
+
+1. Simple two pointers
+2. Two arrays
+
+
+
+##### Check if Palindrome
+
+```python
+def check_if_palindrome(s):
+    left = 0
+    right = len(s) - 1
+
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+
+    return True
+```
+
+#### Is Subsequence
+
+```python
+def combine(arr1, arr2):
+    ans = []
+    i = j = 0
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] < arr2[j]:
+            ans.append(arr1[i])
+            i += 1
+        else:
+            ans.append(arr2[j])
+            j += 1
+
+    while i < len(arr1):
+        ans.append(arr1[i])
+        i += 1
+
+    while j < len(arr2):
+        ans.append(arr2[j])
+        j += 1
+
+    return ans
+```
 
 
 ### Sliding Window
@@ -173,6 +229,78 @@ class Solution:
 </pre>
 
 </details>
+
+
+##### 59 Spiral Matrix II
+
+  <img src="./res/leetcode/spiraln.jpg" style="width: 40%;margin-left: 30%;">
+
+  <details>
+  <summary>Click here to reveal the Python code</summary>
+ <pre>
+
+```python
+
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        res = [ ]
+        col,row = len(matrix[0]), len(matrix)
+        left,top =0,0
+        right,bottom = col-1,row-1
+
+        while len(res)<col*row:
+            # left -> right
+            for i in range(left,right+1):
+                res.append(matrix[top][i])
+
+            # top -> down
+            for i in range(top+1,bottom+1):
+                res.append(matrix[i][right])
+
+            # right -> left
+            if top!=bottom:
+                for i in range(right-1,left-1,-1):
+                    res.append(matrix[bottom][i])
+
+            if left!=right:
+                for i in range(bottom-1,top,-1):
+                    res.append(matrix[i][left])
+            left,top = left +1, top+1
+            right,bottom = right-1, bottom -1
+        return res
+
+```
+
+</pre>
+
+</details>
+
+## Linked List
+
+- [Linked List in Course](https://tinyurl.com/mu5ccjsy)
+
+![LinkedList](.\res\algo\LinkedList.gif)
+
+### Snipet
+
+#### Convert to Array
+
+```python
+
+class ListNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+def solution(head ListNode):
+    elem = []
+    cur = head
+    while cur:
+        elem.append(cur)
+        cur=cur.next
+
+
+```
 
 ## Stack & Queue
 
