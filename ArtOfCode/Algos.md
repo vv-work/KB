@@ -138,6 +138,7 @@ def sldidingWindow(arr):
 
 ### Prefix Sum
 
+- [1480 Running Sum of 1D array](https://leetcode.com/problems/running-sum-of-1d-array)
 - [LeetCode](https://tinyurl.com/mu5ccjsy)
 
 ```python
