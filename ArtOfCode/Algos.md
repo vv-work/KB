@@ -136,6 +136,25 @@ def sldidingWindow(arr):
     return ans
 ```
 
+### Prefix Sum
+
+- [LeetCode](https://tinyurl.com/mu5ccjsy)
+
+```python
+arr = [1,2,3,4]
+
+prefix = [nums[0]]*(len(arr)+1)
+
+for i,n in enumerate(arr):
+    prefix[i+1]=prefix[i]+n
+
+
+prefix = [nums[0]]
+for i in range(1, len(nums)):
+    prefix.append(nums[i] + prefix[-1])
+
+```
+
 ### Matrix
 
 
@@ -192,7 +211,7 @@ class Solution:
 
   <details>
   <summary>Click here to reveal the Python code</summary>
- <pre>
+
 
 ```python
 
@@ -237,7 +256,6 @@ class Solution:
 
   <details>
   <summary>Click here to reveal the Python code</summary>
- <pre>
 
 ```python
 
