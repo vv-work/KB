@@ -1,6 +1,7 @@
 # Algorithms
 
 
+
 ![CheetSheet](./res/algo/LeetCodeChatsheet.png)
 
 
@@ -538,3 +539,33 @@ class Solution:
 #### Restore the array
 
 - [link](https://leetcode.com/problems/restore-the-array/)
+
+
+## Graph
+
+![Undericated Graph](./res/leetcode/UndirectedGraph.png)
+
+
+- [LeetCode FlashCard on Graph](https://leetcode.com/explore/featured/card/graph/)
+
+
+## Pyuthon used code
+
+
+```python
+
+from collections import Counter
+
+elem = [1,1,2,2,3,4]
+
+counter = Counter(elem)
+
+sort =counter.most_common()
+
+values = sort.values()
+
+for element,count in sort:
+    print(f'{element}:{count})
+
+
+```
