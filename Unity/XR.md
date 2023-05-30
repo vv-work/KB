@@ -229,3 +229,10 @@ I was trying to make Oculus Quest 2 to work with.
 **Location:**
 > C:\Program Files (x86)\Windows Kits\10\Emulation
 
+#### Fixing NAT Swithch
+
+[Stack overFlow Link](https://superuser.com/questions/1445288/port-forwarding-with-hyper-v-virtual-machine-on-windows-10)
+
+```powershell
+New-VMSwitch  -SwitchName "NAT Switch"  -SwitchType Internal
+```
