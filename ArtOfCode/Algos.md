@@ -13,6 +13,7 @@
 ![Big O](./res/leetcode/big_o.png)
 
 
+> MOre info about big O
 
 #### Amortized Analyses
 
@@ -21,11 +22,12 @@
 > It's like when you have nested loop but it's not **O(N^2)**
 **Robert Tarjan** in his 1985 paper Amortized Computational Complexity. 
 
+
+
 ## Outline
 
-- [Arrays and Strings]
-- [Hashing]
-
+- [Arrays and Strings](#arrays-and-strings)
+- [Hashmaps and Sets](#hashmaps-and-sets)
 - [LinkedList](#linked-list)
 - [Stack and Queue](#stack--queue) 
     - [Stack](#stack)
@@ -35,6 +37,7 @@
 - [Greedy](#greedy)
 - [Dynamic programming](#dynamic-programming)
     - [Types](#types)
+- [Code Snipets](#code-snipets)
 
 
 ## Links
@@ -54,7 +57,7 @@
 
 ![Leet Code Crash Couse](./res/leetcode/CrashCouse.png)
 
-## Array & String & Matrix
+## Arrays and Strings
 
 ### TwoPointers
 
@@ -118,6 +121,9 @@ def combine(arr1, arr2):
 
 - [Amotized Analysis](https://en.wikipedia.org/wiki/Amortized_analysis)
 
+- [03 Longest Substring Without Repeating Character](https://tinyurl.com/3wurz4k3)
+> Good task very common on many interviews
+
 #### Code Example
 
 ```python
@@ -158,11 +164,9 @@ for i in range(1,len(nums)):
 
 #### Simple Matrix
 
-```markdown
 ![Sameple Matrix](./res/leetcode/sample_1911.png)
 ![Tensors](./res/algo/tensors.jpg)
 ![Vectors](./res/algo/vectors.jpg)
-```
 
 <div style="display: flex; justify-content: space-between;">
   <img src="./res/algo/vectors.jpg" style="width: 33%;margin-right: 5px;">
@@ -290,6 +294,62 @@ class Solution:
 </pre>
 
 </details>
+
+## Hashmaps and Sets
+
+- [Wiki article on Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
+
+- [Hashing in LeetCode course](https://tinyurl.com/3zu5tp4j)
+
+
+| Algorithm |   Average   | Worst case |
+|-----------|-------------|------------|
+| Space     | **Θ**(n)[1] | **O**(n)   |
+| Search    | **Θ**(1)    | **O**(n)   |
+| Insert    | **Θ**(1)    | **O**(n)   |
+| Delete    | **Θ**(1)    | **O**(n)   |
+
+
+**Hash Function**
+
+![HashMapSturcture](./res/algo/HashTableWiki.png)
+
+## Bulletpoints 
+
+- **Hash Function** converts given input into the unique intager
+- **Hash Function** combined with an array gives us **HashMap** or **HashTable** aslo known as **Dictionary**
+- **Hash Function** allows us to map `key`'s to `value`'s efficiently
+- **Hash Function** uses `%`(*module*) operation to get unique vlaue
+
+- **Hash Maps** - time complexity for string is not ~~O(1)~~ but **O(m)** where `m` is length of string
+- **Hash Maps** provides constant time for such operation as `add()` `remove()` and `x in mset` 
+- **Hash Maps** - efficiant, unordered, immutable, store **key-value**
+    		
+- **Python** - `dict={}` `set([0,1,2,3])`
+- **Set** vs **HashMap** The diffrence:
+    - **HashMap** is like Dictionary so we have `kay` `value` pairs
+    - **Set's** stores only unque vlaues value can only be in ther or not there
+
+
+
+- **Pros** 
+    - Fast,Efficient
+
+- **Cons** 
+    - Takes more time to construct
+    - Takes more space because we need  store keys sepretly
+	
+
+
+```python
+int(x) #Hasing in python
+mset = set([0,1,2,3,4]) #Init set
+mset.add(6)
+mset.remove(2) 
+5 in mset # return False cause 5 is not in the set
+```
+
+
 
 ## Linked List
 
@@ -548,8 +608,20 @@ class Solution:
 
 - [LeetCode FlashCard on Graph](https://leetcode.com/explore/featured/card/graph/)
 
+## Code Snipets
 
-## Pyuthon used code
+### Working with Letters
+
+```python
+ord('a') # 97 ord converts char to int
+chr(97) # gives us `a` because converts intager into char 
+
+for i in range(26):
+
+
+```
+
+### Sorting and Counting
 
 
 ```python
@@ -569,3 +641,5 @@ for element,count in sort:
 
 
 ```
+### Hashing
+
