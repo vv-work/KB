@@ -608,6 +608,33 @@ class Solution:
 
 - [LeetCode FlashCard on Graph](https://leetcode.com/explore/featured/card/graph/)
 
+## Bit Manipulation
+
+- [191 Number of 1 Bits](https://tinyurl.com/4h8bys33)
+
+```python
+    def hammingWeight(self, n: int) -> int:
+        res = 0
+        while n:
+            res+=n%2
+            n=n>>1
+        return res
+```
+
+## Terminology
+
+- **Hamming weight** - number of non-zero characters in string
+    a.k.a as bitsummation
+    - 110101 	=4
+    - 00011011	=4
+    - 504630	=4
+
+- **Hamming distance** - count of symbols diffrent between two strings
+   - "karolin" and "kathrin" is 3.
+   - "karolin" and "kerstin" is 3.
+   - "kathrin" and "kerstin" is 4.
+   - 0000 and 1111 is 4. 
+
 ## Code Snipets
 
 ### Working with Letters
@@ -643,3 +670,9 @@ for element,count in sort:
 ```
 ### Hashing
 
+### Bit Manipulation
+
+```python
+res+=n%2 # if 0x0001 will give us 1
+n=n>>1 # Binary shift
+```
