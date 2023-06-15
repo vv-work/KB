@@ -1,4 +1,4 @@
-# Algorithms
+#Algorithms
 
 
 
@@ -21,7 +21,6 @@
 
 > It's like when you have nested loop but it's not **O(N^2)**
 **Robert Tarjan** in his 1985 paper Amortized Computational Complexity. 
-
 
 
 ## Outline
@@ -675,4 +674,20 @@ for element,count in sort:
 ```python
 res+=n%2 # if 0x0001 will give us 1
 n=n>>1 # Binary shift
+```
+
+
+## Binary search
+
+```python
+l,r = 0,len(arr)
+while l<=r:
+	m = (l+r)//2
+	if arr[m]<target:
+		l=m+1
+	elif arr[m]>target:
+		r= m-1
+	else: 
+		return m
+	    	
 ```
