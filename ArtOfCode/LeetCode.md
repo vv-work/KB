@@ -1,10 +1,14 @@
 # LeetCode
 
+
 https://leetcode.com/serynabatov/
 - `164,929` Russian Dev started together
 
 https://leetcode.com/dkochetov/
-- `182,000` Russian Dev I need to take down he made it in 3 month
+- `182,000`(05/30) Russian Dev I need to take down he made it in 3 month
+
+https://leetcode.com/VladimirTheLeet/
+- `330,060` (06/30) Belorus Start together
 
 https://leetcode.com/AlecLC/
 - `150,000` Good to be next goals
@@ -41,7 +45,7 @@ https://leetcode.com/study-plan/programming-skills/
 
 https://leetcode.com/explore/learn/card/fun-with-arrays/
 https://leetcode.com/explore/learn/card/binary-search/
-https://leetcode.com/explore/learn/card/recursion-i/
+https://leetcode.com/explore/learn/cardrecursion-i/
 https://leetcode.com/explore/featured/card/graph/
 
 - [Andrey Shtylenko](https://www.linkedin.com/in/shtylenko/)
