@@ -1,8 +1,23 @@
 # Python Basics
 
+
+## Snipets
+
+### GetCurrentWeek
+
+    
+```python
+import datetime
+cd =datetime.datetime.now()
+cw = cd.isocalendar()[1]
+print(cw) 
+```
+
+
 ## Strings
 
 `words = s.split(' ')` - split words by space.
+
 
 ## List
 
