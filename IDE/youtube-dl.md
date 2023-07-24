@@ -1,6 +1,9 @@
 # yt-dlp
 
 
+## Best line all the time
+
+`yt-dlp -f "bestvideo[height<=1080]+bestaudio[ext=m4a]" --embed-thumbnail --embed-subs --write-auto-subs --sub-lang en URL`
 
 ## Best Downloading options
 
