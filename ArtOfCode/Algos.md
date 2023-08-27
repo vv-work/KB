@@ -32,6 +32,7 @@
     - [Problems](#problems)
       - [20 Valid Parentheses](#20-valid-parentheses)
 - [Queue](#queue)
+- [Graph](#graph)
 - [Greedy](#greedy)
 - [Dynamic programming](#dynamic-programming)
     - [Types](#types)
@@ -603,8 +604,75 @@ class Solution:
 
 ![Undericated Graph](./res/leetcode/UndirectedGraph.png)
 
-
 - [LeetCode FlashCard on Graph](https://leetcode.com/explore/featured/card/graph/)
+
+```mermaid
+graph TB
+    0 --- 1
+    0 --- 3
+    1 --- 2
+    1 --- 3
+ ```
+```python
+def add_edge(graph, u, v):
+    # Add v to the list of nodes connected to u
+    if u not in graph:
+        graph[u] = []
+    graph[u].append(v)
+
+    # Since it's an undirected graph, add u to the list of nodes connected to v
+    if v not in graph:
+        graph[v] = []
+    graph[v].append(u)
+
+def has_cycle(graph, node, visited, parent=None):
+    visited[node] = True
+
+    for neighbor in graph.get(node, []):
+        # If the neighboring node hasn't been visited yet, visit it
+        if not visited[neighbor]:
+            if has_cycle(graph, neighbor, visited, node):
+                return True
+        # If the neighboring node has been visited and it's not the parent of the current node
+        elif parent != neighbor:
+            return True
+
+    return False
+
+def build_graph(roads):
+    graph = {}
+    for u, v in roads:
+        add_edge(graph, u, v)
+    return graph
+
+def contains_cycle(n, roads):
+    graph = build_graph(roads)
+    visited = [False] * n
+
+    for i in range(n):
+        if not visited[i] and has_cycle(graph, i, visited):
+            return True
+
+    return False
+
+# Example
+n = 5
+roads = [[0,1],[0,3],[1,2],[1,3],[2,3],[2,4]]
+print(contains_cycle(n, roads))  # This will return True since there's a cycle in the graph
+```
+
+
+. For the graph with `n = 5, roads = [[0,1],[0,3],[1,2],[1,3],[2,3],[2,4]]`:
+```mermaid
+graph TB
+    0 --- 1
+    0 --- 3
+    1 --- 2
+    1 --- 3
+    2 --- 3
+    2 --- 4 
+```
+
 
 ## Bit Manipulation
 

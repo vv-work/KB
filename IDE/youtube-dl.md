@@ -11,9 +11,7 @@
 
 #### For all playslist on channel
 
-```pwsh
-yt-dlp --cookies B:\Lib\Proj\MyIDE\youtube.com_cookies.txt -f "bv*[height<=1080][ext=webm]+ba[ext=webm]"--embed-thumbnail --embed-subs  -o "%(playlist)s/%(playlist_index)s - %(title)s [%(id)s].%(ext)s" https://www.youtube.com/playlist?list=PLm323Lc7iSW_LxZFPkgEZVc3HSMXrP2f
-```
+` yt-dlp --cookies B:\Lib\Proj\MyIDE\youtube.com_cookies.txt -f "bv*[height<=1080][ext=webm]+ba[ext=webm]"--embed-thumbnail --embed-subs --write-auto-subs --sub-lang en -o "%(playlist)s/%(playlist_index)s - %(title)s [%(id)s].%(ext)s" https://www.youtube.com/playlist?list=PLm323Lc7iSW_LxZFPkgEZVc3HSMXrP2f `
 
 #### mp4
 ```pwsh
