@@ -3,6 +3,20 @@
 ## Indexing
 
 
+<!-- vim-markdown-toc GFM -->
+
+  * [User Input](#user-input)
+    * [List comperhansions](#list-comperhansions)
+    * [Slicing a list](#slicing-a-list)
+    * [Copy array](#copy-array)
+    * [Logic](#logic)
+    * [Dictionary](#dictionary)
+* [Functions](#functions)
+    * [Undeifined number for argum,ents](#undeifined-number-for-arguments)
+    * [For dictionairies](#for-dictionairies)
+* [Soring](#soring)
+
+<!-- vim-markdown-toc -->
 
 [images](CheatSheet/index.md)
 
