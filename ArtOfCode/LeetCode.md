@@ -35,6 +35,8 @@ https://leetcode.com/IliaOzhmegov/
 
 ## Study Plans
 
+
+https://leetcode.com/study-plan/binary-search
 https://leetcode.com/study-plan/leetcode-75
 https://leetcode.com/study-plan/data-structure/
 https://leetcode.com/study-plan/sql/?

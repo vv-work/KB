@@ -1,7 +1,6 @@
 #Algorithms
 
 
-
 ![CheetSheet](./res/algo/LeetCodeChatsheet.png)
 
 
@@ -677,7 +676,7 @@ n=n>>1 # Binary shift
 ```
 
 
-## Binary search
+### Binary search
 
 ```python
 l,r = 0,len(arr)
@@ -689,5 +688,4 @@ while l<=r:
 		r= m-1
 	else: 
 		return m
-	    	
 ```
