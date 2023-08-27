@@ -1,5 +1,9 @@
 # Python
 
+## Indexing
+
+
+
 [images](CheatSheet/index.md)
 
 
@@ -132,3 +136,8 @@ def make_pizza(size, **toppings):
 from pizza import *
  make_pizza("big","meet")
  ```
+## Soring
+
+`arr.sort()` - gives me sorted array
+
+
