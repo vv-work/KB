@@ -1,5 +1,7 @@
 # LeetCode
 
+https://leetcode.com/vanAmsen/
+- `202,817` 01/09 Polish Guy skyroketer in 3 month
 
 https://leetcode.com/serynabatov/
 - `164,929` Russian Dev started together
