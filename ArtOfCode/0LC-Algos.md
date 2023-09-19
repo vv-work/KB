@@ -1,6 +1,5 @@
 #Algorithms
 
-
 ![CheetSheet](./res/algo/LeetCodeChatsheet.png)
 
 
@@ -10,7 +9,6 @@
 ### Big O
 
 ![Big O](./res/leetcode/big_o.png)
-
 
 > MOre info about big O
 
@@ -26,6 +24,7 @@
 
 - [Arrays and Strings](#arrays-and-strings)
 - [Hashmaps and Sets](#hashmaps-and-sets)
+- [Matrix's](#matrix)
 - [LinkedList](#linked-list)
 - [Stack and Queue](#stack--queue) 
     - [Stack](#stack)
@@ -158,10 +157,11 @@ for i in range(1,len(nums)):
 
 ```
 
-### Matrix
+## Matrix
 
 
-#### Simple Matrix
+
+### Simple Matrix
 
 ![Sameple Matrix](./res/leetcode/sample_1911.png)
 ![Tensors](./res/algo/tensors.jpg)
@@ -184,11 +184,23 @@ Input: mat = [[1,2,3],
 ```
 
 
-#### Tasks
+### Tasks
 
+- [1337 The K Weakest Rows in a Matrix](https://tinyurl.com/33624jzj)
 - [1572 Matrix Diaganoal Sum](https://tinyurl.com/2ru2cjuj)
 
-##### 1572 Matrix Diagonal Sum
+#### 1337 The K Weakest Rows in a Matrix
+
+
+```python
+class Solution:
+    def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
+        stgth = [(sum(row),i) for i,row in enumerate(mat)]
+        stgth.sort()
+        return [i for s,i in stgth[:k]]
+```
+
+#### 1572 Matrix Diagonal Sum
 
 ```python
 class Solution:
