@@ -335,7 +335,7 @@ class Solution:
 - **Hash Maps** - time complexity for string is not ~~O(1)~~ but **O(m)** where `m` is length of string
 - **Hash Maps** provides constant time for such operation as `add()` `remove()` and `x in mset` 
 - **Hash Maps** - efficiant, unordered, immutable, store **key-value**
-    		
+            
 - **Python** - `dict={}` `set([0,1,2,3])`
 - **Set** vs **HashMap** The diffrence:
     - **HashMap** is like Dictionary so we have `kay` `value` pairs
@@ -349,7 +349,7 @@ class Solution:
 - **Cons** 
     - Takes more time to construct
     - Takes more space because we need  store keys sepretly
-	
+    
 
 
 ```python
@@ -761,11 +761,11 @@ n=n>>1 # Binary shift
 ```python
 l,r = 0,len(arr)
 while l<=r:
-	m = (l+r)//2
-	if arr[m]<target:
-		l=m+1
-	elif arr[m]>target:
-		r= m-1
-	else: 
-		return m
+    m = (l+r)//2
+    if arr[m]<target:
+        l=m+1
+    elif arr[m]>target:
+        r= m-1
+    else: 
+        return m
 ```
