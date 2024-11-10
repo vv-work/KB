@@ -87,6 +87,20 @@ graph TD
     D -->|Video & Audio| E[Download Manager]
     D -->|FFmpeg for Processing| F[FFmpeg]
     E --> G[File System]
+    E -->|Retries & Fragments| H[Download Accelerator]
+    H -->|Parallel Threads| I[External Downloaders]
+    A --> F
+```
+
+```mermaid
+
+graph TD
+    A[YouTube-DLP] --> B[URL Parser]
+    B --> C[Data Extractor]
+    C --> D{Media Selection}
+    D -->|Video & Audio| E[Download Manager]
+    D -->|FFmpeg for Processing| F[FFmpeg]
+    E --> G[File System]
 
     E -->|Retries & Fragments| H[Download Accelerator]
     H -->|Parallel Threads| I[External Downloaders]
