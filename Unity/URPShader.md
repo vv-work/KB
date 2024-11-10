@@ -62,6 +62,21 @@
 - [URP Edge Detection Outlines]
 
 - 
+
+## Youtube download
+download
+
+
+I **Really ** like `yt-dlp` tool
+
+
+
+```bash 
+Type help for instructions on how to use fish
+ﲎ  ~                                                      12:17:0
+❯ yt-dlp -f "bv*[ext=mp4][height<=720]+ba*[ext=m4a]" --embed-thumbnail "kRXJEqRbuS4"
+
+```
 ### Input
 
 #### Terms
